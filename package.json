@@ -4,7 +4,9 @@
   "description": "Пизда хуй",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss src/scss/style.scss  public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Denys",
   "license": "ISC",
@@ -26,6 +28,11 @@
     "gulp-webp": "^4.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0"
+    "imagemin-optipng": "^8.0.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "flag-icon-css": "^3.5.0"
   }
 }
