@@ -1,0 +1,312 @@
+//main font
+$font-family-primary: "Roboto", sans-serif;
+
+//main-colors
+$white: #ffffff;
+$black: #000000;
+
+//colors
+$la-milk-white: #f5f5f5;
+$la-blue: #0092a7;
+$la-blue-lighter: #55bbca;
+$la-blue-bold: #006f7f;
+$la-blue-light: #0ba9c2;
+$la-milk-grey: #f9f9f9;
+$la-wheat: #ffb88c;
+$la-wheat-lighter: #fefaef;
+$la-orange-milk: #f8e2d4;
+$la-wheat-light: #ffddc8;
+$la-orange-light: #fff1e8;
+$la-black: #212121;
+$la-main-yellow: #ffdc98;
+$la-yellow-color: #f7cb2f;
+$la-black-3-color: #363636;
+$la-transparent-full: rgba(0, 0, 0, 0.12);
+$la-transparent-half: rgba(0, 0, 0, 0.54);
+$la-white-transparent-half: rgba(255, 255, 255, 0.54);
+$la-transparent-dark: rgba(0, 0, 0, 0.87);
+$la-light-gray-color: #595959;
+$la-dark-gray-color: #444444;
+$la-gray-2-color: #d7d2cd;
+$la-light-grey: #e0e0e0;
+$la-grey-moon: #cccccc;
+$la-black-coffee: #2c333a;
+$la-grey-milk: #d6d6d6;
+$la-red-color: #c12828;
+$la-dark: #1a1a1b;
+//general
+$main-title-color: $black;
+$main-special-title-color: $white;
+$body-bgc: $la-milk-grey;
+$placeholder-color: $la-transparent-half;
+$box-title-color: $white;
+$box-title-bg: $la-black;
+$box-title-arrow-color: $la-white-transparent-half;
+$box-title-label-color: $la-dark;
+$box-title-label-bgc: $white;
+$switch-bgc-inactive: $la-gray-2-color;
+$switch-bgc-active: $la-wheat;
+$switch-color: $black;
+$switch-indicator-inactive: $la-light-gray-color;
+$switch-indicator-active: #333333;
+$refresh-color: $la-wheat;
+//sports head
+$sports-head-time-bgc: rgba(255, 255, 255, 0.24);
+$sports-head-time-color: $white;
+
+$sports-item-bg: $la-transparent-half;
+$sports-item-color: $white;
+$sports-item-border: $la-light-gray-color;
+
+$sports-item-small-bg: $la-transparent-half;
+$sports-item-small-color: $white;
+$sports-item-small-border: $la-light-gray-color;
+
+//header
+$header-bg: $la-blue;
+$header-controls-item-bgc: $la-blue-light;
+$header-controls-icon-bgc: $la-blue-bold;
+$header-controls-icon-color: $la-wheat;
+$header-controls-text-color: $white;
+$header-controls-dd-bgc: $la-blue-bold;
+$header-controls-dd-item-hover-bgc: $la-blue-light;
+
+$header-button-login-color: $la-wheat;
+$header-button-login-bg: transparent;
+$header-button-login-border: $la-wheat;
+
+$header-button-register-color: $black;
+$header-button-register-bg: $la-wheat;
+$header-button-register-border: $la-wheat;
+
+$header-dropdown-list-background: $la-wheat;
+$header-dropdown-list-item-color: $black;
+$header-dropdown-list-item-active-color: $white;
+$header-dropdown-list-item-active-background: $la-blue;
+$header-dropdown-list-item-active-icon: $white;
+
+$header-score-background: $white;
+$header-score-color: $black;
+$header-score-icon-background: $la-wheat;
+$header-score-icon-color: $black;
+
+//navigation
+$navigation-bgc: $la-black;
+$navigation-color: $white;
+$navigation-submenu-bgc: $white;
+$navigation-submenu-color: $black;
+
+$navigation-balance-icon-color: $la-wheat;
+$navigation-balance-color: $white;
+
+//slider
+$slider-dot-bgc: $la-white-transparent-half;
+$slider-dot-active-bgc: $white;
+//sidebar
+$sidebar-item-odd: $white;
+$sidebar-item-even: $la-milk-white;
+$sidebar-item-nested-1-lvl: $la-light-grey;
+$sidebar-item-nested-2-lvl: $la-grey-milk;
+$sidebar-item-nested-2-lvl-highlighed-bgc: $la-blue;
+$sidebar-item-nested-2-lvl-highlighed-color: $white;
+$sidebar-item-color: $black;
+$sidebar-item-label-bg: $la-blue;
+$sidebar-item-label-color: $white;
+$sidebar-tabs-control-bgc: $la-black;
+$sidebar-tabs-control-color: $white;
+$sidebar-arrow-color: $la-transparent-half;
+$sidebar-tabs-control-active-bgc: $la-blue;
+
+$sidebar-item-counter-bg: #e1e1e1;
+$sidebar-item-counter-color: rgba(0, 0, 0, 0.87);
+$sidebar-sports-item-bg: $la-blue;
+$sidebar-sports-item-title-color: $white;
+$sidebar-sports-item-time-color: $la-white-transparent-half;
+//scrollable
+$scrollable-track-bgc: $la-grey-moon;
+$scrollable-thumb-bgc: $la-blue;
+//chat
+$chat-bgc: $white;
+$chat-body-color: $black;
+$chat-info-color: $la-transparent-half;
+$chat-sender-color: $la-yellow-color;
+$chat-sender-self-color: #4e9cff;
+$chat-btn-wrapper-bg: $la-orange-light;
+$chat-btn-bgc: $la-blue;
+$chat-btn-color: $la-wheat;
+//betslip
+$betslip-color: $black;
+$betslip-bgc: $white;
+$betslip-card-bgc: $la-wheat; //header
+$betslip-card-content-bgc: $white;
+$betslip-card-title-color: $black;
+$betslip-card-label-color: $white;
+$betslip-card-label-bgc: $la-black-coffee;
+$betslip-card-close-color: $la-transparent-half;
+$betslip-box-border: $la-light-grey;
+$betslip-colored: $la-blue;
+$betslip-input-color: $black;
+$betslip-input-bgc: $white;
+$betslip-input-border: $la-grey-moon;
+$betslip-bet-bgc: $la-wheat;
+$betslip-bet-color: $black;
+$betslip-btn-bgc: $la-wheat;
+$betslip-btn-color: $black;
+//content
+$content-main-bgc: $white;
+$content-box-1-bgc: $white;
+$content-box-2-bgc: $la-milk-white;
+$content-menu-border: transparent;
+$content-menu-bgc: $la-dark-gray-color;
+$content-menulink: $white;
+$content-menulink-active-hover: $la-wheat;
+$content-menu-mode-color: $white;
+$content-menu-refresh-bgc: $la-black-3-color;
+
+$content-tabs-wrapper-bgc: $black;
+$content-tabs-controls-link-bgc: $la-wheat;
+$content-tabs-controls-link-bd: $la-wheat;
+$content-tabs-controls-link-color: $white;
+$content-tabs-controls-link-active-color: $la-wheat;
+$content-tabs-controls-link-active: $black;
+$content-tabs-controls-link-active-bg: $la-wheat;
+$content-dd-bgc: $white;
+$content-dd-color: $black;
+$content-dd-arrow-color: $la-transparent-half;
+$content-dd-body-bgc: $white;
+
+$content-tabs-special-tab-color: $black;
+$content-tabs-special-tab-background: $white;
+$content-tabs-special-tab-border: $la-grey-moon;
+$content-tabs-special-tab-border-bottom: $la-blue;
+
+$content-tabs-special-tab-active-color: $white;
+$content-tabs-special-tab-active-background: $la-blue;
+$content-tabs-special-tab-active-border: $la-blue;
+//live section
+$live-section-title-color: $black;
+//card
+$card-color: $black;
+$card-result-color: $black;
+$card-results-bgc: $la-orange-light;
+$card-results-active-border: $la-wheat;
+
+$card-result-border: $la-wheat;
+$card-result-bg: $la-wheat-light;
+$card-result-hover-bg: $la-blue-lighter;
+$card-result-hover-color: $white;
+
+$card-result-icon-bg: $la-wheat-light;
+$card-result-icon-border: $la-wheat;
+$card-result-icon-color: $la-blue;
+$card-result-icon-active-color: $white;
+$card-result-icon-active-bg: $la-blue-lighter;
+
+$card-live-head-before-bgc: rgba(0, 0, 0, 0.74);
+$card-live-head-color: $white;
+$card-live-score-color: $white;
+$card-live-score-bg: #212121;
+$card-live-period-triangle-color: $white;
+$card-live-time-highlighted: $la-blue;
+$card-live-time-highlighted-color: $white;
+$card-up: #51a24a;
+$card-down: $la-red-color;
+
+//form
+
+$form-wrapper-header-bgc: $la-black;
+$form-wrapper-header-color: $white;
+$form-wrapper-body-bgc: $white;
+
+$form-label-color: $black;
+
+$form-button-bg: $la-blue;
+$form-button-color: $white;
+
+$form-special-button-bg: $la-blue;
+$form-special-button-color: $white;
+
+$form-box-header-bgc: $la-orange-milk;
+$form-box-header-color: $black;
+
+$form-box-body-border: $la-orange-milk;
+$form-box-body-bgc: $la-orange-light;
+
+$input-label-color: $black;
+$input-visible-icon-color: $la-transparent-half;
+$input-bgc: $white;
+$input-border: $la-orange-milk;
+$input-color: $black;
+$input-arrow-color: $la-transparent-half;
+
+$checkbox-bg: transparent;
+$checkbox-border: $black;
+
+$checkbox-active-bg: #0275ff;
+
+$checkbox-text-color: $black;
+
+//popup
+$success-popup-header-bgc: $la-black;
+$success-popup-header-color: $white;
+$success-popup-cross: $la-grey-moon;
+
+$success-popup-body-bg: $white;
+$success-popup-text-color: $black;
+
+$success-popup-button-color: $white;
+$success-popup-button-bg: $la-blue;
+
+//*Mybets page styles
+$mybets-title-labels-color: $la-grey-moon;
+$mybets-table-color: $black;
+$mybets-header-color: $mybets-table-color;
+$mybets-table-header-bg: $white;
+$mybets-table-header-border: $la-grey-moon;
+$mybets-table-row-bg: $white;
+$mybets-table-row-border: $la-grey-moon;
+$mybets-table-win-color: #5daa3a;
+$mybets-table-lose-color: #a90202;
+
+$mybets-pager-wrapper-bg: transparent;
+$mybets-pager-item-bg: $white;
+$mybets-pager-item-border: $la-grey-moon;
+$mybets-pager-item-color: $black;
+
+$mybets-pager-item-active-bg: $la-blue;
+$mybets-pager-item-active-border: $la-blue;
+$mybets-pager-item-active-color: $white;
+
+$mybets-title-bg: $la-black;
+$mybets-button-color: $black;
+$mybets-button-bg: $la-wheat;
+
+//!Calendar page
+$results-table-header-bg: $la-black;
+$results-table-header-color: $white;
+$results-table-row-bg: $white;
+$results-table-row-special-bg: $la-orange-light;
+$results-table-color: $black;
+
+$date-tab-item-color: $black;
+$date-tab-item-bg: $la-orange-milk;
+$date-tab-item-border-right: $la-transparent-full;
+$date-tab-item-border-bottom: $la-transparent-full;
+
+$date-tab-item-active-color: $white;
+$date-tab-item-active-bg: $la-blue;
+$date-tab-item-active-border-active: $la-blue;
+
+$arrow-bg: $la-transparent-half;
+
+$popup-content-bg: $white;
+
+$popup-betslip-color: $black;
+
+$betslip-bottom-button-color: $black;
+$betslip-bottom-button-bg: $la-wheat;
+
+$left-section-numbers-active-color: $la-transparent-dark;
+$left-section-numbers-active-bg: $la-wheat-lighter;
+$left-section-live-active-bg: $la-wheat;
+$left-section-live-active-color: $black;

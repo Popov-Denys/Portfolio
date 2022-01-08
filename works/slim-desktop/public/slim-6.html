@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slim 6</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="css/omega-icon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href="#" class="header__logo"><img src="img/header/header-logo.svg" alt="site name"></a>
+			<div class="header__controls header-controls">
+				<div class="header-controls__item">
+					<div class="header-controls__icon">
+						<img src="img/header/header-korea-lang.svg" alt="Korean">
+					</div>
+					<div class="header-controls__text">Korean</div>
+					<div class="header-controls__arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<ul class="header-controls__dd">
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-icon">
+								<img src="img/header/header-korea-lang.svg" alt="Korean">
+							</span>
+							<span class="header-controls__dd-text">English</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-icon">
+								<img src="img/header/header-korea-lang.svg" alt="Korean">
+							</span>
+							<span class="header-controls__dd-text" title="Korean long text very long">Korean long text very
+								long</span>
+							<span class="header-controls__dd-checkmark"></span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-icon">
+								<img src="img/header/header-korea-lang.svg" alt="Korean">
+							</span>
+							<span class="header-controls__dd-text">Chinese</span>
+						</li>
+					</ul>
+				</div>
+				<div class="header-controls__item">
+					<div class="header-controls__icon">
+						<span class="qicon-brush"></span>
+					</div>
+					<div class="header-controls__text">Korean updated</div>
+					<div class="header-controls__arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<ul class="header-controls__dd">
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Korean updated</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Dark night</span>
+							<span class="header-controls__dd-checkmark"></span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text" title="Korean updated long text">Korean updated long text
+								very long</span>
+						</li>
+					</ul>
+				</div>
+				<div class="header-controls__item">
+					<div class="header-controls__icon">
+						<span class="qicon-money"></span>
+					</div>
+					<div class="header-controls__text">Euro</div>
+					<div class="header-controls__arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<ul class="header-controls__dd">
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Korean updated</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Dark night</span>
+							<span class="header-controls__dd-checkmark"></span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text" title="Korean updated long text">Korean updated long text
+								very long</span>
+						</li>
+					</ul>
+				</div>
+				<div class="header-controls__item">
+					<div class="header-controls__icon">
+						<span class="qicon-remove_red_eye"></span>
+					</div>
+					<div class="header-controls__text">European</div>
+					<div class="header-controls__arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<ul class="header-controls__dd">
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Korean updated</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Dark night</span>
+							<span class="header-controls__dd-checkmark"></span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text" title="Korean updated long text">Korean updated long text
+								very long</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<form method="get" action="" class="header__form header-form">
+				<input type="text" name="userName" id="userName" class="header-form__inp header-form__item"
+					placeholder="Username" required>
+				<input type="password" name="userPassword" id="userPassword" class="header-form__inp header-form__item"
+					placeholder="Password " required>
+				<button class="header-form__btn header-form__btn-login header-form__item" type="submit">Login</button>
+				<a href="#" class="header-form__btn header-form__btn-register header-form__item">Create Account</a>
+			</form>
+			<div class="header__hidden">
+				<div class="header-controls__item">
+					<div class="header-controls__icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+							<g>
+								<g>
+									<path
+										d="M8 10c4.42 0 8 1.79 8 4v2H0v-2c0-2.21 3.58-4 8-4zm4-6a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="header-controls__text">Hello Demobet123!</div>
+					<div class="header-controls__arrow">
+						<i class="fas fa-chevron-down"></i>
+					</div>
+					<ul class="header-controls__dd">
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Profile</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">Deposit</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">My bets</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">My Statements</span>
+						</li>
+						<li class="header-controls__dd-item">
+							<span class="header-controls__dd-text">English</span>
+						</li>
+					</ul>
+				</div>
+				<div class="header__cash">
+					<div class="header__cash-text">
+						usd 10,000.00</div>
+					<div class="header__cash-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+							viewBox="0 0 16 16">
+							<g>
+								<g>
+									<path fill-opacity=".87"
+										d="M13.65 2.35A7.958 7.958 0 0 0 8 0a8 8 0 1 0 0 16c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 8 14 6 6 0 1 1 8 2c1.66 0 3.14.69 4.22 1.78L9 7h7V0z" />
+								</g>
+							</g>
+						</svg></div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__list-item game-center">
+					<a href="#" class="navigation__link">Game center</a>
+					<div class="navigation-submenu">
+						<div class="navigation-submenu__inner">
+							<div class="navigation-submenu__box">
+								<ul class="navigation-submenu__list">
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Sports</a>
+									</li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Live
+											Sports</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Live
+											Calendar</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Sports
+											Results</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Betradar
+											Virtuals</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Kiron
+											Virtuals</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Microgaming
+											Casino</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Solid
+											Gaming Casino</a></li>
+								</ul>
+							</div>
+							<div class="navigation-submenu__box">
+								<ul class="navigation-submenu__list">
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Tutorial
+											Video</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">How to
+											Bet</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">How to
+											Deposit</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">How to
+											Withdraw</a></li>
+								</ul>
+							</div>
+							<div class="navigation-submenu__box">
+								<ul class="navigation-submenu__list">
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Bet
+											Calculator</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">FAQs</a>
+									</li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Contact
+											Us</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">About
+											Us</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Terms and
+											Conditions</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Privacy
+											Policy</a></li>
+								</ul>
+							</div>
+							<div class="navigation-submenu__box">
+								<div class="navigation-submenu__slider">
+									<div class="navigation-slider">
+										<div><img src="img/header/nav-slider-1.jpg" alt="text"></div>
+										<div><img src="img/header/nav-slider-1.jpg" alt="text"></div>
+										<div><img src="img/header/nav-slider-1.jpg" alt="text"></div>
+										<div><img src="img/header/nav-slider-1.jpg" alt="text"></div>
+										<div><img src="img/header/nav-slider-1-1.jpg" alt="text"></div>
+									</div>
+								</div>
+							</div>
+							<div class="navigation-submenu__box">
+								<ul class="navigation-submenu__list">
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">My
+											statements</a></li>
+									<li class="navigation-submenu__item"><a href="#" class="navigation-submenu__link">Deposit</a>
+									</li>
+									<li class="navigation-submenu__item"><a href="#"
+											class="navigation-submenu__link">Withdraw</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="navigation__list-item"><a href="#" class="navigation__link">Tutorial</a></li>
+				<li class="navigation__list-item"><a href="#" class="navigation__link">Service</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section class="content">
+
+				<aside class="sidebar">
+					<div class="sidebar__box">
+						<form method="get" action="" class="sidebar__search">
+							<input type="text" name="sbSearch" id="sbSearch" class="sidebar__search-inp"
+								placeholder="Event Search">
+							<button class="sidebar__search-btn" type="submit"><span class="qicon-search"></span></button>
+						</form>
+					</div>
+					<div class="sidebar__box">
+						<div class="box-title">Top League</div>
+						<ul class="sidebar__list">
+							<li class="sidebar-item"><span class="qicon-foot icon"></span><a href="#">League name</a><span
+									class="sidebar-item__label">live</span></li>
+							<li class="sidebar-item"><span class="qicon-rugu icon"></span><a href="#">League name</a><span
+									class="sidebar-item__label">live</span></li>
+							<li class="sidebar-item"><span class="qicon-cric icon"></span><a href="#">League name</a></li>
+							<li class="sidebar-item"><span class="qicon-bask icon"></span><a href="#">League name</a></li>
+							<li class="sidebar-item"><span class="qicon-base icon"></span><a href="#">League name</a></li>
+							<li class="sidebar-item"><span class="qicon-badm icon"></span><a href="#">League name</a></li>
+						</ul>
+					</div>
+					<div class="sidebar__box">
+						<div class="box-title">Live</div>
+						<ul class="sidebar__list">
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-rugu icon"></span>
+									<a href="#">Rugby union</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-foot icon"></span>
+									<a href="#">Football</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-rugu icon"></span>
+									<a href="#">Rugby union</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-rugu icon"></span>
+									<a href="#">Rugby union</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-rugu icon"></span>
+									<a href="#">Rugby union</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="sidebar-dropdown">
+								<div class="sidebar-item sidebar-item--with-counter">
+									<span class="qicon-rugu icon"></span>
+									<a href="#">Rugby union</a>
+									<span class="sidebar-item__counter">123</span>
+									<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16"
+										width="16">
+										<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+									</svg>
+								</div>
+								<ul class="sidebar-dropdown__list js-dropdown-box">
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/england.svg" alt="eng" class="sidebar-item__icon">
+											<a href="#">England</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl selected"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/france.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">France</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Spain</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/spain.svg" alt="fr" class="sidebar-item__icon">
+											<a href="#">Austria</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International club</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+									<li class="sidebar-dropdown">
+										<div class="sidebar-item sidebar-item--with-flag">
+											<img src="img/sidebar/international.svg" alt="int" class="sidebar-item__icon">
+											<a href="#">International</a>
+											<svg class="js-dropdown" xmlns="http://www.w3.org/2000/svg" height="16"
+												viewBox="0 0 16 16" width="16">
+												<path d="m11.6718 4.7998-3.672 3.672-3.672-3.672-1.128 1.136 4.8 4.8 4.8-4.8z" />
+											</svg>
+										</div>
+										<ul class="sidebar-dropdown__list js-dropdown-box">
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+											<li class="sidebar-item sidebar-item--pl"><a href="#">DBU Cup</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</aside>
+
+				<div class="content__main">
+					<div class="content__menu">
+						<nav class="content__menu-items">
+							<a href="#" class="content__menu-link">Sports</a>
+							<a href="#" class="content__menu-link content__menu-link_active">Live</a>
+							<a href="#" class="content__menu-link">Calendar</a>
+							<a href="#" class="content__menu-link">Results</a>
+						</nav>
+						<div class="content__menu-controls">
+							<div class="content__menu-mode">
+								<div class="content__menu-mode-label">Split mode:</div>
+								<div class="switch">
+									<input type="checkbox" name="switch1" id="switch0" class="switch__inp">
+									<label for="switch0" class="switch__label" data-on="on" data-off="off"></label>
+								</div>
+							</div>
+							<div class="content__menu-refresh">
+								<div class="refresh">
+									<span class="qicon-refresh"></span>
+									<span class="refresh__value"><b>119</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content__cols">
+						<div class="content-col--full">
+							<div class="box-title box-title--with-icon"><span class="qicon-foot icon"></span>Football</div>
+							<div class="content__box-1">
+								<div class="live-section">
+									<div class="live-section__title">FA Cup</div>
+									<div class="card card-live">
+										<div class="card-live__head"
+											style="background-image:url('../public/img/content/card-compact-live-bg.jpg');">
+											<div class="card-live__head-inner">
+												<div class="card-live__head-grid">
+													<div class="card-live__head-item">
+														<span class="card-live__team"><b>B. Binh duglas</b></span>
+														<span class="card-live__box card-live-score"><b>24</b></span>
+													</div>
+													<div class="card-live__head-item card-live__head-item_center"><span
+															class="card-live__box card-live-time card-live-time--highlighted">
+															<span><b>8:07</b></span><span class="card-live-time__period">1st
+																half</span>
+														</span></div>
+													<div class="card-live__head-item">
+														<span class="card-live__box card-live-score"><b>17</b></span>
+														<span class="card-live__team"><b>Noi FC</b></span>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="card__results">
+											<div class="card__box ">
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_red"></div>
+													<span>B. Binh duglas</span><b>1.58</b>
+												</div>
+												<div class="card-result card-result--small"><b>3.30</b></div>
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_green"></div>
+													<b>3.75</b><span>B. Bin Doo</span>
+												</div>
+											</div>
+
+
+										</div>
+										<div class="content__box-2">
+											<div class="content-tabs content-tabs--game-split">
+												<div class="content-tabs-controls content-tabs-controls--full">
+													<a href="#tab-game-1"
+														class="content-tabs-controls__game-link content-tabs-controls__link content-tabs-controls__link_active">
+														<span class="qicon-match-tracker"></span>
+														Match traker
+													</a>
+													<a href="#tab-game-2"
+														class="content-tabs-controls__game-link content-tabs-controls__link">
+														<span class="qicon-video-camera"></span>
+														Video stream
+													</a>
+												</div>
+												<div class="content-tabs__content">
+													<div class="content-tab content-tab_active">
+														<div class="content-tab__game">
+															<img src="img/content/game-placeholder.jpg" alt="game">
+														</div>
+													</div>
+													<div class="content-tab">asd</div>
+												</div>
+											</div>
+											<div class="content-tabs">
+												<div class="content-tabs__controls content-tabs-controls content-tabs_special">
+													<a href="#tab-1"
+														class="content-tabs__controls-link content-tabs-controls__link content-tabs-controls__link_active">All</a>
+													<a href="#tab-2"
+														class="content-tabs__controls-link content-tabs-controls__link content-tabs-controls__link_disabled">Match</a>
+													<a href="#tab-3"
+														class="content-tabs__controls-link content-tabs-controls__link">Over /
+														Under</a>
+													<a href="#tab-4"
+														class="content-tabs__controls-link content-tabs-controls__link">Handicap</a>
+													<a href="#tab-5"
+														class="content-tabs__controls-link content-tabs-controls__link">Other</a>
+												</div>
+												<div class="content-tabs__content">
+													<div class="content-tab content-tab_active" id="tab-1">
+														<div class="content-dropdown">
+															<div class="content-dropdown__head">
+																<div class="content-dropdown__title"><b>Win/Draw/Win - 90 Mins</b></div>
+																<div class="content-dropdown__arrow js-dropdown"><i
+																		class="fas fa-chevron-down"></i></div>
+															</div>
+															<div class="content-dropdown__body js-dropdown-box">
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas very long title</span><b>2.41</b>
+																		<div class="card__triangle card__triangle_green"></div>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow ">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																		<div class="card__triangle card__triangle_red"></div>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow disabled">
+																		<span>Brazil de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div
+																		class="card-result card-result--dd card-result--grow card-result_active">
+																		<span>Brazil de Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--small">
+																		<b>3.30</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="content-dropdown">
+															<div class="content-dropdown__head">
+																<div class="content-dropdown__title"><b>Win/Draw/Win - 90 Mins</b></div>
+																<div class="content-dropdown__arrow js-dropdown"><i
+																		class="fas fa-chevron-down"></i></div>
+															</div>
+															<div class="content-dropdown__body js-dropdown-box">
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas very long title</span><b>2.41</b>
+																		<div class="card__triangle card__triangle_green"></div>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow ">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																		<div class="card__triangle card__triangle_red"></div>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow disabled">
+																		<span>Brazil de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div
+																		class="card-result card-result--dd card-result--grow card-result_active">
+																		<span>Brazil de Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--small">
+																		<b>3.30</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="content-dropdown">
+															<div class="content-dropdown__head">
+																<div class="content-dropdown__title"><b>Win/Draw/Win - 90 Mins</b></div>
+																<div class="content-dropdown__arrow js-dropdown"><i
+																		class="fas fa-chevron-down"></i></div>
+															</div>
+															<div class="content-dropdown__body js-dropdown-box">
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas very long title</span><b>2.41</b>
+																		<div class="card__triangle card__triangle_green"></div>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow ">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																		<div class="card__triangle card__triangle_red"></div>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow disabled">
+																		<span>Brazil de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div
+																		class="card-result card-result--dd card-result--grow card-result_active">
+																		<span>Brazil de Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--small">
+																		<b>3.30</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="content-dropdown">
+															<div class="content-dropdown__head">
+																<div class="content-dropdown__title"><b>Win/Draw/Win - 90 Mins</b></div>
+																<div class="content-dropdown__arrow js-dropdown"><i
+																		class="fas fa-chevron-down"></i></div>
+															</div>
+															<div class="content-dropdown__body js-dropdown-box">
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas very long title</span><b>2.41</b>
+																		<div class="card__triangle card__triangle_green"></div>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow ">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																		<div class="card__triangle card__triangle_red"></div>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow disabled">
+																		<span>Brazil de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div
+																		class="card-result card-result--dd card-result--grow card-result_active">
+																		<span>Brazil de Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--small">
+																		<b>3.30</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+																<div class="content-dropdown__row">
+																	<div class="card-result card-result--dd card-result--grow">
+																		<span>Brazil
+																			de
+																			Pelotas RS…</span><b>2.41</b>
+																	</div>
+																	<div class="card-result card-result--dd card-result--grow">
+																		<b>2.17</b><span>Londrina EC PR .5, + 1</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="content-tab" id="tab-2">asd</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="live-section">
+									<div class="live-section__title">DBU Cup</div>
+									<div class="card card-live">
+										<div class="card-live__head"
+											style="background-image:url('../public/img/content/card-compact-live-bg.jpg');">
+											<div class="card-live__head-inner">
+												<div class="card-live__head-grid">
+													<div class="card-live__head-item">
+														<span class="card-live__team"><b>B. Binh duglas</b></span>
+														<span class="card-live__box card-live-score"><b>24</b></span>
+													</div>
+													<div class="card-live__head-item card-live__head-item_center"><span
+															class="card-live__box card-live-time card-live-time--highlighted">
+															<span><b>8:07</b></span><span class="card-live-time__period">1st
+																half</span>
+														</span></div>
+													<div class="card-live__head-item">
+														<span class="card-live__box card-live-score"><b>17</b></span>
+														<span class="card-live__team"><b>Noi FC</b></span>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="card__results">
+											<div class="card__box ">
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_red"></div>
+													<span>B. Binh duglas</span><b>1.58</b>
+												</div>
+												<div class="card-result card-result--small"><b>3.30</b></div>
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_green"></div>
+													<b>3.75</b><span>B. Bin Doo</span>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="card card-live">
+										<div class="card-live__head"
+											style="background-image:url('../public/img/content/card-compact-live-bg.jpg');">
+											<div class="card-live__head-inner">
+												<div class="card-live__head-grid">
+													<div class="card-live__head-item">
+														<span class="card-live__team"><b>B. Binh duglas</b></span>
+														<span class="card-live__box card-live-score"><b>24</b></span>
+													</div>
+													<div class="card-live__head-item card-live__head-item_center"><span
+															class="card-live__box card-live-time card-live-time--highlighted">
+															<span><b>8:07</b></span><span class="card-live-time__period">1st
+																half</span>
+														</span></div>
+													<div class="card-live__head-item">
+														<span class="card-live__box card-live-score"><b>17</b></span>
+														<span class="card-live__team"><b>Noi FC</b></span>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="card__results">
+											<div class="card__box ">
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_red"></div>
+													<span>B. Binh duglas</span><b>1.58</b>
+												</div>
+												<div class="card-result card-result--small"><b>3.30</b></div>
+												<div class="card-result card-result--grow">
+													<div class="card__triangle card__triangle_green"></div>
+													<b>3.75</b><span>B. Bin Doo</span>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="sidebar">
+					<div class="sidebar__box">
+						<div class="box-title">
+							Betslip
+							<span class="box-title__label box-title__label-left">3</span>
+							<div class="switch">
+								<input type="checkbox" name="switch1" id="switch1" class="switch__inp">
+								<label for="switch1" class="switch__label" data-on="on" data-off="off"></label>
+							</div>
+							<div class="box-title__arrow js-dropdown"><i class="fas fa-chevron-up "></i></div>
+						</div>
+						<div class="betslip js-dropdown-box">
+							<div class="betslip__list">
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+								<div class="betslip-card">
+									<div class="betslip-card__top">
+										<span class="qicon-times-circle betslip-card__close js-betslip-card-remove"></span>
+										<span class="betslip-card__title">Home United FC</span>
+										<span class="betslip-card__label">1.58</span>
+									</div>
+									<div class="betslip-card__content">
+										<div>Pusamania Borneo vs Barito Put…</div>
+										<div>Win/Draw/Win - 90 Mins</div>
+									</div>
+								</div>
+							</div>
+							<div class="betslip__stake-btns">
+								<a href="#" class="betslip__btn betslip__btn-half">REMOVE ALL</a>
+								<a href="#" class="betslip__btn betslip__btn-half">MAX STAKE</a>
+							</div>
+							<div class="betslip__box">
+								<div class="betslip__row betslip__row-between"><b>Balance:</b><span
+										class="betslip__colored"><b>USD 158.00</b></span></div>
+								<div class="betslip__row betslip__row-between"><b>Total odds:</b><span
+										class="betslip__colored"><b>9.84</b></span></div>
+							</div>
+							<div class="betslip__box">
+								<div class="betslip__row betslip__row-between">
+									<label for="bet">Stake:</label>
+									<input type="text" name="bet" id="bet" class="betslip__inp" value="5">
+								</div>
+								<div class="betslip__buttons">
+									<div class="betslip__bet">5k</div>
+									<div class="betslip__bet">10k</div>
+									<div class="betslip__bet">20k</div>
+									<div class="betslip__bet">30k</div>
+									<div class="betslip__bet">50k</div>
+								</div>
+							</div>
+							<div class="betslip__box">
+								<div class="betslip__row betslip__row-between"><b>Potential Returns:</b><span
+										class="betslip__colored"><b>USD 158.00</b></span></div>
+								<div class="betslip__row">
+									<div class="betslip__btn betslip__btn-full">login</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar__box">
+						<div class="box-title">Chat <div class="box-title__arrow js-dropdown"><i
+									class="fas fa-chevron-up "></i></div>
+						</div>
+						<div class="chat js-dropdown-box">
+							<div class="chat__content chat__content-big sidebar-scrollable">
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender chat-msg__sender-self">Test</span> -
+										<span class="chat-msg__time">09:58</span>
+									</div>
+									<div class="chat-msg__body">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor
+										incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:56</span>
+									</div>
+									<div class="chat-msg__body">
+										What do you think about 1/4 Spain league
+										Barcelona vs Valencia?
+									</div>
+								</div>
+								<div class="chat-msg">
+									<div class="chat-msg__info">
+										<span class="chat-msg__sender">Jessica</span> -
+										<span class="chat-msg__time">09:55</span>
+									</div>
+									<div class="chat-msg__body">
+										ok
+									</div>
+								</div>
+							</div>
+							<form action="" method="get" class="chat__form" autocomplete="off">
+								<input type="text" name="msg" id="msg" class="chat__form-inp"
+									placeholder="Enter you mesage here">
+								<button class="chat__form-btn"><span class="qicon-send"></span></button>
+							</form>
+						</div>
+					</div>
+				</aside>
+
+			</section>
+		</main>
+
+	</div>
+	<script src="libs/jquery-3.5.1.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+		integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

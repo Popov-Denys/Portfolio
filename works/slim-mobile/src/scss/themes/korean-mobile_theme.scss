@@ -1,0 +1,390 @@
+//!standart
+$black: #000000;
+$white: #ffffff;
+
+//? korean mobile
+$km-darker-night: #201e20;
+$km-twilight: #212121;
+$km-black-grey: #434243;
+$km-black: #0e0e0e;
+$km-dark: #272527;
+$km-darker: #090609;
+$km-greyer-light: #6e6e6e;
+$km-black-darker: #222222;
+$km-dark-light: #555555;
+$km-light-lighter: #d7d2cd;
+$km-greyer: #aaaaaa;
+$km-dark-moon: #1a1a1a;
+$km-black-moon: #333333;
+$km-dark-black: #262525;
+$km-lighter-grey: #a3a3a3;
+$km-grey: #373737;
+$km-grey2: #363636;
+$km-grey-dark: #474747;
+$km-light-grey: #595959;
+$km-dark-grey: #292929;
+$km-darker-grey: #272527;
+$km-yellow: #f7cb2f;
+$km-yellow-light: #f7e671;
+$km-yellow-lighter: #e8dba7;
+$km-light-red: #b72424;
+$km-black-greyer: #464447;
+$km-lighter-red: #c12828;
+$km-darker-dark: linear-gradient(180deg, #201e20 0%, #141115 100%);
+$km-middle-grey: linear-gradient(180deg, #595959 0%, #353535 100%);
+$km-transparent-light: rgba(255, 255, 255, 0.87);
+$km-transparent-milk: rgba(255, 255, 255, 0.12);
+$km-transparent-lighter: rgba(255, 255, 255, 0.75);
+$km-transparent-white: rgba(255, 255, 255, 0.54);
+$km-transparent-moon: rgba(208, 208, 208, 0.5);
+$km-transparent-half: rgba(0, 0, 0, 0.54);
+$km-transparent-dark: rgba(0, 0, 0, 0.87);
+$km-transparent-full: rgba(0, 0, 0, 0.12);
+$km-gradient-yellow: linear-gradient(180deg, #fce75c 0%, #f7cb2f 100%);
+$km-gradient-dark: linear-gradient(180deg, #323132 0%, #272527 100%);
+$km-gradient-grey: linear-gradient(180deg, #595959 0%, #393939 100%);
+$km-gradient-light-yellow: linear-gradient(180deg, #fce75c 0%, rgba(247, 203, 47, 0.82) 97%);
+$km-gradient-red: linear-gradient(180deg, #c12828 0%, #ae2121 100%);
+//*fonts
+$font-family-primary: "Roboto", sans-serif;
+
+//*active item
+
+$color-active: $km-yellow;
+
+//*header
+$header-bgc: $km-black;
+
+//*navigation
+
+//? links
+$nav-links-color: $white;
+$nav-links-color-active: $km-yellow;
+$nav-links-bg: $km-darker-grey;
+$folder-circle-color: $white;
+$folder-circle-border: $km-dark;
+$folder-circle-bg: $km-light-red;
+
+//? form
+$nav-form-color: $white;
+$nav-form-bg: $km-dark;
+$buttons-color: $white;
+$buttons-bg: $km-darker-dark;
+$buttons-border-color: $km-darker;
+$buttons-active-color: $black;
+$buttons-active-bg: $km-gradient-yellow;
+$buttons-active-border: transparent;
+$search-color: $white;
+$search-bg: $km-grey;
+$search-border: $km-grey;
+$search-placeholder-color: $km-lighter-grey;
+$search-icon-color: $km-lighter-grey;
+
+//TODO overlays
+
+//! burger-menu
+$burger-search-bg: $km-grey;
+$burger-search-color: $white;
+$burger-search-icon: $km-yellow;
+$burger-search-close: $km-greyer;
+$burger-search-placeholder: $km-greyer;
+$burger-title-color: $km-transparent-light;
+$burger-title-bg: $km-black;
+$burger-item-color: $km-transparent-light;
+$burger-item-bg: $km-grey-dark;
+$burger-item-parent-color: $km-transparent-light;
+$burger-item-parent-bg: $km-greyer-light;
+$burger-item-numbers-color: $km-transparent-dark;
+$burger-item-numbers-bg: $km-transparent-lighter;
+$burger-item-numbers-active-color: $km-transparent-dark;
+$burger-item-numbers-active-bg: $km-transparent-lighter;
+$burger-item-live-color: $white;
+$burger-item-live-bg: $km-lighter-red;
+$burger-item-border-color: $km-grey;
+$burger-item-icon: $white;
+$burger-item-icon-active: $white;
+$burger-item-arrow: $km-transparent-white;
+$burger-item-arrow1-active: $km-transparent-white;
+$burger-item2-color: $km-greyer;
+$burger-item2-bg: $km-grey;
+$burger-item2-border-color: $km-dark-black;
+$burger-item3-color: $km-greyer;
+$burger-item3-bg: $km-dark-black;
+$burger-item3-color-active: $km-greyer;
+$burger-item3-bg-active: $km-dark-black;
+$burger-item3-border: $km-grey;
+
+//!folder menu
+
+$folder-bg: $km-grey;
+$folder-bet-cross: $km-grey;
+$folder-bet-header-color: $white;
+$folder-bet-header-bg: $km-light-grey;
+$folder-bet-coefficient-color: $black;
+$folder-bet-coefficient-bg: $km-light-lighter;
+$folder-bet-text-color: $white;
+$folder-bet-text-bg: $km-grey-dark;
+$folder-bet-border: $km-light-grey;
+$folder-buttons-color: $black;
+$folder-buttons-bg: $km-yellow;
+$folder-login-color: $black;
+$folder-login-bg: $km-yellow;
+$folder-balance-color: $white;
+$folder-total-color: $km-yellow;
+$folder-stake-color: $white;
+$folder-stake-border: $km-dark-light;
+$folder-stake-buttons-color: $white;
+$folder-stake-buttons-bg: $km-light-grey;
+$folder-stake-input-bg: $white;
+
+//! sports menu
+$sports-color: $km-transparent-light;
+$sports-bg: $white;
+$sports-row-bg: $km-gradient-dark;
+$sports-row-border: $km-black-grey;
+$sports-item-icon: $km-greyer;
+$sports-item-numbers-color: $km-transparent-light;
+$sports-item-numbers-bg: $km-black-greyer;
+$sports-item-numbers-border: $km-darker-night;
+$sports-item-numbers-boxshadow: 0 1px 0 #403f40;
+//!league menu
+$league-color: $km-transparent-light;
+$league-bg: $white;
+$league-row-bg: $km-gradient-dark;
+$league-row-border: $km-black-grey;
+$league-item-icon: $km-greyer;
+$league-item-numbers-color: $km-transparent-light;
+$league-item-numbers-bg: $km-black-greyer;
+$league-item-numbers-border: $km-darker-night;
+$league-item-numbers-boxshadow: 0 1px 0 #403f40;
+//!chat
+$chat-color: $white;
+$chat-bg: $km-grey2;
+$chat-time: $km-transparent-white;
+$chat-submit-bg: $color-active;
+$chat-arrow-color: $black;
+
+//!game-center
+$game-center-color: $white;
+$game-center-bg: $km-dark;
+$game-center-button-bg: $km-darker-dark;
+$game-center-button-border: $km-darker;
+$game-center-button-active-color: $black;
+$game-center-button-active-bg: $km-gradient-yellow;
+$game-center-button-active-border: transparent;
+
+//!live98
+$live98-draw-color: $black;
+$live98-draw-bg: $km-gradient-light-yellow;
+
+//!matches
+$matches-bg: $km-darker-grey;
+$matches-container-bg: $km-darker-grey;
+$matches-nav-color: $white;
+$matches-nav-bg: $black;
+$matches-nav-border: $km-yellow;
+$matches-nav-item-border: $km-light-grey;
+$matches-nav-item-active-color: $black;
+$matches-nav-item-active-bg: $km-yellow;
+$matches-list-li-bg: $km-black-darker;
+$matches-list-li-color: $white;
+$matches-list-li-arrow-bg: $km-transparent-white;
+$matches-selections-bg: $km-black-darker;
+$matches-selection-color: $white;
+$matches-selection-bg: $km-gradient-grey;
+$matches-selection-border: transparent;
+$matches-selection-active-color: $black;
+$matches-selection-active-bg: $km-gradient-yellow;
+$matches-selection-active-border: transparent;
+
+//*main
+$main-bg: $km-dark-grey;
+
+//? title
+$title-color: $white;
+$title-bg: $km-black;
+
+//?content
+$item-color: $white;
+$item-bg: $km-black-darker;
+
+$switcher-sports-color: $white;
+$switcher-sports-bg: $km-grey;
+$switcher-live-color: $white;
+$switcher-live-bg: $km-black;
+
+//?factor card
+$factor-color: $white;
+$factor-bg: $km-middle-grey;
+$factor-border-color: $km-light-grey;
+$factor-active-color: $black;
+$factor-active-bg: $km-yellow;
+$factor-active-border: transparent;
+$factor-icon-color: $km-yellow;
+$factor-icon-bg: $km-middle-grey;
+$factor-icon-border: $km-light-grey;
+$factor-icon-active-color: $black;
+$factor-icon-active-border: transparent;
+$factor-icon-active-bg: $km-gradient-light-yellow;
+
+$factor-active-color: $black;
+$factor-active-bg: $km-yellow;
+$factor-active-border: $km-yellow;
+//?main variables
+$match-team-score-color: $black;
+$match-team-score-bg: $km-gradient-light-yellow;
+
+$match-team-time-color: $white;
+$match-team-time-bg: $km-gradient-red;
+//!kiron sports
+
+//*upcoming
+$upcoming-question: $km-transparent-white;
+$upcoming-dates-color: $white;
+$upcoming-rating-color: $white;
+$upcoming-results-color: $black;
+$upcoming-results-bg: $km-yellow-light;
+$upcoming-triangle-color: $white;
+$upcoming-card-color: $black;
+$upcoming-card-bg: $km-yellow-lighter;
+$upcoming-card-number-color: $black;
+$upcoming-card-number-bg: $km-transparent-full;
+$upcoming-card-available: $km-transparent-dark;
+$upcoming-card-coeficient-color: $black;
+$upcoming-card-coeficient-bg: $white;
+$upcoming-card-coeficient-border: $white;
+
+$login-user-icon: $km-yellow;
+$login-bg: $km-grey-dark;
+$login-title-color: $white;
+$login-input-color: $black;
+$login-input-border: $white;
+$login-input-bg: $white;
+$login-forgot-color: $white;
+$login-remember-color: $white;
+$login-checkbox-bg: $km-grey-dark;
+$login-checkbox-border: $white;
+$login-checkbox-checked-bg: $km-yellow;
+$login-checkbox-checked-icon: $black;
+$login-button-color: $black;
+$login-button-bg: $km-yellow;
+$login-create-color: $km-yellow;
+$login-settings-hidden-text-color: $km-transparent-white;
+$login-settings-item-arrow: $km-transparent-white;
+$login-settings-item-icon-color: $black;
+$login-settings-item-icon-bg: $km-yellow;
+$login-settings-item-color: $white;
+$login-settings-item-border: $km-light-grey;
+$login-settings-item-bg: $km-grey;
+$login-settings-seconds: $white;
+$login-settings-submenu-bg: $km-grey;
+$login-settings-subitem-color: $white;
+$login-settings-subitem-active-color: $black;
+$login-settings-subitem-active-bg: $km-yellow;
+$login-settings-subitem-icon: $black;
+$login-balance-bg: $km-grey;
+$login-balance-icon: $km-yellow;
+$login-balance-title: $km-transparent-white;
+$login-balance-money: $white;
+$login-menu-item-color: $white;
+$login-menu-item-icon: $km-transparent-white;
+$login-menu-item-border: $km-light-grey;
+$login-loader-bg: $km-transparent-half;
+$betslip-notification-bg: $km-yellow;
+$betslip-notification-top-color: $black;
+
+$range-bg: $km-dark-grey;
+$range-fill-in: $km-yellow;
+$range-circle: $km-light-grey;
+$range-circle-border: $km-dark-grey;
+
+$inputs-wrapper-bg: $km-grey2;
+$inputs-title-color: $white;
+$inputs-title-bg: $km-black;
+$inputs-body-bg: $km-grey2;
+$inputs-body-border: $km-black;
+$inputs-input-title: $white;
+$inputs-input-hide-title: $white;
+$inputs-input-icon: $km-yellow;
+$inputs-input-special-color: $km-transparent-half;
+$inputs-input-special-placeholder: $km-transparent-half;
+$inputs-input-light-placeholder: $km-transparent-half;
+$inputs-input-special-bg: $km-greyer;
+$inputs-input-special-border: $km-transparent-moon;
+$inputs-input-special-arrow: $km-transparent-moon;
+$inputs-input-special-arrow-bg: $km-transparent-moon;
+
+$inputs-input-default-color: $black;
+$inputs-input-default-placeholder: $black;
+$inputs-input-default-bg: $white;
+$inputs-input-default-border: $km-yellow-lighter;
+$inputs-input-default-arrow: $white;
+$inputs-input-default-arrow-bg: $white;
+$inputs-button-color: $black;
+$inputs-button-bg: $km-yellow;
+
+$calendar-button-color: $black;
+$calendar-button-bg: $km-gradient-light-yellow;
+$calendar-nav-border: $km-light-grey;
+$calendar-nav-border-active: $km-yellow;
+$calendar-nav-item-color: $white;
+$calendar-nav-item-bg: $black;
+$calendar-nav-item-active-color: $black;
+$calendar-labels-bg: $km-grey-dark;
+$calendar-labels-color: $white;
+$calendar-labels-border: $km-light-grey;
+$calendar-list-item-bg-odd: $km-black-darker;
+$calendar-list-item-bg-even: $km-grey2;
+$calendar-list-item-color: $white;
+$calendar-list-item-icon-color: $white;
+$calendar-list-item-date-border: $km-dark-moon;
+$calendar-list-item-date-bg: $km-black-moon;
+
+$sailing-button-border: $km-yellow;
+$statements-wrapper-bg: $km-grey2;
+$statements-nav-item-color: $white;
+$statements-nav-item-bg: transparent;
+$statements-nav-item-border: $km-yellow;
+$statements-nav-icon-color: $black;
+$statements-nav-icon-bg: $km-gradient-light-yellow;
+
+$statements-nav-item-active-color: $black;
+$statements-nav-item-active-bg: $km-yellow;
+$statements-nav-item-active-border: $km-yellow;
+$statements-item-bg: $km-grey-dark;
+$statements-credit-color: $white;
+$statements-transaction-color: $white;
+$statements-item-color: $white;
+
+$statements-item-border: $km-twilight;
+$statements-item-header-bg: $km-twilight;
+$statements-item-text-highlighted: $km-yellow;
+$statements-item-date-color: $white;
+$statements-item-date-bg: $km-light-grey;
+
+$statements-receipt-color: $black;
+$statements-receipt-bg: $km-yellow;
+
+$bets-calendar-color: $black;
+$bets-calendar-bg: $km-yellow;
+$bets-calendar-arrows: $white;
+$bets-item-color: $km-transparent-white;
+$bets-item-bg: $km-grey-dark;
+$bets-item-border: $km-twilight;
+$bets-item-header-bg: $km-twilight;
+$bets-item-header-color: $white;
+$bets-selection-color: $white;
+$bets-selection-border: $km-transparent-milk;
+$bets-selection-opened-border: $km-twilight;
+$bets-selection-bg: $km-grey2;
+$bets-arrow-bg: $km-transparent-white;
+$bets-credit-color: $white;
+$bets-transaction-color: $white;
+$bets-item-text-highlighted: $km-yellow;
+$bets-item-date-color: $white;
+$bets-item-date-bg: $km-light-grey;
+
+$result-opened-wrapper-bg: $km-grey2;
+$result-spoiler-arrow: $km-transparent-white;
+$result-spoiler-color: $white;
+$result-spoiler-bg: $km-black-darker;

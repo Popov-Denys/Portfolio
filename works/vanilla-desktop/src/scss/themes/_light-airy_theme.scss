@@ -1,0 +1,795 @@
+//!standart
+$black: #000000;
+$white: #ffffff;
+
+//? lucky red
+$la-white-chocolate: #fafafa;
+$la-orange-milk: #f8e2d4;
+$la-green-light: #5daa3a;
+$la-grey-light: #f5f5f5;
+$la-grey-silver: #999999;
+$la-blue-dark: #2c333a;
+$la-orange-light: #fff1e8;
+$la-grey-dark: #4e4f50;
+$la-wheat-lighter: #fefaef;
+$la-wheat-grey: #f3f6f8;
+$la-wheat-light: #ffe7d8;
+$la-wheat-airy: #fff4ed;
+$la-blue-milk: #56bbca;
+$la-blue-light: #31a6b8;
+$la-blue: #0092a7;
+$la-blue-bold: #006f7f;
+$la-wheat: #ffb88c;
+$la-black: #212121;
+$la-light-red: #a90202;
+$la-grey: #eeeeee;
+$la-light-grey: #e0e0e0;
+$la-grey-moon: #cccccc;
+$la-grey-lighter: #aaaaaa;
+$la-white-transparent-16: rgba(255, 255, 255, 0.16);
+$la-transparent-0: rgba(0, 0, 0, 0.02);
+$la-transparent-04: rgba(0, 0, 0, 0.04);
+$la-transparent-100: rgba(0, 0, 0, 0.08);
+$la-transparent-full: rgba(0, 0, 0, 0.12);
+$la-transparent-16: rgba(0, 0, 0, 0.16);
+$la-translucent-20: rgba(0, 0, 0, 0.24);
+$la-transparent-half: rgba(0, 0, 0, 0.54);
+$la-transparent-dark: rgba(0, 0, 0, 0.87);
+$la-white-transparent-full: rgba(255, 255, 255, 0.12);
+$la-white-transparent-half: rgba(255, 255, 255, 0.54);
+$la-transparent-light: rgba(255, 255, 255, 0.87);
+$la-translucent-grey: rgba(216, 216, 216, 0.24);
+$la-translucent-grey-moon: rgba(208, 208, 208, 0.5);
+$la-transparent-red: rgba(169, 2, 2, 0.1);
+$la-gradient-orange: linear-gradient(180deg, #fff579 0%, #fba727 100%);
+$la-blue-translucent: rgba(217, 223, 255, 0.54);
+$la-translucent-brown: rgba(255, 220, 152, 0.54);
+$la-translucent-half: rgba(105, 83, 168, 0.24);
+$la-translucent-wheat: rgba(255, 184, 140, 0.2);
+//*fonts
+$font-family-primary: "Roboto", sans-serif;
+
+//*important items
+$arrow-bg: $la-transparent-half;
+
+$color-highlighted: $la-blue;
+//!Main blocks
+
+//*header
+$header-background: $la-blue;
+$header-links-color: $white;
+$header-links-color-hover: $la-wheat;
+$header-buttons-color: $black;
+$header-buttons-bg: $la-wheat;
+$header-dropdown-color: $white;
+$header-dropdown-background: $la-translucent-20;
+$header-dropdown-icon: $la-wheat;
+$header-dropdown-icon-background: $la-translucent-20;
+$header-dropdown-arrow: $la-white-transparent-half;
+$header-dropdown-active-color: $black;
+$header-dropdown-active-background: $la-wheat;
+$header-dropdown-active-icon: $black;
+$header-dropdown-active-icon-background: $la-wheat;
+$header-dropdown-active-arrow: $black;
+$header-dropdown-list-background: $la-wheat;
+$header-dropdown-list-item-color: $black;
+$header-dropdown-list-item-active-color: $white;
+$header-dropdown-list-item-active-background: $la-blue;
+$header-dropdown-list-item-active-icon: $white;
+$header-score-background: $white;
+$header-score-color: $black;
+$header-score-icon-background: $la-wheat;
+$header-score-icon-color: $black;
+
+//*main
+$main-bg: $la-wheat-grey;
+$main-item-bg: $white;
+$main-news-bg: $la-black;
+$main-news-color: $white;
+$main-news-icon-bg: transparent;
+$main-news-icon-color: $la-wheat;
+$main-news-icon-border: $la-wheat;
+$main-news-search-bg: $white;
+$main-news-search-color: $black;
+$main-news-search-placeholder: $la-transparent-half;
+$main-news-search-icon: $la-transparent-half;
+
+$main-title-bg: $la-black;
+$main-title-title-color: $white;
+$main-title-button-color: $black;
+$main-title-button-bg: $la-wheat;
+$main-title-button-dropdown: $la-blue;
+$main-title-button-dropdown-color-active: $black;
+$main-title-button-dropdown-active-bg: #ffdbc5;
+$main-icon-color: $la-blue;
+$main-icon-border: $la-blue;
+$main-icon-background: transparent;
+
+$main-icon-active-color: $white;
+$main-icon-active-border: $la-blue;
+$main-icon-active-background: $la-blue;
+
+$factor-bg: $white;
+$factor-color: $black;
+$factor-border: $la-wheat;
+$factor-hidden-color: $la-transparent-half;
+
+$factor-active-bg: $la-blue;
+$factor-active-color: $white;
+$factor-active-border: $la-blue;
+$factor-active-hidden-color: $la-transparent-light;
+
+//!Sections
+
+//*sports-tree
+$left-section-title-bg: $la-black;
+$left-section-title-color: $white;
+
+$left-section-arrow: $la-transparent-half;
+$left-section-arrow-active: $white;
+
+$left-section-numbers-bg: $la-transparent-100;
+$left-section-numbers-color: $la-transparent-dark;
+$left-section-numbers-active-color: $la-transparent-dark;
+$left-section-numbers-active-bg: $la-wheat-lighter;
+$left-section-live-bg: $la-blue;
+$left-section-live-color: $white;
+$left-section-live-active-bg: $la-wheat;
+$left-section-live-active-color: $black;
+
+$left-section-background: $white;
+$left-section-item-background-odd: $white;
+$left-section-item-background-even: $la-transparent-04;
+$left-section-item-icon: $la-transparent-half;
+$left-section-item-color: $la-transparent-dark;
+
+$left-section-item-active-color: $white;
+$left-section-item-active-bg: $la-blue;
+$left-section-item-active-icon: $white;
+
+$left-section-subitem-bg: $la-transparent-full;
+$left-section-subsubitem-bg: $la-transparent-16;
+
+$left-section-jackpot-border: $la-translucent-grey;
+$left-section-jackpot-active-bg: $la-blue;
+$left-section-jackpot-active-color: $white;
+
+$left-section-card-bg: $white;
+$left-section-card-color: $black;
+$left-section-card-icon: $la-blue;
+$left-section-card-cross: $la-transparent-half;
+
+$left-section-tab-bg: $la-black;
+$left-section-tab-color: $la-white-transparent-half;
+$left-section-tab-icon: $la-white-transparent-half;
+$left-section-tab-border: $la-grey-dark;
+
+$left-section-tab-active-bg: $la-blue;
+$left-section-tab-active-color: $white;
+$left-section-tab-active-icon: $la-wheat;
+
+$left-section-tab-indicator-bg: $la-wheat;
+$left-section-tab-indicator-color: $black;
+$left-section-tab-indicator-border: $la-black;
+
+$left-section-date-tab-color: $black;
+$left-section-date-tab-bg: $la-wheat;
+$left-section-date-tab-active-color: $white;
+$left-section-date-tab-active-bg: $la-blue-milk;
+
+$left-section-table-wrapper: $white;
+$left-section-table-wrapper-border: $la-grey-moon;
+$left-section-table-wrapper-title: $black;
+
+$left-section-table-bg: $la-wheat;
+$left-section-table-border: $la-wheat;
+$left-section-table-title: $black;
+$left-section-table-icon: $black;
+
+$left-section-table-active-bg: $la-blue;
+$left-section-table-active-border: $la-blue;
+$left-section-table-active-title: $white;
+$left-section-table-active-icon: $white;
+
+$left-section-table-row-bg: $white;
+$left-section-table-row-border: $la-grey;
+$left-section-table-row-team: $black;
+$left-section-table-row-number: $black;
+$left-section-table-row-bold: $black;
+$left-section-table-row-highlighted: $la-blue;
+$left-section-table-row-icon: $la-blue;
+
+//* right section
+$right-section-tabs-color: $white;
+$right-section-tabs-bg: $la-black;
+$right-section-tabs-solo-indicator-color: $black;
+$right-section-tabs-solo-indicator-border: $la-wheat-lighter;
+$right-section-tabs-solo-indicator-bg: $la-wheat-lighter;
+$right-section-tabs-arrow-border: $la-transparent-full;
+$right-section-tabs-arrow-color: $la-white-transparent-half;
+
+$right-section-tab-empty-bg: $white;
+$right-section-tab-empty-title-color: $black;
+$right-section-tab-empty-text-color: $la-transparent-half;
+
+$right-section-tab-icon: $la-white-transparent-half;
+$right-section-tab-icon-active: $white;
+$right-section-tab-indicator-color: $black;
+$right-section-tab-indicator-border: $la-black;
+$right-section-tab-indicator-bg: $la-wheat;
+
+$right-section-tab-indicator-border-active: $la-blue;
+
+$right-section-tab-background-active: $la-blue;
+
+$range-bg: $la-light-grey;
+$range-fill-in: $la-blue;
+$range-circle: $la-orange-light;
+$range-circle-border: $la-wheat;
+
+$betslip-bg: $white;
+$betslip-navigation-border-bottom: $la-blue;
+$betslip-navigation-item-color: $black;
+$betslip-navigation-item-bg: $white;
+$betslip-navigation-item-border: $la-white-transparent-half;
+$betslip-navigation-item-active-color: $white;
+$betslip-navigation-item-active-bg: $la-blue;
+$betslip-navigation-item-active-border: $la-blue;
+
+$betslip-notification-top-color: $white;
+$betslip-notification-bottom-color: $white;
+$betslip-notification-bg: $la-blue;
+
+$betslip-notification-changes-color: $white;
+$betslip-notification-changes-icon: $white;
+$betslip-notification-changes-bg: $la-blue;
+$betslip-notification-changes-cross: $white;
+
+$betslip-card-color: $black;
+$betslip-card-border: $la-wheat;
+$betslip-card-bg: $white;
+$betslip-card-header-color: $black;
+$betslip-card-header-bg: $la-wheat;
+$betslip-card-header-cross: $la-transparent-half;
+$betslip-card-header-numbers-color: $white;
+$betslip-card-header-numbers-bg: $la-blue-dark;
+$betslip-card-content-color: $black;
+$betslip-card-input-max: $la-blue;
+$betslip-card-input-color: $black;
+$betslip-card-input-bg: $white;
+$betslip-card-input-border: $la-transparent-100;
+$betslip-card-usd: $la-blue;
+
+$betslip-card-disabled-color: $black;
+$betslip-card-disabled-border: $la-grey-moon;
+$betslip-card-disabled-header-color: $black;
+$betslip-card-disabled-header-bg: $la-grey-moon;
+$betslip-card-disabled-header-cross: $la-transparent-half;
+$betslip-card-disabled-header-numbers-color: $black;
+$betslip-card-disabled-header-numbers-bg: $la-grey-lighter;
+$betslip-card-disabled-content-color: $black;
+$betslip-card-disabled-content-bg: $white;
+$betslip-card-disabled-input-color: $la-transparent-half;
+$betslip-card-disabled-input-bg: $la-white-transparent-full;
+$betslip-card-disabled-input-border: $la-transparent-half;
+$betslip-card-disabled-usd: $black;
+
+$betslip-bottom-remove-all: $la-blue;
+$betslip-bottom-border: $la-transparent-100;
+$betslip-bottom-text1: $black;
+$betslip-bottom-text2: $la-blue;
+$betslip-bottom-button-color: $black;
+$betslip-bottom-button-bg: $la-wheat;
+$betslip-bottom-button-active-color: $white;
+$betslip-bottom-button-active-bg: $la-blue;
+$betslip-bottom-submit-color: $black;
+$betslip-bottom-submit-bg: $la-wheat;
+
+$mybets-bg: $white;
+$mybets-card-color: $black;
+$mybets-card-bg: $white;
+$mybets-card-border: $la-wheat;
+$mybets-card-header-bg: $la-wheat;
+$mybets-card-header-color: $black;
+$mybets-card-content-border: $la-transparent-100;
+$mybets-card-content-icon: $la-transparent-half;
+$mybets-card-content-profit: $la-light-red;
+$mybets-card-content-percent: $la-transparent-half;
+$mybets-card-button-color: $black;
+$mybets-card-button-bg: $la-wheat;
+
+$banner-background: $la-blue;
+$banner-title-color: $white;
+$banner-text-color: $la-white-transparent-half;
+$banner-live-text-color: $la-wheat;
+$banner-live-icon-color: $la-wheat;
+$banner-button-color: $black;
+$banner-button-bg: $la-wheat;
+
+//*footer
+$footer-background: $la-blue;
+$footer-links-color: $white;
+$footer-links-border: $la-white-transparent-half;
+$footer-button-background: $la-translucent-grey;
+$footer-button-color: $la-white-transparent-half;
+$footer-button-arrow: $la-white-transparent-half;
+$footer-bottom-bg: $la-blue-light;
+$footer-bottom-color: $la-white-transparent-half;
+
+//! Pages
+
+//? Sports page
+$date-tab-item-color: $black;
+$date-tab-item-bg: $la-orange-milk;
+$date-tab-item-border-right: $la-transparent-full;
+$date-tab-item-border-bottom: $la-transparent-full;
+
+$date-tab-item-active-color: $white;
+$date-tab-item-active-bg: $la-blue;
+$date-tab-item-active-border-active: $la-blue;
+
+$date-tab-reload-bg: $la-black;
+$date-tab-reload-color: $white;
+
+$selected-sport-icon: $black;
+$selected-sport-title: $black;
+$selected-sport-league-bg: $la-blue;
+$selected-sport-league-color: $white;
+
+$navigation-tab-color: $black;
+$navigation-tab-border: $la-grey-moon;
+$navigation-tab-background: $white;
+
+$navigation-tab-active-color: $white;
+$navigation-tab-active-border: $la-blue;
+$navigation-tab-active-background: $la-blue;
+
+$sport-background: $la-translucent-wheat;
+$sport-label-color: $black;
+$sport-label-icon-color: $la-wheat;
+$sport-titles-color: $black;
+$sport-question-color: $la-transparent-half;
+
+$coeficient-border: $la-wheat;
+$coeficient-body-background: $white;
+$coeficient-body-color: $black;
+$coeficient-number-background: $la-wheat;
+$coeficient-number-color: $black;
+
+$coeficient-active-border: $la-blue;
+$coeficient-active-number-background: $la-blue;
+$coeficient-active-number-color: $white;
+
+//? Registration page
+$inputs-wrapper-background: $white;
+$inputs-wrapper-title-background: $la-black;
+$inputs-wrapper-title-color: $white;
+$inputs-star: $la-blue;
+$inputs-star-text: $black;
+
+$inputs-background: $la-orange-light;
+$inputs-border: $la-blue;
+$inputs-header-bg: $la-black;
+$inputs-header-color: $white;
+
+$input-title: $black;
+$input-border: $white;
+$input-background: $white;
+$input-placeholder: $la-transparent-half;
+$input-error: $la-blue;
+$input-color: $black;
+$input-icon: $la-transparent-half;
+
+$inputs-button-color: $white;
+$inputs-button-background: $la-blue;
+
+$registration-checkbox-text: $black;
+$registration-checkbox-background: $white;
+$registration-checkbox-border: $la-blue;
+$registration-checkbox-icon: $white;
+
+$registration-checkbox-active-background: $la-blue;
+$registration-checkbox-active-border: $la-blue;
+
+//* Event details page
+$event-match-background: $la-black;
+$event-match-reload-background: $la-wheat;
+$event-match-reload-color: $black;
+$event-match-color: $white;
+$event-match-vs-color: $la-transparent-half;
+$event-match-vs-bg: $la-wheat;
+$event-match-date-color: $white;
+$event-match-date-background: $la-transparent-half;
+$event-match-date-background-compact: $la-blue;
+
+$event-match-coeficient-active-border: $la-blue;
+$event-match-coeficient-active-numbers-bg: $la-blue;
+$event-match-coeficient-active-numbers-color: $white;
+
+$match-spoiler-background: $white;
+$match-spoiler-arrow: $la-transparent-half;
+$match-spoiler-color: $black;
+$match-spoiler-question: $la-transparent-half;
+$match-spoiler-phone: $la-blue;
+$match-spoiler-more-background: $white;
+$match-spoiler-more-border: $la-blue;
+$match-spoiler-more-color: $la-blue;
+$match-spoiler-more-active-background: $main-icon-active-background;
+$match-spoiler-more-active-border: $main-icon-active-border;
+$match-spoiler-more-active-color: $main-icon-active-color;
+$match-spoiler-active-background: $la-orange-light;
+
+//*African sports page
+$african-table-border: $la-grey-moon;
+
+$african-table-header-bg: $white;
+$african-table-header-label-color: $black;
+$african-table-header-sublabel-color: $la-transparent-half;
+$african-table-title-bg: $la-wheat-light;
+$african-table-title-color: $black;
+$african-table-color: $black;
+
+$african-table-row-bg: $white;
+$african-table-id-bg: $la-blue;
+$african-table-id-color: $white;
+$african-table-team-color: $black;
+$african-table-team-highlighted-color: $black;
+$african-table-score-color: $black;
+
+$african-table-factor-color: $white;
+$african-table-factor-bg: $la-blue;
+
+$african-table-factor-active-color: $black;
+$african-table-factor-active-bg: $la-wheat;
+
+$african-table-disabled-factor-bg: $la-grey-silver;
+$african-table-disabled-factor-color: $white;
+
+$african-table-icon-bg: $white;
+$african-table-icon-color: $la-blue;
+$african-table-icon-border: $la-blue;
+
+$african-table-icon-active-bg: $la-blue;
+$african-table-icon-active-color: $white;
+
+$continental-table-spoilers-bg: $la-grey-light;
+$continental-table-spoilers-border: $la-grey-light;
+
+$asian-outright-table-border: $la-grey-moon;
+$asian-outright-table-color: $black;
+
+$asian-outright-table-header-bg: $la-blue-milk;
+$asian-outright-table-header-border: $la-translucent-half;
+$asian-outright-table-header-color: $white;
+
+$asian-outright-table-title-bg: $la-wheat-light;
+$asian-outright-table-title-color: $black;
+$asian-outright-table-match-star: $la-wheat;
+$asian-outright-table-match-color: $black;
+$asian-outright-table-match-border: $la-grey-moon;
+
+$asian-outright-table-match-id-color: $white;
+$asian-outright-table-match-id-bg: $la-blue-milk;
+$asian-outright-row-bg: $main-item-bg;
+
+$asian-sports-table-border: $la-grey-moon;
+$asian-sports-table-header-bg: $la-blue-milk;
+$asian-sports-table-header-label-color: $white;
+$asian-sports-table-header-sublabel-color: $white;
+
+$asian-sports-table-title-bg: $la-wheat-light;
+$asian-sports-table-title-color: $black;
+$asian-sports-table-color: $black;
+$asian-sports-table-row-bg: $white;
+$asian-sports-table-row-special-bg: rgba(85, 187, 202, 0.07);
+$asian-sports-table-row-special-border: $la-grey-moon;
+
+$asian-sports-table-team-color: $black;
+$asian-sports-table-team-highlighted-color: $la-blue;
+
+$asian-sports-table-coeficient-color: $black;
+$asian-sports-table-coeficient-active-color: $white;
+$asian-sports-table-coeficient-active-bg: $la-blue;
+$asian-sports-table-coeficient-highlighted-color: $la-blue;
+
+$asian-sports-table-icon-bg: $white;
+$asian-sports-table-icon-color: $la-blue;
+$asian-sports-table-icon-border: $la-blue;
+$asian-sports-table-icon-active-bg: $la-blue;
+$asian-sports-table-icon-active-color: $white;
+
+$calculator-bg: $white;
+$calculator-item-bg: $la-orange-light;
+
+$calculator-item-color: $black;
+
+$calculator-checkboxes-select-bg: $la-wheat;
+$calculator-checkboxes-select-color: $black;
+$calculator-checkboxes-select-active-bg: $la-blue-milk;
+$calculator-checkboxes-select-active-color: $white;
+
+$calculator-checkboxes-description-icon: $la-blue;
+$calculator-checkboxes-description-text: $la-transparent-dark;
+
+$calculator-odds-labels-color: $black;
+$calculator-borders: $la-transparent-16;
+$calculator-odds-borders: $la-transparent-16;
+$calculator-odds-number: $la-transparent-half;
+$calculator-odds-cross: $la-blue;
+$calculator-odds-button-bg: $la-wheat;
+$calculator-odds-button-color: $black;
+
+$calculator-odds-checkbox-bg: $white;
+$calculator-odds-checkbox-border: $la-blue-milk;
+$calculator-odds-checkbox-active-border: transparent;
+$calculator-odds-checkbox-icon: $la-blue-milk;
+$calculator-odds-special-input: $white;
+
+$calculator-odds-total-usd-color: $la-blue;
+
+$calculator-returns-header-bg: $la-blue-milk;
+$calculator-returns-header-usd: $white;
+$calculator-returns-header-sublabel: $la-white-transparent-half;
+
+$calculator-returns-color: $black;
+$calculator-returns-border: $la-translucent-20;
+$calculator-returns-input-bg: $white;
+$calculator-returns-input-color: $black;
+
+$calculator-steps-border-disabled: $la-grey-moon;
+$calculator-step-title-color: $black;
+$calculator-step-active-color: $la-blue;
+$calculator-step-disabled-color: $la-transparent-half;
+
+//* Compact event details page
+
+$ticket-background: $la-orange-light;
+$ticket-active-background: $la-blue-milk;
+$ticket-active-color: $white;
+$ticket-active-icon: $la-wheat;
+
+$ticket-color: $black;
+$ticket-icon: $la-blue;
+
+$ticket-coeficient-bg: $la-blue;
+
+//*Mybets page styles
+$mybets-title-labels-color: $la-grey-moon;
+$mybets-table-color: $black;
+$mybets-header-color: $mybets-table-color;
+$mybets-table-header-bg: $white;
+$mybets-table-header-border: $la-grey-moon;
+$mybets-table-row-bg: $white;
+$mybets-table-row-border: $la-grey-moon;
+$mybets-table-win-color: $la-green-light;
+$mybets-table-lose-color: $la-light-red;
+
+$mybets-pager-wrapper-bg: transparent;
+$mybets-pager-item-bg: $white;
+$mybets-pager-item-border: $la-grey-moon;
+$mybets-pager-item-color: $black;
+
+$mybets-pager-item-active-bg: $la-blue;
+$mybets-pager-item-active-border: $la-blue;
+$mybets-pager-item-active-color: $white;
+
+//* Jackpot page
+$jackpot-item-bg: $white;
+$jackpot-item-border: $la-grey-moon;
+$jackpot-item-title-color: $black;
+$jackpot-item-date-color: $la-transparent-half;
+$jackpot-item-match-color: $la-blue-milk;
+
+$jackpot-item-reserve-bg: $la-wheat-light;
+$jackpot-item-reserve-button-bg: $la-blue-milk;
+$jackpot-item-reserve-button-color: $white;
+
+$jackpot-betslip-card-header-color: $betslip-card-header-color;
+$jackpot-betslip-card-header-bg: $betslip-card-header-bg;
+$jackpot-betslip-card-header-numbers-color: $betslip-card-header-numbers-color;
+$jackpot-betslip-card-header-numbers-bg: $betslip-card-header-numbers-bg;
+
+//*results page
+
+$results-table-header-bg: $la-black;
+$results-table-header-color: $white;
+$results-table-row-bg: $white;
+$results-table-row-special-bg: $la-orange-light;
+$results-table-color: $black;
+$results-table-border: $la-grey-moon;
+$results-table-highlighted: $la-blue;
+$results-table-special-border: $results-table-border;
+//*casino page
+$casino-item-active-bg: $la-blue;
+$casino-item-active-border: $la-wheat;
+$casino-item-button-bg: $la-gradient-orange;
+$casino-item-button-border: $la-transparent-half;
+$casino-item-button-color: $la-blue;
+
+//*live overview apge
+
+$overview-nav-label-color: $left-section-title-color;
+$overview-nav-label-bg: $left-section-title-bg;
+$overview-nav-item-odd-bg: $left-section-item-background-odd;
+$overview-nav-item-event-bg: $left-section-item-background-even;
+$overview-nav-item-icon-color: $left-section-item-icon;
+$overview-nav-item-text-color: $left-section-item-color;
+
+$overview-nav-item-active-bg: $la-blue;
+$overview-nav-item-active-color: $white;
+
+$overview-spoiler-bg: $match-spoiler-background;
+$overview-spoiler-color: $match-spoiler-color;
+$overview-spoiler-arrow: $match-spoiler-arrow;
+
+$overview-spoiler-items-bg: $white;
+$overview-spoiler-item-bg: $match-spoiler-active-background;
+$overview-spoiler-item-border: $la-blue;
+$overview-spoiler-item-title-color: $color-highlighted;
+$overview-spoiler-item-arrow: $match-spoiler-arrow;
+
+$overview-spoiler-item-table-time-bg: $color-highlighted;
+$overview-spoiler-item-table-time-color: $white;
+$overview-spoiler-item-table-team-color: $left-section-table-row-team;
+$overview-spoiler-item-table-score-color: $left-section-table-row-number;
+$overview-spoiler-item-table-score-bold-color: $left-section-table-row-bold;
+$overview-spoiler-item-table-border: $left-section-table-border;
+$overview-spoiler-item-table-match-bg: $left-section-table-row-bg;
+$overview-spoiler-item-table-match-border: $left-section-table-row-border;
+
+$vs-upcoming-match-banner-bg: $black;
+$vs-upcoming-matches-wrapper-bg: $main-item-bg;
+$vs-coeficient-bg: $la-wheat;
+$vs-coeficient-border: $la-wheat;
+$vs-coeficient-color: $black;
+
+$vs-coeficient-active-bg: $la-blue;
+$vs-coeficient-active-border: $la-blue;
+$vs-coeficient-active-color: $white;
+
+$vs-upcoming-match-table-bg: $white;
+$vs-upcoming-match-table-border: $la-translucent-half;
+$vs-upcoming-match-table-labels-color: $black;
+$vs-upcoming-match-table-sublabels-color: $black;
+
+$match-tab-bg: $la-orange-milk;
+$match-tab-color: $black;
+$match-tab-border: $la-transparent-full;
+
+$match-tab-active-bg: $la-blue;
+$match-tab-active-color: $white;
+$match-tab-active-border: $la-blue;
+
+$match-tab-button-bg: $la-wheat;
+$match-tab-button-border: $la-transparent-full;
+$match-tab-button-arrow: $black;
+
+$virtual-matches-table-bg: $la-white-chocolate;
+$virtual-matches-table-border: $la-grey-moon;
+$virtual-matches-table-title: $black;
+
+$virtual-match-bg: $la-orange-light;
+$virtual-match-number-bg: $la-transparent-full;
+$virtual-match-number-color: $black;
+$virtual-match-color: $black;
+$virtual-match-rating: $la-transparent-half;
+
+//? Popups
+$popup-content-bg: $white;
+
+$popup-login-color: $black;
+$popup-login-input-color: $black;
+$popup-login-input-bg: $la-wheat-lighter;
+$popup-login-input-border: $la-blue;
+
+$popup-login-checkbox-text-color: $la-transparent-half;
+$popup-login-checkbox-background: $white;
+$popup-login-checkbox-border: $la-blue;
+
+$popup-login-checkbox-active-background: $la-blue;
+$popup-login-checkbox-active-border: $la-blue;
+$popup-login-checkbox-active-icon: $white;
+
+$popup-login-button-bg: $la-wheat;
+$popup-login-button-border: $la-wheat;
+$popup-login-button-color: $black;
+
+$popup-login-links-color: $la-blue;
+
+$popup-league-color: $black;
+$popup-league-border: $la-grey-moon;
+$popup-league-cross: $la-transparent-half;
+$popup-league-filters-color: $la-blue;
+
+$popup-league-checkbox-bg: transparent;
+$popup-league-checkbox-border: $la-blue;
+
+$popup-league-checkbox-active-bg: $la-blue;
+$popup-league-checkbox-active-border: $la-blue;
+$popup-league-checkbox-active-icon: $white;
+
+$popup-league-button-bg: $la-wheat;
+$popup-league-button-color: $black;
+$popup-league-button-border: $la-wheat;
+
+$popup-betslip-color: $black;
+
+$chat-icon-bg: $la-blue;
+$chat-icon-color: $white;
+
+$popup-sms-color: $black;
+$popup-sms-cross: $la-transparent-half;
+$popup-sms-border: $la-grey-moon;
+$popup-sms-bet-bg: $la-wheat-lighter;
+$popup-sms-bet-border: $la-blue;
+$popup-sms-bet-color: $black;
+$popup-sms-text-highlighted-bg: $la-blue;
+$popup-sms-text-underline: $la-blue;
+$popup-sms-text-highlighted-color: $white;
+$popup-sms-text-special: $la-blue;
+
+$popup-sms-button-bg: transparent;
+$popup-sms-button-border: $la-blue;
+$popup-sms-button-color: $black;
+
+$popup-sms-button-special-color: $white;
+$popup-sms-button-special-bg: $la-blue;
+$popup-sms-button-special-border: $la-blue;
+
+$vs-popup-cross: $la-transparent-half;
+$vs-popup-title-color: $white;
+$vs-popup-select-label: $la-white-transparent-half;
+$vs-popup-select-bg: $la-wheat-light;
+$vs-popup-select-color: $black;
+
+$vs-popup-spoiler-bg: $la-wheat;
+$vs-popup-spoiler-arrow: $la-transparent-half;
+$vs-popup-spoiler-color: $black;
+
+$vs-popup-spoiler-content-bg: $white;
+
+$vs-popup-table-color: $black;
+$vs-popup-table-heading-bg: $la-orange-light;
+$vs-popup-table-heading-border: $la-grey-moon;
+
+$vs-popup-table-number-bg: $la-wheat;
+$vs-popup-table-number-border: $la-transparent-16;
+
+$vs-popup-table-place-bg: transparent;
+$vs-popup-table-place-border: $la-grey-moon;
+
+$vs-popup-table-heading-color: $vs-popup-table-color;
+$vs-popup-table-number-color: $vs-popup-table-color;
+$vs-popup-table-place-color: $vs-popup-table-color;
+
+$filter-color: $black;
+
+$multiview-box-background: $la-transparent-04;
+
+//! font-sizes
+$fz-small: 8px;
+$fz-xsmall: 9px;
+$fz-2xsmall: 10px;
+$fz-3xsmall: 11px;
+$fz-4xsmall: 12px;
+$fz-medium: 13px;
+$fz-xmedium: 15px;
+$fz-2xmedium: 17px;
+$fz-3xmedium: 18px;
+$fz-large: 19px;
+$fz-xlarge: 20px;
+$fz-2xlarge: 22px;
+$fz-3xlarge: 24px;
+$fz-4xlarge: 25px;
+
+$fz-content: 14px;
+$fz-uppercase-tabs: 14px;
+$fz-subcontent: 16px;
+
+$fz-selected-sport-title-1440px: 28px;
+
+$fz-vs-popup-title: 30px;
+
+$fz-board-colon: 32px;
+
+$fz-calculator-returns-usd: 50px;
