@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/omega-icon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="login">
+		<div class="login__body">
+			<div class="login-banner">
+				<div class="login-banner__content">
+					<div class="login-banner__title">Agent System</div>
+					<div class="login-banner__subtitle"> <span>Platform </span> <img src="img/logos/platform.png"
+							alt="platform">
+						<span>Technologies</span>
+					</div>
+				</div>
+			</div>
+			<div class="login__content">
+				<div class="login__title">
+					Welcome Back!
+				</div>
+				<div class="login__subtitle"> use your personal info for SIGN IN</div>
+				<form action="#" id="form" class="login__form">
+					<div class="login__inputs">
+						<div class="login__item " id="login__item_username">
+							<div class="login__label">Name</div>
+							<div class="login__content">
+								<input type="text" id="username" class="login__input" pattern="[a-z]{1,15}" required>
+							</div>
+						</div>
+						<div class="login__item" id="login__item_password">
+							<div class="login__label">Password</div>
+							<div class="login__content">
+								<input type="password" id="password" name="password" class="login__input password" required
+									pattern="[0-9]{1,15}">
+								<a href="#" class="login__icon login__icon_password">
+									<svg class="login__view login__none-visible" xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20">
+										<path
+											d="M.2 10a11 11 0 0 1 19.6 0A11 11 0 0 1 .2 10zm9.8 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+									</svg>
+									<svg class="login__view login__visible " xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 20 20">
+										<path
+											d="M12.81 4.36l-1.77 1.78a4 4 0 0 0-4.9 4.9l-2.76 2.75C2.06 12.79.96 11.49.2 10a11 11 0 0 1 12.6-5.64zm3.8 1.85c1.33 1 2.43 2.3 3.2 3.79a11 11 0 0 1-12.62 5.64l1.77-1.78a4 4 0 0 0 4.9-4.9l2.76-2.75zm-.25-3.99l1.42 1.42L3.64 17.78l-1.42-1.42L16.36 2.22z" />
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="login__item">
+							<div class="login__label">Language</div>
+							<div class="login-dropdown dropdown-box">
+								<ul class="login-dropdown__list">
+									<li>
+										<div class="login-dropdown__current dropdown">
+											<span class="login-dropdown__icon">
+												<img src="img/icons/english.png" alt="language"></img>
+											</span>
+											<div class="login-dropdown__body">
+												<span class="login-dropdown__title">English</span>
+												<span class="login-dropdown__arrow"><i class="fas fa-chevron-down"></i></span>
+											</div>
+										</div>
+										<div class="login-dropdown__content dropdown">
+											<ul>
+												<li class="login-dropdown__theme">
+													<span class="login-dropdown__icon">
+														<img src="img/icons/bulgaria.png" alt="language"></img>
+													</span>
+													<span class="login-dropdown__label">Bulgarian</span>
+												</li>
+												<li class="login-dropdown__theme">
+													<span class="login-dropdown__icon">
+														<img src="img/icons/china.png" alt="language"></img>
+													</span>
+													<span class="login-dropdown__label">Chinese (Simplified)</span>
+												</li>
+												<li class="login-dropdown__theme">
+													<span class="login-dropdown__icon">
+														<img src="img/icons/china.png" alt="language"></img>
+													</span>
+													<span class="login-dropdown__label">Chinese (Traditional)</span>
+												</li>
+												<li class="login-dropdown__theme">
+													<span class="login-dropdown__icon">
+														<img src="img/icons/english.png" alt="language"></img>
+													</span>
+													<span class="login-dropdown__label">English (Kenya)</span>
+												</li>
+												<li class="login-dropdown__theme">
+													<span class="login-dropdown__icon">
+														<img src="img/icons/english.png" alt="language"></img>
+													</span>
+													<span class="login-dropdown__label">English (Philippines)</span>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="login__buttons">
+						<button class="login__button" id="login__confirm">Sign up</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+		integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<script src="js/login.js"></script>
+
+
+</body>
+
+</html>
