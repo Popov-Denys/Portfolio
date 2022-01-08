@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quel style</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main background_4">
+			<div class="container_small">
+				<div class="content">
+					<h1 class="title">
+						Dans l’idéal,
+						<p class="color_red">quel serait votre budget ?</p>
+					</h1>
+					<form action="#" class="form">
+						<div class="form__body">
+
+							<div class="slider">
+								<a class="ui-slider-handle" href="#">
+									<div id="slider-result" class="slider-result">7</div>
+								</a>
+
+								<input multiple id="znch" name="znch" type="hidden" min="7" max="9" />
+								<div class="range_title">Nous recherchons un vin entre
+									<span class="slider-result">7</span>
+								</div>
+							</div>
+						</div>
+						<input type="submit" class="bgc_red btn" value="Rechercher">
+					</form>
+					<a href="#" class="previous">
+						Précédent
+						<span class="previous__border"></span>
+					</a>
+					<div class="blur"></div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+	<script
+		src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

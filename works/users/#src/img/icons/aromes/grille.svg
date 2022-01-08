@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.704" height="34.625" viewBox="0 0 42.704 34.625">
+    <defs>
+        <style>
+            .cls-1{fill:#b3b5f0}.cls-2{fill:none;stroke:#1e1240;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.25px}
+        </style>
+    </defs>
+    <g id="illus_grillé" data-name="illus/grillé" transform="translate(.625)">
+        <g id="Groupe_2800" data-name="Groupe 2800" transform="translate(.854)">
+            <path id="Tracé_20095" d="M1385.61 1476.67a31.7 31.7 0 0 0-4.276-1.705c-.007 10.79 3.933 11.981 6.329 11.709-3.54-2.174-3.55-6.133-2.053-10.004z" class="cls-1" data-name="Tracé 20095" transform="translate(-1381.334 -1469.802)"/>
+            <path id="Tracé_20096" d="M1423.587 1476.67c1.5 3.87 1.489 7.829-2.052 10 2.4.271 6.336-.919 6.329-11.709a31.691 31.691 0 0 0-4.277 1.709z" class="cls-1" data-name="Tracé 20096" transform="translate(-1408.844 -1469.802)"/>
+            <path id="Tracé_20097" d="M1400.593 1458.611c-9.674 13.309-2.75 16.381-.586 16.986v-8.821a.587.587 0 0 1 1.173 0v8.821c2.163-.605 9.088-3.677-.587-16.986z" class="cls-1" data-name="Tracé 20097" transform="translate(-1391.083 -1458.611)"/>
+        </g>
+        <g id="Groupe_2802" data-name="Groupe 2802" transform="translate(0 20.422)">
+            <path id="Tracé_20098" d="M1378.631 1523.3h38.831a2.624 2.624 0 1 1-2.624 2.624" class="cls-2" data-name="Tracé 20098" transform="translate(-1378.631 -1523.3)"/>
+            <g id="Groupe_2801" data-name="Groupe 2801" transform="translate(0 1.864)">
+                <path id="Ligne_58" d="M0 1.347L1.347 0" class="cls-2" data-name="Ligne 58" transform="translate(7.991 .514)"/>
+                <path id="Tracé_20099" d="M1399.358 1533.48a10.364 10.364 0 1 1-20.727 0" class="cls-2" data-name="Tracé 20099" transform="translate(-1378.631 -1532.13)"/>
+                <path id="Ligne_59" d="M0 0L8.285 8.285" class="cls-2" data-name="Ligne 59" transform="translate(6.13)"/>
+                <path id="Ligne_60" d="M8.285 0L0 8.285" class="cls-2" data-name="Ligne 60" transform="translate(6.311)"/>
+                <path id="Tracé_20100" d="M1398.8 1535.1l-2.373 2.372 4.745 4.745 4.745-4.745-2.373-2.372" class="cls-2" data-name="Tracé 20100" transform="translate(-1390.809 -1533.237)"/>
+                <path id="Ligne_61" d="M0 1.944L1.945 0" class="cls-2" data-name="Ligne 61" transform="translate(15.108 2.288)"/>
+                <path id="Ligne_62" d="M0 0L1.767 1.767" class="cls-2" data-name="Ligne 62" transform="translate(15.108 4.233)"/>
+                <path id="Ligne_63" d="M1.944 1.944L0 0" class="cls-2" data-name="Ligne 63" transform="translate(3.674 2.288)"/>
+                <path id="Ligne_64" d="M1.767 0L0 1.767" class="cls-2" data-name="Ligne 64" transform="translate(3.851 4.233)"/>
+                <path id="Ligne_65" d="M1.354 1.355L0 0" class="cls-2" data-name="Ligne 65" transform="translate(11.381 .505)"/>
+            </g>
+        </g>
+    </g>
+</svg>

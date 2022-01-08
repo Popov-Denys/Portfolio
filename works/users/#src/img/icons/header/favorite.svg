@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.5" height="17.525" viewBox="0 0 19.5 17.525">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1e1240;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="favori" transform="translate(0.75 0.75)">
+    <path id="Tracé_20053" data-name="Tracé 20053" class="cls-1" d="M238.576-24.8c-1.914,0-3.445,1.422-4.4,2.363-.971-.934-2.53-2.363-4.44-2.363A4.505,4.505,0,0,0,225-20.113c0,6,8.037,10.937,8.393,11.136a1.223,1.223,0,0,0,1.267,0C235-9.184,243-14.148,243-20.109,242.972-23,241.29-24.8,238.576-24.8Z" transform="translate(-225 24.8)"/>
+  </g>
+</svg>

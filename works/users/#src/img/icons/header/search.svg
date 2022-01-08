@@ -1,0 +1,27 @@
+<svg id="icons_search" data-name="icons/search" xmlns="http://www.w3.org/2000/svg" width="18.561" height="19.561" viewBox="0 0 18.561 19.561">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1e1240;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_53" data-name="Ellipse 53" class="cls-1">
+    <circle class="cls-3" cx="8" cy="8" r="8"/>
+    <circle class="cls-4" cx="8" cy="8" r="7.25"/>
+  </g>
+  <line id="Ligne_1" data-name="Ligne 1" class="cls-2" x2="3" y2="3" transform="translate(14.5 15.5)"/>
+</svg>

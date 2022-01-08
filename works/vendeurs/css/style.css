@@ -1,0 +1,1239 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Sofia Pro bold";
+  src: url("../fonts/Sofia Pro Bold.eot");
+  src: local("☺"), url("../fonts/Sofia Pro Bold.woff") format("woff"),
+    url("../fonts/Sofia Pro Bold.ttf") format("truetype"), url("../fonts/Sofia Pro Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro light";
+  src: url("../fonts/sofiapro-light.eot");
+  src: local("☺"), url("../fonts/sofiapro-light.woff") format("woff"),
+    url("../fonts/sofiapro-light.ttf") format("truetype"), url("../fonts/sofiapro-light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro regular";
+  src: url("../fonts/Sofia Pro Regular.eot");
+  src: local("☺"), url("../fonts/Sofia Pro Regular.woff") format("woff"),
+    url("../fonts/Sofia Pro Regular.ttf") format("truetype"), url("../fonts/Sofia Pro Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Default*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+/*styles for forms*/
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+  cursor: default;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+  cursor: default;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+  cursor: default;
+}
+
+/*styles for input type='text, password, email, etc.'*/
+.input_text {
+  cursor: pointer;
+  color: #1f1240;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 15px 18px;
+  margin: 0 0 12px 0;
+  width: 100%;
+}
+.input_text::-webkit-input-placeholder {
+  color: #1f1240;
+}
+.input_text:-ms-input-placeholder {
+  color: #1f1240;
+}
+.input_text::-ms-input-placeholder {
+  color: #1f1240;
+}
+.input_text::placeholder {
+  color: #1f1240;
+}
+
+/* end of styles for input type='text, password, email, etc.'*/
+/*styles for input type='submit'*/
+.input_submit {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  padding: 10px 28px 10px 28px;
+  border-radius: 20px;
+}
+
+/*end of styles for input type='submit'*/
+.form__price {
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  font-weight: 300;
+  padding: 8px 12px 8px 12px;
+  margin: 0;
+  border-radius: 5px;
+  color: #1f1240;
+  border-radius: 5px;
+  width: 100%;
+}
+.form__price::-webkit-input-placeholder {
+  color: #1f1240;
+}
+.form__price:-ms-input-placeholder {
+  color: #1f1240;
+}
+.form__price::-ms-input-placeholder {
+  color: #1f1240;
+}
+.form__price::placeholder {
+  color: #1f1240;
+}
+
+.form select {
+  color: #1f1240;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0 8px 9px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  margin: 0 0 18px 0;
+}
+
+.form__select-title {
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 0 0 2px 0;
+}
+
+.button_plus {
+  position: relative;
+}
+.button_plus input,
+.button_plus a {
+  padding-left: 42px;
+}
+.button_plus:before {
+  content: url("../img/icons/plus.png");
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  z-index: 4;
+  top: 12px;
+  left: 12px;
+}
+
+.button_enregister {
+  position: fixed;
+  bottom: 89px;
+  right: 21px;
+  z-index: 3;
+}
+
+.button_red {
+  background-color: #e96161;
+}
+
+.button_blue {
+  background-color: #1f1240;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  padding: 10px 28px 10px 28px;
+  border-radius: 20px;
+}
+
+/*custom styles*/
+.select_293 {
+  max-width: 293px;
+}
+.select_293 select {
+  width: 100%;
+}
+
+.select_143 {
+  max-width: 143px;
+}
+.select_143 select {
+  width: 100%;
+}
+
+.select__ajouter-de-nouveaux {
+  max-width: 253px;
+}
+.select__ajouter-de-nouveaux select {
+  margin: 0 0 29px 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+.en-vente select {
+  margin: 0 0 18px 0;
+}
+
+.link {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  padding: 10px 28px 10px 28px;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Sofia Pro light";
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.content_main {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0 0 93px 0;
+}
+
+.container {
+  padding: 0 30px;
+}
+.container_small {
+  padding: 20px 17.5px 0 25px;
+}
+.container_big {
+  padding: 0 17px 0 16px;
+}
+
+.arrow-left {
+  display: inline-block;
+  width: 17px;
+  height: 26px;
+  margin: 0 0 20px 0;
+}
+.arrow-left img {
+  max-width: 100%;
+}
+
+.border_black {
+  max-width: 325px;
+  height: 1px;
+  background-color: black;
+  margin: 21.5px 0 21.5px 0;
+}
+
+.title_green:before {
+  content: url("../img/icons/artboard-svg.svg");
+  background-color: #54cd21;
+}
+
+.title_blue:before {
+  content: url("../img/icons/artboard-svg.svg");
+  background-color: #545ff4;
+}
+
+.title_red:before {
+  content: url("../img/icons/eye.png");
+  background-color: #e96161;
+}
+
+.product-img {
+  margin: 43px 0 0 0;
+}
+
+.label_general {
+  color: #1f1240;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Sofia Pro bold";
+  margin: 0 0 27px 0;
+}
+
+.sublabel {
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 60px 21px 0;
+  line-height: 17px;
+}
+
+.navbar {
+  margin: 73px 0 0 0;
+}
+
+.navbar__list li {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  margin: 0 0 20px 0;
+  border-radius: 40px;
+}
+.navbar__list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 21.5px 18px 18px 31px;
+}
+.navbar__list li a span {
+  display: inline-block;
+  padding: 0 0 0 55px;
+  color: #1f1240;
+  font-size: 20px;
+  font-weight: 300;
+}
+.navbar__list li a:before {
+  position: absolute;
+}
+.navbar__list li a:after {
+  content: url("../img/icons/arrow-right.png");
+}
+
+/*styles for navigation*/
+.nav__menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: #fff;
+  width: 100%;
+  height: 73px;
+  padding: 11px 20px;
+  text-align: center;
+}
+
+.nav__store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__magasin {
+  display: block;
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 22px 0 0;
+}
+.nav__magasin:before {
+  display: inline-block;
+  content: url("../img/icons/magasin.png");
+  width: 30px;
+  height: 30px;
+  margin: 0 0 4px 0;
+}
+
+.nav__magasin_active {
+  color: #e96161;
+}
+.nav__magasin_active:before {
+  content: url("../img/icons/magasin_red.png");
+}
+
+.nav__text {
+  display: block;
+}
+
+.nav__analyse {
+  display: block;
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+}
+.nav__analyse:before {
+  display: inline-block;
+  content: url("../img/icons/analyse.png");
+  width: 30px;
+  height: 30px;
+  margin: 0 0 4px 0;
+}
+
+.nav__analyse_active {
+  color: #e96161;
+}
+.nav__analyse_active:before {
+  content: url("../img/icons/analyse_red.png");
+}
+
+.nav__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__compte {
+  display: block;
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+}
+.nav__compte:before {
+  display: inline-block;
+  content: url("../img/icons/compte.png");
+  width: 30px;
+  height: 30px;
+  margin: 0 0 4px 0;
+}
+
+.nav__compte_active {
+  color: #e96161;
+}
+.nav__compte_active:before {
+  content: url("../img/icons/compte_red.png");
+}
+
+/*end of styles for navigation*/
+/*styles for menu.html*/
+.menu_1 .navbar__list li:nth-child(1) a:before {
+  content: url("../img/icons/mes-vins.png");
+}
+
+.menu_1 .navbar__list li:nth-child(2) a:before {
+  content: url("../img/icons/vins-non.png");
+}
+
+.menu_1 .navbar__list li:nth-child(3) a:before {
+  content: url("../img/icons/ajouter.png");
+}
+
+.menu_1 .navbar__list li:nth-child(4) a:before {
+  content: url("../img/icons/mes_rayons.png");
+}
+
+/*end of styles for menu.html*/
+/*styles for mes-vins.html*/
+.search {
+  height: 37px;
+  width: 100%;
+  margin: 0 0 32px 0;
+}
+.search__form {
+  width: 100%;
+  height: 100%;
+}
+.search__input {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  padding: 0 25px 0 25px;
+  width: 100%;
+  height: 100%;
+  color: #707070;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card {
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  padding: 9px 15px 5px 25px;
+  margin: 0 0 4px 0;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: transparent;
+}
+.card_rouge:before {
+  background-color: #f45a5a;
+}
+.card_blanc:before {
+  background-color: #fdf1b6;
+}
+.card_rose:before {
+  background-color: #ffe6e6;
+}
+.card_jaune:before {
+  background-color: #f3c965;
+}
+.card__text {
+  display: block;
+  padding: 0 17px 0 0;
+}
+.card__title {
+  color: #6d6d6d;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.card__subtitle {
+  color: #6d6d6d;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 900;
+}
+.card__lable {
+  color: #6d6d6d;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.card__sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 4px 0 0 0;
+}
+.card__btn {
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 3px 17px;
+  margin: 0 0 3px 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.card__btn img {
+  width: 18px;
+  height: 18px;
+}
+.card__btn_normal {
+  background-color: #54cd21;
+}
+.card__btn_hidden {
+  background-color: #e96161;
+}
+.card__btn_high {
+  background-color: #614dd4;
+}
+.card__cost {
+  display: block;
+  color: #6d6d6d;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.footer {
+  background-color: #fff;
+  margin: 4px 0 0 0;
+  padding: 8px 0;
+  width: 100%;
+}
+
+/*end of styles for mes-vins.html*/
+/*styles for vins-non-traites.html*/
+.column {
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  padding: 9px 13px 4px 25px;
+  margin: 0 0 8px 0;
+  overflow: hidden;
+}
+.column__img {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 67px;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.column__img img {
+  width: 100%;
+  height: 100%;
+}
+.column__text {
+  display: block;
+  padding: 0 0px 0 51px;
+}
+.column__title {
+  color: #6d6d6d;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 18px;
+}
+.column__subtitle {
+  color: #6d6d6d;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  position: relative;
+  top: 2px;
+  left: 0;
+}
+.column__lable {
+  color: #6d6d6d;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  position: relative;
+  bottom: 2px;
+  left: 0;
+}
+.column__sale {
+  display: block;
+  padding: 4px 0 0 0;
+}
+.column__btn {
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+  background-color: #54cd21;
+  border-radius: 40px;
+  text-align: center;
+  padding: 3px 17px;
+  margin: 0 0 3px 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.column__btn img {
+  width: 18px;
+  height: 18px;
+}
+.column__cost {
+  color: #6d6d6d;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+/*end of styles for vins-non-traites.html*/
+/*styles for en-vente pages*/
+.title {
+  color: #1f1240;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 900;
+  padding: 11px 14px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 0 31px 0;
+}
+.title:before {
+  content: "";
+  padding: 8px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  margin: 0 14px 0 0;
+}
+.title_green:before {
+  content: url("../img/icons/artboard-svg.svg");
+  background-color: #54cd21;
+}
+.title_red:before {
+  content: url("../img/icons/eye.png");
+  background-color: #e96161;
+}
+.title_blue:before {
+  content: url("../img/icons/artboard-svg.svg");
+  background-color: #545ff4;
+}
+
+.production {
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+}
+.production span {
+  display: block;
+  margin: 0 0 8.5px 0;
+}
+.production__title {
+  font-weight: 900;
+  margin: 0 0 10.4px 0;
+}
+.production__text {
+  margin: 0 0 36.5px 0;
+}
+
+.product-img {
+  margin: 43px 0 0 0;
+}
+
+/*end of styles for en-vente pages*/
+/*styles for Ajouter de nouveaux vins.html*/
+/*end of styles for Ajouter de nouveaux vins.html*/
+/*styles for mes rayons.html*/
+.items__rayons_row {
+  margin: 0 0 30px 0;
+}
+
+.item_rayons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 16px 0 14px 14px;
+  margin: 0 0 8px 0;
+}
+.item_rayons:before {
+  display: none;
+}
+.item_rayons span {
+  display: inline-block;
+  color: #1f1240;
+  font-weight: 300;
+  padding: 0 12px 0 0;
+}
+
+/* end of styles for mes rayons.html*/
+/* styles for scan.html*/
+.scan__body {
+  position: relative;
+  bottom: 73px;
+  left: 0;
+}
+.scan__body .arrow-left {
+  position: relative;
+  top: 73px;
+  left: 0;
+  z-index: 2;
+}
+
+.scan__row {
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.scan__camera {
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 18px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.scan__camera img {
+  width: 100%;
+  height: 100%;
+}
+
+.scan__img {
+  width: 100%;
+  height: 100%;
+}
+.scan__img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* end of styles for scan.html*/
+/* styles for rayon_Vins rouges de Bordeaux.html*/
+.rayon {
+  margin: 0 0 25px 0;
+}
+.rayon .label_general {
+  margin: 0 0 2px 0;
+}
+.rayon .form {
+  position: relative;
+}
+.rayon .product-img {
+  margin: 0 0 26px 0;
+}
+.rayon select {
+  margin: 0 0 31px 0;
+  color: #1f1240;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0 8px 9px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  margin: 0 0 18px 0;
+}
+.rayon .form__price {
+  font-size: 20px;
+  padding: 8px 12px 8px 12px;
+  margin: 0;
+  border-radius: 5px;
+  color: #1f1240;
+  border-radius: 5px;
+  width: 100%;
+}
+.rayon .form__price::-webkit-input-placeholder {
+  color: #1f1240;
+}
+.rayon .form__price:-ms-input-placeholder {
+  color: #1f1240;
+}
+.rayon .form__price::-ms-input-placeholder {
+  color: #1f1240;
+}
+.rayon .form__price::placeholder {
+  color: #1f1240;
+}
+.rayon .rayon__text {
+  color: #1f1240;
+  font-weight: 300;
+  padding: 0 16.5px 0 0;
+  margin: 0 0 16px 0;
+  line-height: 15px;
+}
+.rayon .rayon__text span {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Sofia Pro bold";
+}
+.rayon .button_plus {
+  margin: 0 0 12px 0;
+}
+.rayon label {
+  position: absolute;
+  top: 185px;
+  left: 152px;
+  color: #1f1240;
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+/* end of styles for rayon_Vins rouges de Bordeaux.html*/
+/*styles for Supprimer ce rayon.html*/
+.supprimer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0 0 24px 0;
+}
+.supprimer .label_general {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* end of styles for Supprimer ce rayon.html*/
+/* styles for menu_2.html*/
+.menu_2 .navbar__list li:nth-child(1) a:before {
+  content: url("../img/icons/info.png");
+}
+
+.menu_2 .navbar__list li:nth-child(2) a:before {
+  content: url("../img/icons/lock.png");
+}
+
+.menu_2 .navbar__list li:nth-child(3) a:before {
+  content: url("../img/icons/on_off.png");
+}
+
+/* end of styles for menu_2.html*/
+/*styles for page 14.html*/
+.merchandises {
+  margin: 0 0 44px 0;
+}
+.merchandises__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.merchandise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 44px 0;
+}
+.merchandise:last-child {
+  margin: 0;
+}
+.merchandise__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.merchandise__img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100px;
+  flex: 0 1 100px;
+  margin: 0 14px 0 0;
+}
+.merchandise__img img {
+  max-width: 100%;
+}
+.merchandise__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.merchandise__form form * {
+  max-width: 98px;
+  margin: 0 0 8px 0;
+}
+.merchandise__btn {
+  background-color: #e96161;
+  padding: 14px;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*end of styles for page 14.html*/
+/* styles for connexion.html*/
+.connexion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.connexion__btn {
+  color: #1f1240;
+  font-size: 15px;
+  font-weight: 300;
+}
+.connexion .logo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 113px;
+  flex: 0 1 113px;
+  margin: 50px 0 0 0;
+}
+.connexion .logo img {
+  max-width: 100%;
+}
+.connexion .form .button_red {
+  display: block;
+  margin: 26px auto 80px auto;
+}
+
+/*end of styles for connexion.html*/
+/*styles for contact.html*/
+.contact__item {
+  margin: 0 0 56px 0;
+}
+
+/*end of styles for contact.html*/
+/* styles for pagination.html*/
+.pagination_nav {
+  display: inline-block;
+}
+
+.pagination {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0 5px;
+}
+
+.page-item {
+  display: inline-block;
+  padding: 10px 15px;
+}
+.page-item * {
+  font-size: 20px;
+  color: #e96161;
+  font-weight: 600;
+}
+
+.active {
+  display: inline-block;
+  background-color: #e96161;
+}
+.active * {
+  color: white;
+}
+
+.disabled * {
+  color: #707070;
+}
+
+/*end of styles for pagination.html*/
+/*direct upload styles*/
+.direct-upload {
+  display: inline-block;
+  position: relative;
+  padding: 2px 4px;
+  margin: 0 3px 3px 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.direct-upload--pending {
+  opacity: 0.6;
+}
+
+.direct-upload__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.2;
+  background: #0076ff;
+  -webkit-transition: width 120ms ease-out, opacity 60ms 60ms ease-in;
+  -o-transition: width 120ms ease-out, opacity 60ms 60ms ease-in;
+  transition: width 120ms ease-out, opacity 60ms 60ms ease-in;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.direct-upload--complete .direct-upload__progress {
+  opacity: 0.4;
+}
+
+.direct-upload--error {
+  border-color: red;
+}
+
+/*direct upload styles*/

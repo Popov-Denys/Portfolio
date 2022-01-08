@@ -1,0 +1,875 @@
+@import'fonts.scss';   
+@import 'default/nullstyle.scss';
+@import 'forms.scss';
+
+body{  
+	background-color: #f5f5f5;
+	font-family: 'Sofia Pro light';
+}
+
+.wrapper{ 
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    overflow: hidden;
+}
+.content {
+    &_main {
+        position: relative;
+        flex:1 1 auto;
+        margin: 0 0 93px 0;
+    }
+}
+.container {
+    padding:0 30px;
+    &_small {
+        padding: 20px 17.5px 0 25px;
+    }
+    &_big{
+        padding: 0 17px 0 16px;
+    }
+}
+.arrow-left{
+    display: inline-block;
+    width: 17px;
+    height: 26px; 
+    margin: 0 0 20px 0;  
+    img{
+        max-width: 100%;
+    }
+}
+.border_black{
+            max-width: 325px;
+            height: 1px;
+            background-color: black;
+            margin: 21.5px 0 21.5px 0;
+}
+.title {
+    &_green {
+        &:before{
+            content:url('../img/icons/artboard-svg.svg');
+            background-color: #54cd21;
+
+        }
+    }
+    &_blue{
+        &:before{
+            content:url('../img/icons/artboard-svg.svg');
+            background-color: #545ff4;
+        }
+    }
+    &_red{
+        &:before{
+            content:url('../img/icons/eye.png');
+            background-color: #e96161;
+        }
+    }
+}
+.product-img {
+    margin: 43px 0 0 0;
+}
+
+
+.label_general {
+    color: #1f1240; 
+    font-size: 20px;
+    font-weight:900;
+    font-family: 'Sofia Pro bold';
+    margin: 0 0 27px 0; 
+}
+.sublabel{
+    color: #1f1240;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 60px 21px 0;
+    line-height: 17px;
+}
+
+.navbar{
+    margin: 73px 0 0 0;
+}
+.navbar__list li{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    margin: 0 0 20px 0;
+    border-radius:40px;
+    a{
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        padding: 21.5px 18px 18px 31px;
+        span{
+            display: inline-block; 
+            padding: 0 0 0 55px;
+            color: #1f1240;
+            font-size: 20px;
+            font-weight: 300; 
+        }
+        &:before{
+            position: absolute;
+        }
+        &:after{
+            content: url('../img/icons/arrow-right.png');
+        }
+    }
+}
+/*styles for navigation*/
+.nav {
+    &__menu {
+        position:fixed;
+        left: 0;
+        bottom:0;
+        box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+        background-color: #fff;
+        width: 100%;
+        height: 73px;
+        padding: 11px 20px;
+        text-align: center;
+
+    } 
+    &__store {
+        display: flex;
+    }
+    &__magasin {
+        display: block;
+        color: #1f1240;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 22px 0 0;
+        &:before{
+            display: inline-block;
+            content: url('../img/icons/magasin.png');      
+            width: 30px;
+            height: 30px;
+            margin: 0 0 4px 0;
+
+        }
+    }
+    &__magasin_active {
+        color:#e96161;
+        &:before{
+            content: url('../img/icons/magasin_red.png');   
+        }
+    }
+    &__text {
+        display: block;
+    }
+    &__analyse {
+        display: block;
+        color: #1f1240;
+        font-size: 15px;
+        font-weight: 300;
+        &:before{
+            display: inline-block;
+            content: url('../img/icons/analyse.png');       
+            width: 30px;
+            height: 30px;
+            margin: 0 0 4px 0;
+
+        }
+    }
+    &__analyse_active{
+        color:#e96161;
+        &:before{
+            content: url('../img/icons/analyse_red.png');  
+        } 
+    }
+    &__login {
+        display: flex;
+    }
+    &__compte {
+        display: block;
+        color: #1f1240;
+        font-size: 15px;
+        font-weight: 300;
+        &:before{
+            display: inline-block;
+            content: url('../img/icons/compte.png');       
+            width: 30px;
+            height: 30px;
+            margin: 0 0 4px 0;
+
+        }       
+    }
+    &__compte_active{
+        color:#e96161 ;
+        &:before{
+            content: url('../img/icons/compte_red.png') ; 
+        }
+    }
+}
+             
+/*end of styles for navigation*/
+
+
+/*styles for menu.html*/
+.menu_1{
+    .navbar__list li{
+        &:nth-child(1){
+        a{
+            &:before{
+        content: url('../img/icons/mes-vins.png'); 
+}
+        }
+    }
+    &:nth-child(2){
+        a{
+            &:before{
+        content: url('../img/icons/vins-non.png'); 
+}
+        }
+    }
+        &:nth-child(3){
+        a{
+            &:before{
+        content: url('../img/icons/ajouter.png'); 
+}
+        }
+    }
+        &:nth-child(4){
+        a{
+            &:before{
+        content: url('../img/icons/mes_rayons.png'); 
+}
+        }
+    }
+    }
+}
+/*end of styles for menu.html*/
+
+/*styles for mes-vins.html*/
+.search {
+    height: 37px; 
+    width:100%;
+    margin: 0 0 32px 0;
+    &__form {
+        width: 100%;
+        height: 100%;
+    }
+    &__input {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius:30px;
+        padding:0 25px 0 25px;
+        width: 100%; 
+        height: 100%;
+        color: #707070;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+.cards {
+    &__body {}
+}
+.card {
+    display:inline-block;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    padding: 9px 15px 5px 25px;
+    margin: 0 0 4px 0;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 9px; 
+        top:0;
+        left: 0;
+        height:100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color:transparent;
+    }
+    &_rouge {
+        &:before{
+            background-color: #f45a5a;
+        } 
+    }
+    &_blanc {
+        &:before{
+            background-color: #fdf1b6;
+        }    
+    }
+    &_rose {
+        &:before{
+            background-color: #ffe6e6 ;
+        }
+    }
+    &_jaune {
+        &:before{
+            background-color: #f3c965;
+        }
+    }                                                                  
+    &__text {
+        display: block;;
+        padding: 0 17px 0 0    }
+    &__title {
+        color: #6d6d6d;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    &__subtitle {
+        color: #6d6d6d;    
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 900;
+    }
+    &__lable {
+        color: #6d6d6d;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+    &__sale {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 4px 0 0 0;
+    }
+    &__btn {
+        display: inline-block;
+        width: 52px;
+        height: 24px;
+        border-radius: 40px;
+        text-align: center;
+        padding: 3px 17px;
+        margin: 0 0 3px 0;
+        box-shadow: none;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+        &_normal {
+            background-color: #54cd21;
+        }
+        &_hidden {
+            background-color: #e96161;
+        }
+        &_high {
+            background-color: #614dd4;
+        }
+    }
+    &__cost {
+        display: block;
+        color: #6d6d6d;
+        text-align:right;
+        font-size: 15px;
+        font-weight: 900;
+    }
+}
+
+.footer{
+    background-color: #fff;
+    margin: 4px 0 0 0;
+    padding: 8px 0;
+    width: 100%;
+} 
+
+/*end of styles for mes-vins.html*/
+
+/*styles for vins-non-traites.html*/
+.columns {
+    &__body {}
+}
+.column { 
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    padding: 9px 13px 4px 25px;
+    margin: 0 0 8px 0;
+    overflow: hidden;
+    &__img{
+        display: inline-block;
+        position: absolute;
+        top:0;
+        height:100%; 
+        width:67px;
+        left: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__text {
+        display: block;
+        padding: 0 0px 0 51px;
+    }
+    &__title {
+        color: #6d6d6d;
+        font-size: 15px;
+        font-weight: 900;
+        line-height: 18px;
+    }
+    &__subtitle {
+        color: #6d6d6d;  
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+        position: relative;
+        top:2px;
+        left: 0;
+    }
+    &__lable {
+        color: #6d6d6d;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+        position: relative;
+        bottom: 2px;
+        left: 0;
+    }
+    &__sale {
+        display: block;
+        padding: 4px 0 0 0;
+    }
+    &__btn {
+        display: inline-block;
+        width: 52px;
+        height: 24px;
+        background-color: #54cd21;
+        border-radius: 40px;
+        text-align: center;
+        padding: 3px 17px;
+        margin: 0 0 3px 0;
+        box-shadow: none;
+        img{
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__cost {
+        color: #6d6d6d; 
+        font-size: 15px;
+        font-weight: 900;
+    }
+}
+/*end of styles for vins-non-traites.html*/
+
+/*styles for en-vente pages*/
+
+.title {
+    color: #1f1240;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 900;
+    padding: 11px 14px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 0 31px 0;
+    &:before{
+        content: '';
+        padding:8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing:content-box;
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        margin: 0 14px 0 0;
+    }
+    &_green {
+        &:before{
+        content:url('../img/icons/artboard-svg.svg');
+        background-color: #54cd21;
+        }        
+    }
+    &_red{
+        &:before{
+        content:url('../img/icons/eye.png');
+        background-color: #e96161;
+        }
+    }
+    &_blue{
+        &:before{
+        content:url('../img/icons/artboard-svg.svg');
+        background-color: #545ff4;
+        }
+    }
+}
+
+.production {
+    color: #1f1240;
+    font-size: 15px;
+    font-weight: 300;
+    span{
+        display: block;
+        margin: 0 0 8.5px 0;        
+    }
+    &__title {
+        font-weight: 900;
+        margin: 0 0 10.4px 0;
+    }
+    &__subtitle {}
+    &__lable {}
+    &__sublable {}
+    &__text {
+        margin:0 0 36.5px 0;
+    }
+} 
+.product-img{ 
+    margin: 43px 0 0 0;
+}
+/*end of styles for en-vente pages*/
+
+/*styles for Ajouter de nouveaux vins.html*/
+/*end of styles for Ajouter de nouveaux vins.html*/
+
+/*styles for mes rayons.html*/
+.items__rayons_row{ 
+    margin: 0 0 30px 0;
+}
+.item_rayons{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 14px 14px;
+    margin: 0 0 8px 0;
+
+    &:before{
+        display: none;
+    } 
+    span{
+        display: inline-block;
+        color: #1f1240;
+        font-weight: 300;
+        padding: 0 12px 0 0;
+
+    }
+
+}
+  
+/* end of styles for mes rayons.html*/
+/* styles for scan.html*/
+.scan {
+    &__body {
+        position: relative;
+        bottom:73px;
+        left: 0;
+        .arrow-left{
+            position:relative;
+            top:73px;
+            left: 0;
+            z-index: 2;
+        }
+    }
+    &__row {
+       margin:0 auto 0 auto;
+       position: relative;
+       top:0;
+       left:0;
+       max-width: 375px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    &__camera {
+        background-color: #fff;
+        position: absolute;
+        z-index: 2;
+        top:500px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 18px 15px;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__img{  
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+/* end of styles for scan.html*/
+
+/* styles for rayon_Vins rouges de Bordeaux.html*/
+.rayon{
+    margin: 0 0 25px 0;
+    .label_general{
+        margin: 0 0 2px 0;
+    }
+    .form{
+        position: relative;
+
+    }
+    .product-img{
+
+        margin: 0 0 26px 0;
+    }
+    select{
+        margin: 0 0 31px 0;
+                color: #1f1240; 
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 0 8px 9px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 5px;
+        margin:0 0 18px 0; 
+    }
+    .form__price{
+        font-size: 20px;
+        padding: 8px 12px 8px 12px ;
+        margin: 0;
+        border-radius: 5px;
+        color: #1f1240; 
+        border-radius: 5px;
+        width: 100%;
+        &::placeholder{
+            color: #1f1240;  
+        }
+    }
+   .rayon__text{
+        color: #1f1240;
+        font-weight: 300;
+        padding: 0 16.5px 0 0;
+        margin: 0 0 16px 0;
+        line-height: 15px;
+        span{
+                font-size: 14px;
+                font-weight: 900;
+                font-family: 'Sofia Pro bold';
+        }
+   }
+   .button_plus{
+        margin: 0 0 12px 0;
+   }
+   label{
+    position: absolute;
+    top:185px;
+    left: 152px;
+    color: #1f1240;
+    font-size: 20px;
+    font-weight: 1000;
+   }
+}    
+
+/* end of styles for rayon_Vins rouges de Bordeaux.html*/
+
+
+/*styles for Supprimer ce rayon.html*/
+.supprimer{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 0 24px 0;
+    .label_general{
+        margin:0;
+        display: flex;
+        align-items: center;
+    }
+}
+/* end of styles for Supprimer ce rayon.html*/
+/* styles for menu_2.html*/
+.menu_2{
+    .navbar__list li{
+        &:nth-child(1){
+        a{
+            &:before{
+        content: url('../img/icons/info.png');     }
+
+}
+        }
+    &:nth-child(2){
+        a{
+            &:before{
+        content: url('../img/icons/lock.png'); 
+}
+        }
+    }
+        &:nth-child(3){
+        a{
+            &:before{
+        content: url('../img/icons/on_off.png'); 
+}
+        }
+    }
+    }
+}
+/* end of styles for menu_2.html*/
+
+/*styles for page 14.html*/
+.merchandises {
+    margin: 0 0 44px 0;
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.merchandise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 44px 0;
+    &:last-child{
+        margin: 0;
+    }
+    &__body {
+        display: flex;
+    }
+    &__img {
+        flex:0 1 100px;
+        margin: 0 14px 0 0;
+        img{
+            max-width: 100%;
+        }
+    }
+    &__form {
+        form{
+            display: flex;
+            flex-direction: column;
+            *{
+                max-width: 98px;
+                margin: 0 0 8px 0;
+            }
+        }
+    }
+    &__btn {
+        background-color:#e96161 ;
+        padding:14px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: none; 
+    }
+}
+
+/*end of styles for page 14.html*/
+
+/* styles for connexion.html*/
+.connexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__btn {
+        color: #1f1240;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .logo {
+        flex:0 1 113px; 
+        margin: 50px 0 0 0;
+        img{
+            max-width: 100%;
+        }
+}
+    .form {
+        .button {
+            &_red {
+                display: block;
+                margin: 26px auto 80px auto;
+            }
+}
+}
+
+
+}
+/*end of styles for connexion.html*/
+
+/*styles for contact.html*/
+.contact {
+    &__item {
+        margin: 0 0 56px 0;
+    }
+}
+
+/*end of styles for contact.html*/
+
+/* styles for pagination.html*/
+.pagination_nav{
+    display: inline-block;
+}
+.pagination {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius:20px;
+    padding: 0 5px;
+}
+.page-item {
+    display: inline-block;
+    padding:10px 15px;
+    *{
+        font-size: 20px;
+        color:#e96161;
+        font-weight:600;
+    }
+} 
+.active{ 
+    display: inline-block;
+    background-color:#e96161;
+    *{
+        color: white;
+    }
+}
+.disabled{
+    *{
+        color: #707070;
+    }
+}
+/*end of styles for pagination.html*/
+
+/*direct upload styles*/
+.direct-upload {
+display: inline-block;
+position: relative;
+padding: 2px 4px;
+margin: 0 3px 3px 0;
+border: 1px solid rgba(0, 0, 0, 0.3);
+border-radius: 3px;
+font-size: 11px;
+line-height: 13px;
+}
+
+.direct-upload--pending {
+opacity: 0.6;
+}
+
+.direct-upload__progress {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+opacity: 0.2;
+background: #0076ff;
+transition: width 120ms ease-out, opacity 60ms 60ms ease-in;
+transform: translate3d(0, 0, 0);
+}
+
+.direct-upload--complete .direct-upload__progress {
+opacity: 0.4;
+}
+
+.direct-upload--error {
+border-color: red;
+}
+/*direct upload styles*/

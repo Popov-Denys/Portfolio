@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.088" height="38.412" viewBox="0 0 40.088 38.412">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#1e1240;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Composant_224_2" data-name="Composant 224 – 2" transform="translate(.78 .75)">
+        <g id="Groupe_3263" data-name="Groupe 3263">
+            <path id="Tracé_14655" d="M190.178 476.6c-9.235 0-16.39 11.742-1.944 24.906l-.6 1.419a.727.727 0 0 0 .679 1.006h3.731a.727.727 0 0 0 .679-1.006l-.6-1.419c14.377-13.106 7.362-24.906-1.945-24.906z" class="cls-1" data-name="Tracé 14655" transform="translate(-170.91 -476.599)"/>
+            <path id="Ligne_38" d="M0 0L0 9.582" class="cls-1" data-name="Ligne 38" transform="translate(19.268 27.331)"/>
+            <path id="Ligne_39" d="M0 0L1.94 0" class="cls-1" data-name="Ligne 39" transform="translate(17.324 24.906)"/>
+            <g id="Groupe_3261" data-name="Groupe 3261" transform="translate(25.254 6.622)">
+                <path id="Tracé_14656" d="M268.9 530.119a27.965 27.965 0 0 0 3.422 3.688l-.489 1.155a.592.592 0 0 0 .553.819h3.038a.592.592 0 0 0 .553-.819l-.489-1.155c11.535-10.511 6.161-19.994-1.246-20.273" class="cls-1" data-name="Tracé 14656" transform="translate(-268.9 -513.534)"/>
+                <path id="Ligne_40" d="M0 0L0 8.043" class="cls-1" data-name="Ligne 40" transform="translate(5.004 22.247)"/>
+                <path id="Ligne_41" d="M0 0L1.58 0" class="cls-1" data-name="Ligne 41" transform="translate(3.422 20.273)"/>
+            </g>
+            <g id="Groupe_3262" data-name="Groupe 3262" transform="translate(0 6.622)">
+                <path id="Tracé_14657" d="M137.851 513.534c-7.353.281-12.832 9.716-1.245 20.273l-.489 1.155a.592.592 0 0 0 .553.819h3.038a.592.592 0 0 0 .553-.819l-.489-1.155a27.958 27.958 0 0 0 3.377-3.633" class="cls-1" data-name="Tracé 14657" transform="translate(-129.912 -513.534)"/>
+                <path id="Ligne_42" d="M0 0L0 8.043" class="cls-1" data-name="Ligne 42" transform="translate(8.276 22.247)"/>
+                <path id="Ligne_43" d="M0 0L1.58 0" class="cls-1" data-name="Ligne 43" transform="translate(6.694 20.273)"/>
+            </g>
+        </g>
+        <path id="Tracé_14658" fill="#b3b5f0" d="M212.263 491.536a8.231 8.231 0 0 0-7.771-5.1 8.345 8.345 0 0 0-6.986 3.621 12.537 12.537 0 0 1 9.483.322 12.2 12.2 0 0 1 5.791 5.884 9.226 9.226 0 0 0-.517-4.727z" data-name="Tracé 14658" transform="translate(-185.224 -484.672)"/>
+    </g>
+</svg>
