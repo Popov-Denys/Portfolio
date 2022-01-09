@@ -1,3 +1,19 @@
+var doRelocation = function () {
+
+	var currentWidth = window.innerWidth,
+		breakpoint = 1280,
+		newLocation = 'sports.html';
+
+	if (currentWidth < breakpoint) {
+		window.location.replace(newLocation);
+	}
+
+}
+
+doRelocation();
+
+window.addEventListener('resize', doRelocation);
+
 $(document).ready(function () {
 	$(".card-result").click(function (event) {
 		if ($(this).hasClass('disabled')) {

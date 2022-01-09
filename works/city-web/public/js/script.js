@@ -1,3 +1,19 @@
+var doRelocation = function () {
+
+	var currentWidth = window.innerWidth,
+		breakpoint = 1280,
+		newLocation = 'Homepage2.html';
+
+	if (currentWidth < breakpoint) {
+		window.location.replace(newLocation);
+	}
+
+}
+
+doRelocation();
+
+window.addEventListener('resize', doRelocation);
+
 $(document).ready(function () {
 	$('.content-dropdown__list-li').click(function () {
 		$(this).addClass("active");
@@ -26,129 +42,8 @@ window.addEventListener('resize', () => {
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-$(document).ready(function () {
-	$('.main-slider').slick({
-		arrows: true,
-		dots: true,
-		adaptiveHeight: false,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		waitForAnimate: true,
-		speed: 500,
-		variableWidth: true,
-		autoplay: false,
-		autoplaySpeed: 3000,
-		infinite: true,
-		draggable: true,
-		responsive: [
-			{
-				breakpoint: 320,
-				settings: {
-					slidesToShow: 2,
-				},
 
-			},
-			{
-				breakpoint: 425,
-				settings: {
-					slidesToShow: 2,
-				},
 
-			},
-			{
-				breakpoint: 1590,
-				settings: {
-					slidesToShow: 3,
-				},
-
-			},
-			{
-				breakpoint: 1690,
-				settings: {
-					slidesToShow: 4,
-				}
-			},
-			{
-				breakpoint: 2000,
-				settings: {
-					slidesToShow: 4,
-				}
-			},
-			{
-				breakpoint: 2560,
-				settings: {
-					slidesToShow: 4,
-				}
-			},
-			{
-				breakpoint: 4000,
-				settings: {
-					slidesToShow: 4,
-				}
-			}
-		]
-	});
-});
-
-$(document).ready(function () {
-	$('.sports-slider').slick({
-		arrows: true,
-		dots: false,
-		slidesToShow: 8,
-		slidesToScroll: 2,
-		speed: 500,
-		variableWidth: true,
-		draggable: true,
-		infinite: false,
-		responsive: [
-			{
-				breakpoint: 320,
-				settings: {
-					slidesToShow: 6,
-				},
-
-			},
-			{
-				breakpoint: 425,
-				settings: {
-					slidesToShow: 6,
-				},
-
-			},
-			{
-				breakpoint: 1590,
-				settings: {
-					slidesToShow: 6,
-				},
-
-			},
-			{
-				breakpoint: 1690,
-				settings: {
-					slidesToShow: 6,
-				}
-			},
-			{
-				breakpoint: 2000,
-				settings: {
-					slidesToShow: 6,
-				}
-			},
-			{
-				breakpoint: 2560,
-				settings: {
-					slidesToShow: 6,
-				}
-			},
-			{
-				breakpoint: 4000,
-				settings: {
-					slidesToShow: 6,
-				}
-			}
-		]
-	});
-});
 
 $(document).ready(function () {
 	$('.drop-down').click(function (event) {

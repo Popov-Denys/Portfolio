@@ -334,6 +334,8 @@ body {
     z-index: 3;
     transition: all 0.3s; }
   .works__text {
+    width: 100%;
+    padding: 0 10px;
     top: calc(50% - 20px);
     font-size: calc(18px + 2 * ((100vw - 320px) / 960));
     margin: 0 0 20px; }
