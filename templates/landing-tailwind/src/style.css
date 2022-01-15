@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch */
+
+/* Повторяющиеся стили */
+
+@layer base {
+	h2 {
+		@apply text-primary uppercase text-3xl font-semibold font-lato mb-4;
+	}
+}
+/* Создает общий класс из классов tailwind */
+
+@layer components {
+	.header-link {
+		@apply text-white text-sm;
+	}
+	.social-link {
+		@apply text-white text-xl opacity-30 hover:opacity-100 transition-all ease-linear;
+	}
+	.social-list-item {
+		@apply mr-4 w-5 inline-flex items-center justify-center;
+	}
+	.features {
+		@apply flex flex-col items-center md:flex-row md:items-start max-w-973;
+	}
+	.features__item {
+		@apply flex flex-col items-center md:flex-row md:items-start text-center md:text-left w-full mb-8 md:mr-8;
+	}
+	.features__icon {
+		@apply border text-xl md:text-xs border-current text-primary w-14 h-14 md:w-8 md:h-8 shrink-0 inline-flex items-center justify-center rounded-full mb-3 md:mr-3;
+	}
+	.features__label {
+		@apply flex-auto text-secondary font-semibold mb-5;
+	}
+	.sublabel-strings {
+		@apply before:inline-block before:h-px before:w-7 before:bg-primary before:-right-10 before:transform before:-translate-y-1/2 before:absolute before:top-2/4
+		after:transform after:-translate-y-1/2 after:absolute after:top-2/4 after:-left-10 after:inline-block after:h-px after:w-7 after:bg-primary;
+	}
+	.presentation {
+		@apply bg-white pt-20 pb-24 px-4;
+	}
+	.presentation__item {
+		@apply flex flex-col flex-auto w-full pt-10;
+	}
+	.presentation__card {
+		@apply flex flex-col items-center text-center lg:items-start lg:text-left lg:flex-row text-secondary py-4 pl-4 pr-2 mb-8 transition-all duration-200 hover:bg-[#f7e327] hover:bg-opacity-10;
+	}
+	.presentation__icon {
+		@apply opacity-40 mb-10 lg:mr-10 text-4xl transition-all duration-200;
+	}
+	.presentation__text {
+		@apply flex flex-col flex-auto;
+	}
+	.presentation__title {
+		@apply text-lg font-semibold mb-5;
+	}
+	.presentation__description {
+		@apply text-sm lg:text-xs leading-5 flex-auto;
+	}
+	.works {
+		@apply mb-24;
+	}
+
+	.works__card {
+		@apply flex flex-col items-center justify-center relative transition-all duration-200 before:w-full before:h-full before:absolute before:opacity-90 before:bg-primary before:inline-block before:top-0 before:left-0 before:transition-all before:duration-200 before:invisible hover:before:visible before:opacity-0 hover:before:opacity-90;
+	}
+	.works__info {
+		@apply absolute flex flex-col items-center text-center text-white transition-all duration-200 opacity-0 invisible;
+	}
+	.team__card {
+		@apply flex flex-col mb-3 items-center justify-center relative transition-all duration-200 before:w-full before:h-full before:absolute before:opacity-90 before:bg-primary before:inline-block before:top-0 before:left-0 before:transition-all before:duration-200 before:invisible hover:before:visible before:opacity-0 hover:before:opacity-90;
+	}
+	.team__info {
+		@apply absolute flex flex-col items-center text-center text-white transition-all duration-200 opacity-0 invisible;
+	}
+	.works__button {
+		@apply text-secondary text-sm font-bold mr-8 py-3 px-4 w-full;
+	}
+	.team {
+		@apply mb-20;
+	}
+	.title {
+		@apply text-center flex flex-col items-center;
+	}
+	.title span {
+		@apply inline-block relative before:inline-block before:h-px before:w-24 text-secondary before:bg-secondary 	 before:right-10 before:transform before:-translate-y-1/2 before:absolute before:top-2/4 before:opacity-10
+		after:inline-block after:h-px after:w-24 after:bg-secondary after:left-10 after:transform after:-translate-y-1/2 after:absolute after:top-2/4 after:opacity-10;
+	}
+	.title span i {
+		@apply text-2xl opacity-20;
+	}
+	.title_special span {
+		@apply before:opacity-100 after:opacity-100 before:bg-white after:bg-white text-white;
+	}
+	.title_special span i {
+		@apply opacity-100;
+	}
+}
+
+/* Собственный класс */
+
+@layer utilities {
+	@variants hover {
+		.kek {
+			background: yellow;
+		}
+	}
+	.bg-blue {
+		background-color: rgba(16, 22, 54, 0.2);
+	}
+	.presentation__card:hover .presentation__icon {
+		opacity: 1;
+	}
+	.works__card:hover .works__info {
+		opacity: 1;
+		visibility: visible;
+	}
+	.team__card:hover .team__info {
+		opacity: 1;
+		visibility: visible;
+	}
+	.lock {
+		overflow: hidden;
+	}
+	.burger-menu.active {
+		width: 100%;
+		height: 100%;
+		visibility: visible;
+		opacity: 1;
+	}
+	.burger-menu.active .burger-content {
+		right: 0;
+	}
+}
