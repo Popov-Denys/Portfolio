@@ -84,8 +84,8 @@ $maxHeight: 1150;
 }
 
 //! Media
-@mixin _1520 {
-	@media (min-width: 1520px) {
+@mixin _1540 {
+	@media (min-width: 1540px) {
 		@content;
 	}
 }
