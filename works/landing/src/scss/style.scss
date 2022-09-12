@@ -12,6 +12,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	&_alt {
+		overflow: hidden;
+	}
 	&_special {
 		justify-content: flex-end;
 	}
@@ -601,7 +604,7 @@ body {
 	margin: 7px auto 0;
 	max-width: 630px;
 	width: 100%;
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .payment .row {
@@ -655,10 +658,10 @@ body {
 .form__field input {
 	border: 0;
 	color: #000;
-	height: 22px;
 	font-size: 14px;
 	padding: 0 20px;
 	font-weight: 100;
+	height: 23.5px;
 	line-height: 50px;
 	background: #f0f0f0;
 	font-family: "HelveticaNeue", sans-serif;
