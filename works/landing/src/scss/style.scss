@@ -1097,3 +1097,54 @@ body {
 .broadcast {
 	@include fz(20, 16);
 }
+@include _480 {
+	.thank {
+		&__success {
+			padding: 15px 0;
+		}
+		&__info {
+			padding-top: 15px;
+			p:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		&__green {
+			height: 25px;
+		}
+	}
+	.guarantee {
+		margin: 160px 0 0;
+		padding: 65px 0 15px;
+		&::before {
+			top: -125px;
+			width: 170px;
+			height: 170px;
+		}
+	}
+	.broadcast {
+		padding: 15px 0;
+	}
+}
+@include _768 {
+	.thank {
+		&__success {
+			padding: 20px 0;
+			@include hfz(26, 18);
+		}
+		&__info {
+			padding-top: 20px;
+			@include fz(20, 16);
+		}
+		&__green {
+			height: 30px;
+		}
+	}
+	.guarantee {
+		@include fz(20, 16);
+		padding: 75px 0 20px;
+	}
+	.broadcast {
+		padding: 20px 0;
+		@include fz(20, 16);
+	}
+}
