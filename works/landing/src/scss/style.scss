@@ -544,163 +544,6 @@ body {
 	}
 }
 
-.payment {
-}
-
-/* Head */
-
-.head {
-	color: #fff;
-	padding: 7px 0;
-	background: #0f6937;
-}
-
-.head .container {
-	position: relative;
-}
-
-.head__icon {
-	width: 30px;
-	height: 20px;
-}
-
-.sum {
-	font-weight: 400;
-	position: relative;
-	padding-right: 72px;
-}
-
-.sum__title {
-	font-size: 12px;
-}
-
-.sum__box {
-	z-index: 1;
-	font-size: 10px;
-	top: 50%;
-	right: 0;
-	position: absolute;
-	background: #3b3b3b;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.sum__box:after {
-	z-index: -1;
-	width: 99999em;
-	background: inherit;
-	top: -14px;
-	left: -10px;
-	bottom: -14px;
-}
-
-/* Container */
-
-.payment__text {
-	margin: 7px auto 0;
-	max-width: 630px;
-	width: 100%;
-	font-size: 12px;
-}
-
-.payment .row {
-	margin-top: 7px;
-}
-
-.payment__way {
-	margin-bottom: 10px;
-}
-
-.payment__title {
-	font-size: 18px;
-	-ms-flex-negative: 0;
-	flex-shrink: 0;
-}
-
-.payment__way img {
-	margin-left: 20px;
-	max-width: 125px;
-	width: 100%;
-}
-
-.payment__warning {
-	color: #fff;
-	font-size: 12px;
-	margin-top: 5px;
-	padding: 7px 15px;
-	background: #323734;
-}
-
-.payment__txt {
-	color: #0f6937;
-	font-size: 12px;
-	margin-top: 10px;
-	font-weight: bold;
-	font-style: italic;
-	font-family: "HelveticaNeueCyr", sans-serif;
-}
-
-.form__field,
-.form__field input {
-	width: 100%;
-	display: block;
-}
-
-.form__field {
-	position: relative;
-	margin-bottom: 5px;
-}
-
-.form__field input {
-	border: 0;
-	color: #000;
-	font-size: 13px;
-	padding: 0 20px;
-	font-weight: 100;
-	height: 23.5px;
-	line-height: 50px;
-	background: #f0f0f0;
-	font-family: "HelveticaNeue", sans-serif;
-}
-
-.form__group {
-	margin-left: -6px;
-	margin-right: -6px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-
-.form__group [class*="col-"] {
-	padding: 0 6px;
-}
-
-.form__field--card input {
-	padding-right: 65px;
-}
-
-.form__field--card:after {
-	top: 50%;
-	right: 5px;
-	pointer-events: none;
-	width: 22px;
-	height: 22px;
-	background: url(../img/icons/i-card-dark.png) center/contain no-repeat;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.bg-green:after,
-.sum__box:after,
-.guarantee:before,
-.form__field--card:after {
-	content: " ";
-	position: absolute;
-}
-
 /* =================================== */
 /*             Page: Video             */
 /* =================================== */
@@ -1067,7 +910,188 @@ body {
 .broadcast {
 	@include fz(20, 16);
 }
+.payment {
+}
+
+/* Head */
+
+.head {
+	color: #fff;
+	padding: 7px 0;
+	background: #0f6937;
+}
+
+.head .container {
+	position: relative;
+}
+
+.head__icon {
+	width: 30px;
+	height: 20px;
+}
+
+.sum {
+	font-weight: 400;
+	position: relative;
+	padding-right: 72px;
+}
+
+.sum__title {
+	font-size: 12px;
+}
+
+.sum__box {
+	z-index: 1;
+	font-size: 10px;
+	top: 50%;
+	right: 0;
+	position: absolute;
+	background: #3b3b3b;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.sum__box:after {
+	z-index: -1;
+	width: 99999em;
+	background: inherit;
+	top: -14px;
+	left: -10px;
+	bottom: -14px;
+}
+
+/* Container */
+
+.payment__text {
+	margin: 7px auto 0;
+	max-width: 630px;
+	width: 100%;
+	font-size: 12px;
+}
+
+.payment .row {
+	margin-top: 7px;
+}
+
+.payment__way {
+	margin-bottom: 10px;
+}
+
+.payment__title {
+	font-size: 18px;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+}
+
+.payment__way img {
+	margin-left: 20px;
+	max-width: 125px;
+	width: 100%;
+}
+
+.payment__warning {
+	color: #fff;
+	font-size: 12px;
+	margin-top: 5px;
+	padding: 7px 15px;
+	background: #323734;
+}
+
+.payment__txt {
+	color: #0f6937;
+	font-size: 12px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: "HelveticaNeueCyr", sans-serif;
+}
+
+.form__field,
+.form__field input {
+	width: 100%;
+	display: block;
+}
+
+.form__field {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.form__field input {
+	border: 0;
+	color: #000;
+	font-size: 13px;
+	padding: 0 20px;
+	font-weight: 100;
+	height: 23.5px;
+	background: #f0f0f0;
+	font-family: "HelveticaNeue", sans-serif;
+}
+
+.form__group {
+	margin-left: -6px;
+	margin-right: -6px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.form__group [class*="col-"] {
+	padding: 0 6px;
+}
+
+.form__field--card input {
+	padding-right: 65px;
+}
+
+.form__field--card:after {
+	top: 50%;
+	right: 5px;
+	pointer-events: none;
+	width: 22px;
+	height: 22px;
+	background: url(../img/icons/i-card-dark.png) center/contain no-repeat;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.bg-green:after,
+.sum__box:after,
+.guarantee:before,
+.form__field--card:after {
+	content: " ";
+	position: absolute;
+}
 @include _480 {
+	.sum {
+		padding-right: 85px;
+		&__title {
+			font-size: 14px;
+		}
+		&__box {
+			font-size: 18px;
+		}
+	}
+	.payment {
+		&__warning {
+			font-size: 13px;
+		}
+		&__text {
+			margin: 10px auto 0;
+			font-size: 14px;
+		}
+		&__txt {
+			font-size: 13px;
+		}
+	}
+	.form__field {
+		input {
+			height: 25px;
+		}
+	}
 	.thank {
 		&__success {
 			padding: 15px 0;
@@ -1096,6 +1120,52 @@ body {
 	}
 }
 @include _768 {
+	.head {
+		padding: 10px 0;
+	}
+	.sum {
+		padding-right: 113px;
+		&__title {
+			font-size: 17px;
+		}
+		&__box {
+			font-size: 24px;
+		}
+	}
+	.payment .row {
+		margin-top: 15px;
+	}
+	.payment {
+		&__warning {
+			font-size: 15px;
+			padding: 10px 15px;
+		}
+		&__text {
+			margin: 15px auto 0;
+			font-size: 16px;
+		}
+		&__txt {
+			font-size: 13px;
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__way {
+			img {
+				max-width: 160px;
+			}
+		}
+		&__txt {
+			font-size: 15px;
+		}
+	}
+	.form__field {
+		margin-bottom: 7px;
+		input {
+			height: 30px;
+			font-size: 15px;
+		}
+	}
 	.thank {
 		&__success {
 			padding: 20px 0;
@@ -1121,6 +1191,67 @@ body {
 	.broadcast {
 		padding: 20px 0;
 		@include fz(24, 16);
+	}
+}
+@include _992 {
+	.head {
+		padding: 10px 0;
+		&__icon {
+			width: 50px;
+			height: 25px;
+		}
+	}
+	.sum {
+		padding-right: 151px;
+		&__title {
+			font-size: 21px;
+		}
+		&__box {
+			font-size: 35px;
+		}
+	}
+	.payment {
+		&__warning {
+			font-size: 17px;
+			margin-top: 10px;
+		}
+		&__text {
+			margin: 20px auto 0;
+			font-size: 18px;
+		}
+		&__txt {
+			font-size: 19px;
+			margin-top: 15px;
+		}
+		&__title {
+			font-size: 22px;
+		}
+		&__way {
+			img {
+				max-width: 200px;
+			}
+		}
+	}
+	.form__field {
+		margin-bottom: 10px;
+		input {
+			height: 45px;
+			font-size: 18px;
+		}
+	}
+	.form__field--card:after {
+		width: 29px;
+		height: 29px;
+	}
+	.footer {
+		&__button {
+			&_special {
+				font-size: 18px;
+				span:first-child {
+					font-size: 26px;
+				}
+			}
+		}
 	}
 }
 @include _1170 {
@@ -1160,6 +1291,72 @@ body {
 			top: -154px;
 			width: 210px;
 			height: 210px;
+		}
+	}
+}
+@include _1440 {
+	.payment {
+		padding: 20px 0 0 0;
+	}
+	.head {
+		&__icon {
+			width: 50px;
+			height: 30px;
+		}
+	}
+	.sum {
+		padding-right: 204px;
+		&__title {
+			font-size: 27px;
+		}
+		&__box {
+			font-size: 50px;
+		}
+	}
+	.payment .row {
+		margin-top: 25px;
+	}
+	.payment {
+		&__warning {
+			font-size: 24px;
+			margin-top: 15px;
+		}
+		&__text {
+			margin: 25px auto 0;
+			font-size: 24px;
+		}
+		&__txt {
+			font-size: 27px;
+			margin-top: 20px;
+		}
+		&__title {
+			font-size: 26px;
+		}
+		&__way {
+			img {
+				max-width: 250px;
+			}
+		}
+	}
+	.form__field {
+		margin-bottom: 15px;
+		input {
+			height: 55px;
+			font-size: 23px;
+		}
+	}
+	.form__field--card:after {
+		width: 45px;
+		height: 45px;
+	}
+	.footer {
+		&__button {
+			&_special {
+				font-size: 24px;
+				span:first-child {
+					font-size: 37px;
+				}
+			}
 		}
 	}
 }
