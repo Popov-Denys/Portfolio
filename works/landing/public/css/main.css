@@ -349,6 +349,8 @@ body {
     .footer__button span:first-child {
       font-size: calc(14px + 14 * ((100vh - 600px) / 300));
       margin: 0 0 -5px; }
+    .footer__button_special span:first-child {
+      margin: 0 0 -3px; }
 
 .form-container {
   padding: 20px 20px 0; }
@@ -515,33 +517,30 @@ body {
     .new-form__input_small {
       width: 40%; } }
 
-.payment {
-  padding-top: 80px; }
-
 /* Head */
 .head {
   color: #fff;
-  padding: 15px 0;
+  padding: 7px 0;
   background: #0f6937; }
 
 .head .container {
   position: relative; }
 
 .head__icon {
-  width: 70px;
-  height: 47px; }
+  width: 30px;
+  height: 20px; }
 
 .sum {
   font-weight: 400;
   position: relative;
-  padding-right: 250px; }
+  padding-right: 72px; }
 
 .sum__title {
-  font-size: 28px; }
+  font-size: 12px; }
 
 .sum__box {
   z-index: 1;
-  font-size: 56px;
+  font-size: 10px;
   top: 50%;
   right: 0;
   position: absolute;
@@ -554,43 +553,44 @@ body {
   z-index: -1;
   width: 99999em;
   background: inherit;
-  top: -30px;
-  left: -25px;
-  bottom: -30px; }
+  top: -14px;
+  left: -10px;
+  bottom: -14px; }
 
 /* Container */
 .payment__text {
-  margin: 35px auto 0;
+  margin: 7px auto 0;
   max-width: 630px;
-  width: 100%; }
+  width: 100%;
+  font-size: 11px; }
 
 .payment .row {
-  margin-top: 35px; }
+  margin-top: 7px; }
 
 .payment__way {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .payment__title {
-  font-size: 30px;
+  font-size: 18px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
 
 .payment__way img {
   margin-left: 20px;
-  max-width: 260px;
+  max-width: 125px;
   width: 100%; }
 
 .payment__warning {
   color: #fff;
-  font-size: 24px;
-  margin-top: 15px;
-  padding: 12px 20px;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 7px 15px;
   background: #323734; }
 
 .payment__txt {
   color: #0f6937;
-  font-size: 21px;
-  margin-top: 50px;
+  font-size: 12px;
+  margin-top: 10px;
   font-weight: bold;
   font-style: italic;
   font-family: "HelveticaNeueCyr", sans-serif; }
@@ -602,13 +602,13 @@ body {
 
 .form__field {
   position: relative;
-  margin-bottom: 12px; }
+  margin-bottom: 5px; }
 
 .form__field input {
   border: 0;
   color: #000;
-  height: 50px;
-  font-size: 25px;
+  height: 22px;
+  font-size: 14px;
   padding: 0 20px;
   font-weight: 100;
   line-height: 50px;
@@ -634,8 +634,8 @@ body {
   top: 50%;
   right: 5px;
   pointer-events: none;
-  width: 50px;
-  height: 34px;
+  width: 22px;
+  height: 22px;
   background: url(../img/icons/i-card-dark.png) center/contain no-repeat;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -836,32 +836,6 @@ body {
     height: 21px; } }
 
 @media only screen and (max-width: 1199px) {
-  .form__field input {
-    font-size: 20px; }
-  .form__field--card input {
-    padding-right: 50px; }
-  .form__field--card:after {
-    width: 34px;
-    height: 23px; }
-  .payment {
-    padding-top: 60px; }
-  .head__icon {
-    width: 50px;
-    height: 33px; }
-  .sum {
-    padding-right: 210px; }
-  .sum__title {
-    font-size: 24px; }
-  .sum__box {
-    font-size: 44px; }
-  .sum__box:after {
-    top: -25px;
-    left: -25px;
-    bottom: -25px; }
-  .payment__title {
-    font-size: 24px; }
-  .payment__warning {
-    font-size: 20px; }
   .video__head {
     font-size: 22px; }
   .video__head a {
@@ -885,8 +859,8 @@ body {
     height: 50px; } }
 
 .footer--bg {
-  padding: 30px 0;
-  margin-top: 30px;
+  padding: 10px 0;
+  margin-top: 10px;
   background: #323734; }
 
 /* =================================== */
