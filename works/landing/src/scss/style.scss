@@ -1133,18 +1133,52 @@ body {
 		}
 		&__info {
 			padding-top: 20px;
-			@include fz(20, 16);
+			@include fz(24, 16);
 		}
 		&__green {
 			height: 30px;
 		}
 	}
 	.guarantee {
-		@include fz(20, 16);
+		@include fz(24, 16);
 		padding: 75px 0 20px;
+		&::before {
+			top: -145px;
+			width: 190px;
+			height: 190px;
+		}
 	}
 	.broadcast {
 		padding: 20px 0;
-		@include fz(20, 16);
+		@include fz(24, 16);
+	}
+}
+@include _1170 {
+	.thank {
+		&__success {
+			padding: 25px 0;
+			@include hfz(28, 18);
+		}
+		&__info {
+			padding-top: 25px;
+			@include fz(26, 16);
+		}
+		&__green {
+			height: 35px;
+		}
+	}
+	.guarantee {
+		margin: 180px 0 0;
+		@include fz(26, 16);
+		padding: 85px 0 25px;
+		&::before {
+			top: -154px;
+			width: 210px;
+			height: 210px;
+		}
+	}
+	.broadcast {
+		padding: 25px 0;
+		@include fz(26, 16);
 	}
 }
