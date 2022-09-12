@@ -82,8 +82,6 @@ body {
   justify-content: flex-end; }
   .wrapper_alt {
     overflow: hidden; }
-  .wrapper_special {
-    justify-content: flex-end; }
 
 .body-bg {
   background: url(../img/bg/body.png) 0 0/cover no-repeat; }
