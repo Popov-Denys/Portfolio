@@ -1,0 +1,72 @@
+/* Helvetica Neue */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueBoldCondensed.eot');
+    src: local('Helvetica Neue Condensed Bold'), local('HelveticaNeueBoldCondensed'),
+        url('HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('HelveticaNeueBoldCondensed.woff') format('woff'),
+        url('HelveticaNeueBoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueBlackCondensed.eot');
+    src: local('Helvetica Neue Condensed Black'), local('HelveticaNeueBlackCondensed'),
+        url('HelveticaNeueBlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('HelveticaNeueBlackCondensed.woff') format('woff'),
+        url('HelveticaNeueBlackCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueThin.eot');
+    src: url('HelveticaNeueThin.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueThin.woff2') format('woff2'),
+        url('HelveticaNeueThin.woff') format('woff'),
+        url('HelveticaNeueThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeueRegular.eot');
+    src: url('HelveticaNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueRegular.woff2') format('woff2'),
+        url('HelveticaNeueRegular.woff') format('woff'),
+        url('HelveticaNeueRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('HelveticaNeueCyr-BoldItalic.eot');
+    src: local('HelveticaNeueCyr-BoldItalic'),
+        url('HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueCyr-BoldItalic.woff2') format('woff2'),
+        url('HelveticaNeueCyr-BoldItalic.woff') format('woff'),
+        url('HelveticaNeueCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* MarkerFelt */
+@font-face {
+    font-family: 'MarkerFelt Thin';
+    src: url('Marker Felt Thin.eot');
+    src: local('☺'), url('Marker Felt Thin.woff') format('woff'), url('Marker Felt Thin.ttf') format('truetype'), url('Marker Felt Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MarkerFelt Wide';
+    src: url('Marker Felt Wide.eot');
+    src: local('☺'), url('Marker Felt Wide.woff') format('woff'), url('Marker Felt Wide.ttf') format('truetype'), url('Marker Felt Wide.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
