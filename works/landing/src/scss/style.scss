@@ -1157,11 +1157,11 @@ body {
 	.thank {
 		&__success {
 			padding: 21px 0;
-			@include hfz(28, 18);
+			@include hfz(45, 18);
 		}
 		&__info {
 			padding-top: 21px;
-			@include fz(26, 16);
+			@include hfz(43, 16);
 		}
 		&__green {
 			height: 31px;
@@ -1169,7 +1169,7 @@ body {
 	}
 	.guarantee {
 		margin: 175px 0 0;
-		@include fz(26, 16);
+		@include hfz(43, 16);
 		padding: 80px 0 21px;
 		&::before {
 			top: -154px;
@@ -1179,6 +1179,17 @@ body {
 	}
 	.broadcast {
 		padding: 21px 0;
-		@include fz(26, 16);
+		@include hfz(43, 16);
+	}
+}
+@include _1280 {
+	.guarantee {
+		margin: 170px 0 0;
+		padding: 80px 0 21px;
+		&::before {
+			top: -154px;
+			width: 210px;
+			height: 210px;
+		}
 	}
 }
