@@ -1156,29 +1156,29 @@ body {
 @include _1170 {
 	.thank {
 		&__success {
-			padding: 25px 0;
+			padding: 21px 0;
 			@include hfz(28, 18);
 		}
 		&__info {
-			padding-top: 25px;
+			padding-top: 21px;
 			@include fz(26, 16);
 		}
 		&__green {
-			height: 35px;
+			height: 31px;
 		}
 	}
 	.guarantee {
-		margin: 180px 0 0;
+		margin: 175px 0 0;
 		@include fz(26, 16);
-		padding: 85px 0 25px;
+		padding: 80px 0 21px;
 		&::before {
 			top: -154px;
-			width: 210px;
-			height: 210px;
+			width: 200px;
+			height: 200px;
 		}
 	}
 	.broadcast {
-		padding: 25px 0;
+		padding: 21px 0;
 		@include fz(26, 16);
 	}
 }
