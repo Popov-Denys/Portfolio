@@ -1098,7 +1098,7 @@ body {
       width: 210px;
       height: 210px; } }
 
-@media (min-width: 1440px) {
+@media (min-width: 1520px) {
   .payment {
     padding: 20px 0 0 0; }
   .head__icon {
