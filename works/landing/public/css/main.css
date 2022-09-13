@@ -101,7 +101,7 @@ body {
   justify-content: center;
   margin: 0 0 10px; }
   .header__logo {
-    max-width: 100px; }
+    max-width: 130px; }
     .header__logo img {
       max-width: 100%; }
 
@@ -737,13 +737,13 @@ body {
 /*             Page: Thank             */
 /* =================================== */
 .thank {
-  padding-top: 15px;
+  padding-top: 18px;
   letter-spacing: -0.5px; }
 
 .thank__success {
   color: #fff;
   font-size: 66px;
-  padding: 10px 0;
+  padding: 13px 0;
   font-weight: 900;
   background: #0f6937; }
 
@@ -753,27 +753,27 @@ body {
   color: #0f6937;
   font-size: 45px;
   font-weight: 900;
-  padding-top: 10px;
+  padding-top: 13px;
   max-width: 750px;
   width: 100%; }
 
 .thank__info p:not(:last-child) {
-  margin-bottom: 10px; }
+  margin-bottom: 13px; }
 
 /* Guarantee */
 .guarantee {
   color: #fff;
   font-weight: 900;
-  margin-top: 130px;
+  margin-top: 160px;
   position: relative;
   background: #323734;
-  padding: 55px 0 10px; }
+  padding: 55px 0 13px; }
 
 .guarantee:before {
-  top: -105px;
+  top: -125px;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   background: url(../img/other/guarantee.png) center/contain no-repeat;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -807,16 +807,16 @@ body {
   background: #0f6937; }
 
 .thank__success {
-  font-size: calc(18px + 4 * ((100vh - 600px) / 300)); }
+  font-size: calc(20px + 4 * ((100vh - 600px) / 300)); }
 
 .thank__info {
-  font-size: calc(16px + 4 * ((100vh - 600px) / 300)); }
+  font-size: calc(18px + 4 * ((100vh - 600px) / 300)); }
 
 .guarantee {
-  font-size: calc(16px + 4 * ((100vh - 600px) / 300)); }
+  font-size: calc(18px + 4 * ((100vh - 600px) / 300)); }
 
 .broadcast {
-  font-size: calc(16px + 4 * ((100vh - 600px) / 300)); }
+  font-size: calc(18px + 4 * ((100vh - 600px) / 300)); }
 
 /* Head */
 .head {
