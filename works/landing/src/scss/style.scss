@@ -918,7 +918,7 @@ body {
 
 .head {
 	color: #fff;
-	padding: 7px 0;
+	padding: 9px 0;
 	background: #0f6937;
 }
 
@@ -934,16 +934,16 @@ body {
 .sum {
 	font-weight: 400;
 	position: relative;
-	padding-right: 72px;
+	padding-right: 90px;
 }
 
 .sum__title {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .sum__box {
 	z-index: 1;
-	font-size: 10px;
+	font-size: 18px;
 	top: 50%;
 	right: 0;
 	position: absolute;
@@ -965,22 +965,22 @@ body {
 /* Container */
 
 .payment__text {
-	margin: 7px auto 0;
+	margin: 9px auto 0;
 	max-width: 630px;
 	width: 100%;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .payment .row {
-	margin-top: 7px;
+	margin-top: 9px;
 }
 
 .payment__way {
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 }
 
 .payment__title {
-	font-size: 18px;
+	font-size: 19px;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
@@ -993,16 +993,16 @@ body {
 
 .payment__warning {
 	color: #fff;
-	font-size: 12px;
-	margin-top: 5px;
-	padding: 7px 15px;
+	font-size: 16px;
+	margin-top: 7px;
+	padding: 9px 15px;
 	background: #323734;
 }
 
 .payment__txt {
 	color: #0f6937;
-	font-size: 12px;
-	margin-top: 10px;
+	font-size: 15px;
+	margin-top: 13px;
 	font-weight: bold;
 	font-style: italic;
 	font-family: "HelveticaNeueCyr", sans-serif;
@@ -1016,16 +1016,16 @@ body {
 
 .form__field {
 	position: relative;
-	margin-bottom: 5px;
+	margin-bottom: 9px;
 }
 
 .form__field input {
 	border: 0;
 	color: #000;
-	font-size: 13px;
+	font-size: 15px;
 	padding: 0 20px;
 	font-weight: 100;
-	height: 23.5px;
+	height: 28px;
 	background: #f0f0f0;
 	font-family: "HelveticaNeue", sans-serif;
 }
@@ -1067,32 +1067,6 @@ body {
 	position: absolute;
 }
 @include _480 {
-	.sum {
-		padding-right: 85px;
-		&__title {
-			font-size: 14px;
-		}
-		&__box {
-			font-size: 18px;
-		}
-	}
-	.payment {
-		&__warning {
-			font-size: 13px;
-		}
-		&__text {
-			margin: 10px auto 0;
-			font-size: 14px;
-		}
-		&__txt {
-			font-size: 13px;
-		}
-	}
-	.form__field {
-		input {
-			height: 25px;
-		}
-	}
 	.thank {
 		&__success {
 			padding: 15px 0;
