@@ -2,8 +2,8 @@ $maxMobileHeight: 900;
 $maxHeight: 1150;
 @mixin fz($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
-	$maxMobileHeight: $maxMobileHeight - 580;
-	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vh - 580px) / #{$maxMobileHeight}));
+	$maxMobileHeight: $maxMobileHeight - 600;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vh - 600px) / #{$maxMobileHeight}));
 }
 @mixin hfz($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;
