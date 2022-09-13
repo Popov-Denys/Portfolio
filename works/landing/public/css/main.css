@@ -81,6 +81,8 @@ body {
   overflow: hidden;
   flex-direction: column;
   justify-content: flex-end; }
+  .wrapper_special {
+    justify-content: flex-start; }
   .wrapper_alt {
     overflow: hidden; }
 
