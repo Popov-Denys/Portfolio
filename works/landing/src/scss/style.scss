@@ -816,14 +816,14 @@ body {
 /* =================================== */
 
 .thank {
-	padding-top: 18px;
+	padding-top: 15px;
 	letter-spacing: -0.5px;
 }
 
 .thank__success {
 	color: #fff;
 	font-size: 66px;
-	padding: 13px 0;
+	padding: 10px 0;
 	font-weight: 900;
 	background: #0f6937;
 }
@@ -899,17 +899,17 @@ body {
 }
 .thank {
 	&__success {
-		@include fz(24, 20);
+		@include fz(24, 19.5);
 	}
 	&__info {
-		@include fz(22, 18);
+		@include fz(22, 17.5);
 	}
 }
 .guarantee {
-	@include fz(22, 18);
+	@include fz(22, 17.5);
 }
 .broadcast {
-	@include fz(22, 18);
+	@include fz(22, 17.5);
 }
 .payment {
 }
