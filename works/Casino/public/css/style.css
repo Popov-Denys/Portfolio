@@ -101,17 +101,17 @@ body {
     display: block; }
 
 #games-box .game {
-  background: url("../img/clash.jpeg") center/800px no-repeat; }
+  background: url("../img/clash.webp") center/800px no-repeat; }
 
 #tools-box .game {
-  background: url("../img/royale.jpeg") center/800px no-repeat; }
+  background: url("../img/royale.webp") center/800px no-repeat; }
 
 .game {
   min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("../img/dragon-city.png") center/800px no-repeat;
+  background: url("../img/dragon-city.webp") center/800px no-repeat;
   margin: 0 0 40px; }
   .game__content {
     display: flex;
