@@ -36,10 +36,11 @@ $('.help__button').click(function () {
 
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
 
-const timeout = 800;
+const timeout = 500;
 
 if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
@@ -67,7 +68,6 @@ function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
 		const popupActive = document.querySelector('.popup.open');
 		if (popupActive) {
-
 			popupClose(popupActive, false);
 		} else {
 			bodyLock();
@@ -91,6 +91,15 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
+	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+	if (lockPadding.length > 0) {
+		for (let index = 0; index < lockPadding.length; index++) {
+			const el = lockPadding[index];
+			el.style.paddingRight = lockPaddingValue;
+		}
+	}
+	body.style.paddingRight = lockPaddingValue;
 	body.classList.add('lock');
 
 	unlock = false;
@@ -101,6 +110,13 @@ function bodyLock() {
 
 function bodyUnLock() {
 	setTimeout(function () {
+		if (lockPadding.length > 0) {
+			for (let index = 0; index < lockPadding.length; index++) {
+				const el = lockPadding[index];
+				el.style.paddingRight = '0px';
+			}
+		}
+		body.style.paddingRight = '0px';
 		body.classList.remove('lock');
 	}, timeout);
 
@@ -118,9 +134,7 @@ document.addEventListener('keydown', function (e) {
 });
 
 (function () {
-
 	if (!Element.prototype.closest) {
-
 		Element.prototype.closest = function (css) {
 			var node = this;
 			while (node) {
@@ -132,15 +146,15 @@ document.addEventListener('keydown', function (e) {
 	}
 })();
 (function () {
-
 	if (!Element.prototype.matches) {
-
 		Element.prototype.matches = Element.prototype.matchesSelector ||
 			Element.prototype.webkitMatchesSelector ||
 			Element.prototype.mozMatchesSelector ||
 			Element.prototype.msMatchesSelector;
 	}
 })();
+
+
 
 $(document).ready(function () {
 	$('.cards-slider').slick({
