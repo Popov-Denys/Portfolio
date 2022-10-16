@@ -454,7 +454,8 @@ a {
   .selection__phone {
     max-width: 167px;
     display: flex;
-    align-items: flex-end; }
+    align-items: flex-end;
+    filter: drop-shadow(5.39934px 13.4984px 26.9967px rgba(0, 0, 0, 0.15)); }
     .selection__phone img {
       max-width: 100%; }
 
@@ -506,6 +507,7 @@ a {
     justify-content: center;
     margin: 0 0 36px; }
   .introduction__phone {
+    filter: drop-shadow(5.39934px 13.4984px 26.9967px rgba(0, 0, 0, 0.15));
     margin: 0 12px 0 0;
     max-width: 140px; }
     .introduction__phone:last-child {
@@ -1091,6 +1093,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   background: rgba(29, 34, 41, 0.2);
   z-index: 6; }
   .popup-map.active {
@@ -1436,7 +1439,7 @@ a {
     .banner__icons {
       display: flex; }
   .form {
-    min-height: 460px;
+    min-height: 468px;
     margin: 23px 0;
     display: block; } }
 
@@ -1546,7 +1549,6 @@ a {
       padding: 32px;
       border-radius: 16px; }
     .help__label {
-      max-width: 115px;
       margin: 0 0 24px; }
   .banner {
     background: url("../img/banner-bg-big.png") 100%/cover no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%), url("../img/banner-big.png") 100%/cover no-repeat; }
@@ -1636,5 +1638,5 @@ a {
   display: none; }
 
 .select-items div:hover,
-.same-as-selected {
+.select-items .same-as-selected {
   color: #3c7ce6; }

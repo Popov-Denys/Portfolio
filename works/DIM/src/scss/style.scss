@@ -427,6 +427,7 @@ a {
 		max-width: 167px;
 		display: flex;
 		align-items: flex-end;
+		filter: drop-shadow(5.39934px 13.4984px 26.9967px rgba(0, 0, 0, 0.15));
 		img {
 			max-width: 100%;
 		}
@@ -497,6 +498,7 @@ a {
 	}
 
 	&__phone {
+		filter: drop-shadow(5.39934px 13.4984px 26.9967px rgba(0, 0, 0, 0.15));
 		margin: 0 12px 0 0;
 		max-width: 140px;
 		&:last-child {
@@ -1264,6 +1266,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	overflow-y: auto;
 	background: rgba(29, 34, 41, 0.2);
 	z-index: 6;
 	&.active {
@@ -1764,7 +1767,7 @@ a {
 		}
 	}
 	.form {
-		min-height: 460px;
+		min-height: 468px;
 		margin: 23px 0;
 		display: block;
 	}
@@ -1935,7 +1938,6 @@ a {
 			border-radius: 16px;
 		}
 		&__label {
-			max-width: 115px;
 			margin: 0 0 24px;
 		}
 	}
@@ -2055,6 +2057,6 @@ a {
 }
 
 .select-items div:hover,
-.same-as-selected {
+.select-items .same-as-selected {
 	color: #3c7ce6;
 }
