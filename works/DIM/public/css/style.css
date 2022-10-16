@@ -154,7 +154,7 @@ a {
   transition: all 0.5s;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
-  transition-timing-function: all;
+  transition-timing-function: ease;
   font: inherit;
   color: inherit;
   text-transform: none;
