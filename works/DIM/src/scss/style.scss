@@ -4,13 +4,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 body {
+	background: #ffffff;
 	font-family: "Inter", sans-serif;
-	&.lock {
+	&.lock,
+	&.locked {
 		overflow: hidden;
 	}
 }
 a {
 	color: #37404d;
+}
+.introduction-page {
+	background: #f5f5f5;
 }
 .wrapper {
 	width: 100%;
@@ -20,6 +25,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	color: #37404d;
+}
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0 0 16px;
 }
 .hamburger {
 	padding: 5px 5px;
@@ -120,7 +130,6 @@ a {
 }
 .header {
 	flex-shrink: 0;
-	background: #ffffff;
 	padding: 16px 16px 14px;
 	margin: 0 0 10px;
 	&__container {
@@ -228,15 +237,22 @@ a {
 			cursor: pointer;
 			padding: 5px;
 			transition: 0.3s all;
-			&:hover,
+
 			&.active {
+				cursor: default;
+				pointer-events: none;
 				color: #3c7ce6;
+			}
+			&:hover {
+				color: #3c7ce6;
+			}
+			a {
+				color: #64748c;
 			}
 		}
 		&_default {
 			color: #64748c;
 			padding: 0 30px 0 0;
-			background-color: white;
 			position: relative;
 			cursor: pointer;
 			transition: all 0.3s ease;
@@ -272,8 +288,149 @@ a {
 	}
 }
 .main {
+	@include flex-column;
 	flex: 1 1 auto;
 	padding: 0 16px;
+}
+.selections {
+	margin: 0 0 24px;
+}
+.selection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url("../img/selection-small.png") 100% / cover no-repeat;
+	border-radius: 24px;
+	overflow: hidden;
+	padding: 32px;
+	min-height: 472px;
+	color: #ffffff;
+	margin: 0 0 16px;
+	&:last-child {
+		margin: 0;
+	}
+	&__content {
+		@include flex-column;
+		flex: 1 1 auto;
+	}
+	&__box {
+		display: none;
+	}
+	&__title {
+		display: inline-flex;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 28px;
+		position: relative;
+		margin: 0 0 24px;
+		span {
+			display: inline-block;
+			&:first-child {
+				margin: 0 6px 0 0;
+			}
+		}
+	}
+	&__label {
+		position: relative;
+	}
+	&__underline {
+		display: flex;
+		position: absolute;
+		width: calc(100% + 15px);
+		left: -2px;
+		bottom: -13px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		p {
+			font-size: 14px;
+			line-height: 22px;
+			margin: 0 0 15px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	&__button {
+	}
+
+	&__box {
+		flex-shrink: 0;
+	}
+
+	&__map {
+		margin: auto 0 0;
+		@include flex-center;
+		background: url("../img/ukraine-grey.png") 100%/100% no-repeat;
+		width: 282px;
+		height: 192px;
+	}
+
+	&__graphics {
+		position: relative;
+		display: flex;
+		height: 182px;
+		width: 266px;
+		background: url("../img/ukraine.png") 100%/100% no-repeat;
+	}
+	&__design {
+		position: absolute;
+		@include flex-column;
+		align-items: center;
+		&_1 {
+			left: 45px;
+			top: -92px;
+		}
+		&_2 {
+			left: 79px;
+			top: -69px;
+		}
+		&_3 {
+			left: 114px;
+			top: -16px;
+		}
+		&_4 {
+			right: 90px;
+			top: -96px;
+		}
+		&_5 {
+			right: 55px;
+			top: -40px;
+		}
+		&_6 {
+			right: 21px;
+			top: -71px;
+		}
+	}
+	&__home {
+		@include inline-flex-center;
+		padding: 5px 4px;
+		background: #5cbf5a;
+		box-shadow: 0px 0px 8px rgba(3, 100, 1, 0.3);
+		border-radius: 8px;
+		margin: 0 0 9px;
+	}
+
+	&__strip {
+	}
+
+	&__ellipse {
+		margin: -12px 0 0;
+	}
+
+	&__phone {
+		max-width: 167px;
+		display: flex;
+		align-items: flex-end;
+		img {
+			max-width: 100%;
+		}
+	}
 }
 .introduction {
 	overflow: hidden;
@@ -283,6 +440,24 @@ a {
 	padding: 24px;
 	color: #ffffff;
 	margin: 0 0 24px;
+	&_special {
+		display: flex;
+		flex-direction: column;
+		min-height: 600px;
+		background: url("../img/people-bg.png") center/ cover no-repeat,
+			linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%),
+			url("../img/people-small.png") 100% / cover no-repeat, #3c7ce6;
+		background-blend-mode: multiply, normal, normal, normal;
+		.introduction {
+			&__content {
+				flex: 1 1 auto;
+				@include flex-column;
+			}
+			&__buttons {
+				margin: auto 0 0;
+			}
+		}
+	}
 	&__box {
 		display: none;
 		flex-shrink: 0;
@@ -343,6 +518,7 @@ a {
 	}
 }
 .button {
+	cursor: pointer;
 	width: 100%;
 	@include inline-flex-center;
 	text-align: center;
@@ -407,6 +583,14 @@ a {
 			z-index: 2;
 			background: linear-gradient(124.68deg, #ebf2ff 20.39%, rgba(235, 242, 255, 0) 56.66%);
 			transform: matrix(-1, 0, 0, 1, 0, 0);
+		}
+		&_special {
+			padding: 67px 2px;
+			.description {
+				&__message {
+					display: flex;
+				}
+			}
 		}
 	}
 	&__message {
@@ -506,6 +690,84 @@ a {
 		margin: auto 0 0;
 	}
 }
+.team {
+	margin: 0 -16px 0;
+	& .slick-track {
+		margin: 0 0 24px 0;
+		left: 16px;
+	}
+	&__title {
+		padding: 0 0 0 16px;
+	}
+
+	&__slider {
+		display: flex;
+	}
+
+	&__item {
+		min-width: 0;
+		width: 343px;
+		background: #ffffff;
+		box-shadow: 2px 2px 10px rgba(115, 118, 128, 0.11);
+		border-radius: 16px;
+		overflow: hidden;
+		margin: 0 12px 0 0;
+	}
+
+	&__image {
+		img,
+		svg {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 24px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		color: #495466;
+	}
+
+	&__name {
+		margin: 0 0 10px;
+	}
+
+	&__position {
+		font-weight: 600;
+	}
+
+	&__country {
+		margin: 0 0 -8px;
+	}
+}
+.partners {
+	margin: 0 0 24px;
+	&__title {
+	}
+
+	&__content {
+	}
+
+	&__item {
+		@include inline-flex-center;
+		padding: 40px 10px;
+		width: 100%;
+		background: #ffffff;
+		box-shadow: 2px 2px 10px rgba(115, 118, 128, 0.11);
+		border-radius: 16px;
+		margin: 0 0 16px;
+		img {
+			width: 220px;
+		}
+	}
+}
+
 .help {
 	background: #ebf2ff;
 	border-radius: 16px;
@@ -513,6 +775,12 @@ a {
 	padding: 24px 24px 32px;
 	color: #37404d;
 	margin: 0 0 24px;
+	&_special {
+		.help {
+			&__label {
+			}
+		}
+	}
 	&__title {
 		font-weight: 600;
 		font-size: 24px;
@@ -542,18 +810,25 @@ a {
 		transition: 0.2s ease-in-out;
 		margin: 0 12px 0 0;
 		background: #ffffff;
-		&:hover,
 		&.active {
+			pointer-events: initial;
 			background: #2e60b3;
 			color: #ffffff;
+			&:hover {
+				background: #2e60b3;
+			}
 		}
-
+		&:hover {
+			color: #ffffff;
+			background: #80b0ff;
+		}
 		&:last-child {
 			margin: 0 24px 0 0;
 		}
 	}
 
 	&__map {
+		position: relative;
 		border-radius: 8px;
 		overflow: hidden;
 		margin: 0 0 16px;
@@ -607,6 +882,7 @@ a {
 	display: flex;
 	overflow: hidden;
 	color: #ffffff;
+	min-height: 572px;
 	padding: 24px;
 	margin: 0 0 32px;
 	&__content {
@@ -664,7 +940,34 @@ a {
 .form {
 	display: none;
 	flex-shrink: 0;
+	width: 100%;
+	max-width: 380px;
+	&__body {
+		height: 100%;
+	}
+	&__form {
+		&.hidden {
+			display: none;
+		}
+	}
+	&__success {
+		display: none;
+		align-items: center;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 22px;
+		color: #098507;
+		svg {
+			width: 32px;
+			height: 32px;
+			margin: 0 10px 0 0;
+		}
+		&.active {
+			display: flex;
+		}
+	}
 	&__content {
+		height: 100%;
 		background: #ffffff;
 		border: 1px solid #c5d0e3;
 		border-radius: 16px;
@@ -719,15 +1022,18 @@ a {
 	}
 	&__select {
 		position: relative;
-		select {
-			background: #ffffff;
-			border: 1px solid #c5d0e3;
-			border-radius: 8px;
-			padding: 8px 38px 8px 16px;
-			font-size: 16px;
-			line-height: 26px;
-			-webkit-appearance: none;
-			width: 100%;
+		background: #ffffff;
+		color: #000;
+		width: 100%;
+		&.active {
+			.select-selected {
+				border: 1px solid #2e60b3;
+			}
+			.form {
+				&__arrow {
+					transform: translatey(-50%) rotate(180deg);
+				}
+			}
 		}
 	}
 	&__arrow {
@@ -749,6 +1055,10 @@ a {
 	&__pass {
 		width: 55px;
 		margin: 0 auto 18px;
+		svg,
+		img {
+			max-width: 100%;
+		}
 	}
 	&__text {
 		font-weight: 600;
@@ -779,7 +1089,6 @@ a {
 		font-size: 16px;
 		line-height: 26px;
 		&_email {
-			text-decoration: underline;
 			display: none;
 			&:hover {
 				text-decoration: underline;
@@ -906,14 +1215,18 @@ a {
 	}
 	&__select {
 		position: relative;
-		select {
-			border: 1px solid #c5d0e3;
-			border-radius: 8px;
-			padding: 8px 38px 8px 16px;
-			font-size: 16px;
-			line-height: 26px;
-			-webkit-appearance: none;
-			width: 100%;
+		background: #ffffff;
+		color: #000;
+		width: 100%;
+		&.active {
+			.select-selected {
+				border: 1px solid #2e60b3;
+			}
+			.popup {
+				&__arrow {
+					transform: translatey(-50%) rotate(180deg);
+				}
+			}
 		}
 	}
 	&__arrow {
@@ -944,13 +1257,83 @@ a {
 		color: #098507;
 	}
 }
+.popup-map {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(29, 34, 41, 0.2);
+	z-index: 6;
+	&.active {
+		display: block;
+	}
+	&__body {
+		min-height: 100%;
+		@include flex-center;
+		padding: 16px;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 380px;
+		margin: 0 auto;
+		background: #ffffff;
+		border: 1px solid #c5d0e3;
+		border-radius: 16px;
+		padding: 20px 18px 40px 0px;
+	}
+
+	&__cross {
+		cursor: pointer;
+		width: 14px;
+		height: 14px;
+		margin: 0 0 0 auto;
+	}
+
+	&__box {
+		padding: 0 22px 0 40px;
+	}
+
+	&__pass {
+		width: 35px;
+		margin: 0 auto 5px;
+		svg {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 14px;
+		text-align: center;
+		color: #098507;
+	}
+}
+
 @include _500 {
+	.selection {
+		background: url("../img/selection.png") 100% / cover no-repeat;
+	}
+	.selection {
+		min-height: 372px;
+	}
 	.cards {
 	}
 	.card {
 		width: 343px;
 	}
+	.team {
+		&__item {
+			width: 312px;
+		}
+	}
 	.introduction {
+		&_special {
+			min-height: 754px;
+		}
 		padding: 32px;
 	}
 	.banner {
@@ -1001,6 +1384,25 @@ a {
 		background: url("../img/intro-bg.png") center/cover no-repeat,
 			linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%);
 		margin: 0 0 32px;
+		&_special {
+			background: url("../img/people-bg.png") right top/ cover no-repeat,
+				linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%),
+				url("../img/people.png") right top / contain no-repeat, #3c7ce6;
+			.introduction {
+				&__content {
+					max-width: 540px;
+				}
+				&__description {
+					max-width: 374px;
+				}
+				&__buttons {
+					flex-direction: row;
+				}
+				&__button {
+					margin: 0 24px 0 0;
+				}
+			}
+		}
 		&__content {
 			@include flex-column;
 			padding: 0 0 48px;
@@ -1024,6 +1426,30 @@ a {
 		}
 		&__box {
 			display: flex;
+		}
+	}
+	.selections {
+		margin: 0 0 72px;
+		display: flex;
+	}
+	.selection {
+		margin: 0 24px 0 0;
+		min-height: 468px;
+		&__title {
+			font-size: 32px;
+			line-height: 100%;
+			margin: 0 0 32px;
+		}
+		&__underline {
+			bottom: -18px;
+			img {
+				width: 249px;
+				height: 25px;
+			}
+		}
+		&__button {
+			max-width: 250px;
+			margin: 0 auto 0 0;
 		}
 	}
 	.description {
@@ -1052,6 +1478,29 @@ a {
 		}
 	}
 	.card {
+	}
+	.team {
+		margin: 0 -24px;
+		&__title {
+			padding: 0 0 0 24px;
+		}
+		& .slick-track {
+			margin: 0 0 32px;
+			left: 24px;
+		}
+		&__item {
+			width: 312px;
+		}
+	}
+	.partners {
+		margin: 0 0 32px;
+		&__content {
+			display: flex;
+		}
+		&__item {
+			padding: 40px 66px;
+			margin: 0 16px 0 0;
+		}
 	}
 	.help {
 		padding: 32px;
@@ -1086,7 +1535,7 @@ a {
 		}
 	}
 	.banner {
-		min-height: auto;
+		min-height: 326px;
 		padding: 48px;
 		&__text {
 			margin: 0 0 16px;
@@ -1102,7 +1551,7 @@ a {
 			flex-shrink: 0;
 		}
 		&__logo {
-			flex: 0 1 22%;
+			flex: 0 1 40%;
 			align-items: flex-start;
 			justify-content: flex-start;
 			margin: 0 0 16px;
@@ -1136,6 +1585,9 @@ a {
 	}
 }
 @include _1024 {
+	.title {
+		margin: 0 0 24px;
+	}
 	.header {
 		&__logo {
 			order: 1;
@@ -1160,7 +1612,7 @@ a {
 		&__menu {
 			@include flex-a-center;
 			padding: 0;
-
+			background: transparent;
 			left: 0;
 			height: auto;
 			overflow-y: visible;
@@ -1179,9 +1631,30 @@ a {
 	.hamburger {
 		display: none;
 	}
+	.selection {
+		margin: 0 24px 0 0;
+		min-height: 426px;
+		&__title {
+			font-size: 40px;
+		}
+		&__button {
+			max-width: 250px;
+			margin: 0 auto 0 0;
+		}
+	}
 	.introduction {
 		padding: 64px 64px 0;
 		margin: 0 0 48px;
+		&_special {
+			background: url("../img/people-bg.png") center/ cover no-repeat,
+				linear-gradient(90deg, #3c7ce6 55.07%, rgba(46, 96, 179, 0) 108.64%),
+				url("../img/people-ibg.png") 100% / contain no-repeat, #3c7ce6;
+			.introduction {
+				&__description {
+					padding: 0;
+				}
+			}
+		}
 		&__content {
 			@include flex-column;
 			padding: 0 0 64px;
@@ -1237,8 +1710,6 @@ a {
 	.card {
 		width: 360px;
 	}
-	.card {
-	}
 	.help {
 		padding: 32px;
 		margin: 0 0 48px;
@@ -1265,6 +1736,9 @@ a {
 			margin: 0 0 0 auto;
 		}
 	}
+	.partners {
+		margin: 0 0 48px;
+	}
 	.banner {
 		display: flex;
 		justify-content: center;
@@ -1290,12 +1764,35 @@ a {
 		}
 	}
 	.form {
+		min-height: 460px;
 		margin: 23px 0;
-		flex: 0 0 360px;
 		display: block;
 	}
 }
 @include _1440 {
+	.selections {
+		flex: 1 1 auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.selection {
+		min-height: 526px;
+		flex-direction: row;
+		&:last-child {
+			.selection {
+				&__text {
+					padding: 0 120px 0 0;
+				}
+			}
+		}
+		&__box {
+			display: flex;
+		}
+	}
+	.title {
+		font-size: 40px;
+		margin: 0 0 32px;
+	}
 	.header {
 		&__flag {
 			margin: 0 12px 0 0;
@@ -1316,6 +1813,14 @@ a {
 	}
 	.introduction {
 		margin: 0 0 64px;
+		&_special {
+			.introduction {
+				&__description {
+					max-width: 458px;
+					padding: 0;
+				}
+			}
+		}
 		&__content {
 			margin: 0 71px 0 0;
 		}
@@ -1343,7 +1848,6 @@ a {
 		&__button {
 			margin: 0 24px 0 0;
 			&:last-child {
-				max-width: 250px;
 				margin: 0;
 			}
 		}
@@ -1356,6 +1860,7 @@ a {
 		}
 		&__content {
 			padding: 40px;
+			flex: 0 0 420px;
 		}
 		&__label {
 			font-size: 24px;
@@ -1385,9 +1890,34 @@ a {
 	.card {
 		width: 100%;
 	}
+	.team {
+		margin: 0 0 64px 0;
+		& .slick-track {
+			left: 0;
+		}
+		&__title {
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0 0 32px;
+			padding: 0;
+		}
+		&__item {
+			margin: 0 24px 0 0;
+		}
+	}
+	.partners {
+		margin: 0 0 88px;
+	}
 	.help {
 		padding: 64px 64px 72px;
 		margin: 0 0 64px;
+		&_special {
+			.help {
+				&__label {
+					max-width: 100%;
+				}
+			}
+		}
 		&__title {
 			font-size: 40px;
 			line-height: 100%;
@@ -1410,12 +1940,16 @@ a {
 		}
 	}
 	.banner {
+		background: url("../img/banner-bg-big.png") 100% / cover no-repeat,
+			linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%),
+			url("../img/banner-big.png") 100% / cover no-repeat;
 		&__title {
 			font-size: 56px;
 			line-height: 100%;
 			margin: 0 0 40px;
 		}
 	}
+
 	.footer {
 		padding: 0 60px;
 		flex-wrap: nowrap;
@@ -1453,9 +1987,74 @@ a {
 	}
 }
 @include _1920 {
+	.title {
+		margin: 0 0 40px;
+	}
 	.description {
 		&__title {
 			margin: 0 0 40px;
 		}
 	}
+}
+/* The container must be positioned relative: */
+.custom-select {
+	cursor: pointer;
+	position: relative;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+	font-size: 16px;
+	line-height: 26px;
+	padding: 8px 38px 8px 16px;
+	border: 1px solid #c5d0e3;
+	border-radius: 8px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div {
+	color: #1d2229;
+	padding: 8px 16px;
+	cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+	position: absolute;
+	background: #ffffff;
+	max-height: 300px;
+	font-size: 16px;
+	line-height: 26px;
+	overflow-y: auto;
+	border: 1px solid #c5d0e3;
+	border-radius: 8px;
+	top: calc(100% + 8px);
+	left: 0;
+	right: 0;
+	z-index: 99;
+	&::-webkit-scrollbar {
+		width: 4px;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 4px;
+		background: #495466;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: #495466;
+	}
+}
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+	color: #3c7ce6;
 }
