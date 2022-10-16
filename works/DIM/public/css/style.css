@@ -461,7 +461,7 @@ a {
 
 .introduction {
   overflow: hidden;
-  background: url("../img/intro-bg.png") center/cover #3c7ce6 no-repeat;
+  background: url("../img/intro-bg.webp") center/cover #3c7ce6 no-repeat;
   background-blend-mode: multiply;
   border-radius: 24px;
   padding: 24px;
@@ -471,7 +471,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 600px;
-    background: url("../img/people-bg.png") center/cover no-repeat, linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%), url("../img/people-small.png") 100%/cover no-repeat, #3c7ce6;
+    background: url("../img/people-bg.webp") center/cover no-repeat, linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%), url("../img/people-small.webp") 100%/cover no-repeat, #3c7ce6;
     background-blend-mode: multiply, normal, normal, normal; }
     .introduction_special .introduction__content {
       flex: 1 1 auto;
@@ -791,7 +791,7 @@ a {
 
 .banner {
   position: relative;
-  background: url("../img/bg-2.png") bottom right no-repeat, linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%), url("../img/bg-1.png") 100%/cover no-repeat;
+  background: url("../img/bg-2.webp") bottom right no-repeat, linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%), url("../img/bg-1.webp") 100%/cover no-repeat;
   background-blend-mode: multiply, normal, normal, normal;
   border-radius: 24px;
   display: flex;
@@ -1176,10 +1176,10 @@ a {
     min-height: 572px;
     overflow: hidden;
     border-radius: 32px;
-    background: url("../img/intro-bg.png") center/cover no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%);
+    background: url("../img/intro-bg.webp") center/cover no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%);
     margin: 0 0 32px; }
     .introduction_special {
-      background: url("../img/people-bg.png") right top/cover no-repeat, linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%), url("../img/people.png") right top/contain no-repeat, #3c7ce6; }
+      background: url("../img/people-bg.webp") right top/cover no-repeat, linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%), url("../img/people.webp") right top/contain no-repeat, #3c7ce6; }
       .introduction_special .introduction__content {
         max-width: 540px; }
       .introduction_special .introduction__description {
@@ -1367,7 +1367,7 @@ a {
     padding: 64px 64px 0;
     margin: 0 0 48px; }
     .introduction_special {
-      background: url("../img/people-bg.png") center/cover no-repeat, linear-gradient(90deg, #3c7ce6 55.07%, rgba(46, 96, 179, 0) 108.64%), url("../img/people-ibg.png") 100%/contain no-repeat, #3c7ce6; }
+      background: url("../img/people-bg.webp") center/cover no-repeat, linear-gradient(90deg, #3c7ce6 55.07%, rgba(46, 96, 179, 0) 108.64%), url("../img/people-ibg.webp") 100%/contain no-repeat, #3c7ce6; }
       .introduction_special .introduction__description {
         padding: 0; }
     .introduction__content {
@@ -1425,7 +1425,7 @@ a {
   .banner {
     display: flex;
     justify-content: center;
-    background: url("../img/bg-2.png") center/100% no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%), url("../img/bg-1.png") 100%/cover no-repeat; }
+    background: url("../img/bg-2.webp") center/100% no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%), url("../img/bg-1.webp") 100%/cover no-repeat; }
     .banner__content {
       margin: 0 48px 0 0; }
     .banner__title {
