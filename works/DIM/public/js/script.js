@@ -17,6 +17,17 @@ $(document).ready(function (e) {
 	});
 
 });
+$('[href^="#banner"]').on('click', function () {
+	let href = $(this).attr('href'), elem = $(document).find(href);
+	if (elem.length > 0) {
+		let posY = elem.eq(0).offset().top;
+		$('html, body').animate({
+			scrollTop: posY
+		}, 1000);
+	}
+	return false;
+});
+
 $(document).mouseup(function (e) {
 	$('.hamburger').click(function () {
 		$('.hamburger,.header__box,.header__menu').toggleClass('active');

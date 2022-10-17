@@ -31,6 +31,28 @@ a {
 	font-size: 24px;
 	margin: 0 0 16px;
 }
+.button {
+	cursor: pointer;
+	width: 100%;
+	@include inline-flex-center;
+	text-align: center;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 12px;
+	padding: 16px 10px;
+	transition: 0.3s ease-in-out;
+
+	&:hover {
+		background: #ffffff;
+		color: #37404d;
+	}
+	&.active {
+		background: #ffffff;
+		color: #37404d;
+	}
+}
 .hamburger {
 	padding: 5px 5px;
 	display: inline-block;
@@ -514,33 +536,15 @@ a {
 	}
 	&__button {
 		margin: 0 0 16px;
+		&_anchor {
+			display: none;
+		}
 		&:last-child {
 			margin: 0;
 		}
 	}
 }
-.button {
-	cursor: pointer;
-	width: 100%;
-	@include inline-flex-center;
-	text-align: center;
-	border: 1px solid #ffffff;
-	color: #ffffff;
-	font-size: 16px;
-	font-weight: 600;
-	border-radius: 12px;
-	padding: 16px 10px;
-	transition: 0.3s ease-in-out;
 
-	&:hover {
-		background: #ffffff;
-		color: #37404d;
-	}
-	&.active {
-		background: #ffffff;
-		color: #37404d;
-	}
-}
 .description {
 	color: #37404d;
 	margin: 0 0 24px;
@@ -1390,7 +1394,7 @@ a {
 		&_special {
 			background: url("../img/people-bg.webp") right top/ cover no-repeat,
 				linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%),
-				url("../img/people.webp") right top / contain no-repeat, #3c7ce6;
+				url("../img/people.png") right top / contain no-repeat, #3c7ce6;
 			.introduction {
 				&__content {
 					max-width: 540px;
@@ -1679,6 +1683,14 @@ a {
 			}
 			&:last-child {
 				margin: 0;
+			}
+		}
+		&__button {
+			&_anchor {
+				display: inline-flex;
+			}
+			&_popup {
+				display: none;
 			}
 		}
 	}
