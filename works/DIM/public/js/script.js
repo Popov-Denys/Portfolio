@@ -1,4 +1,4 @@
-
+const element = document.querySelectorAll("header");
 function removeLoader() {
 	body.classList.add("hidden");
 	setTimeout(() => {
@@ -12,6 +12,7 @@ function removeLoader() {
 $(window).on('beforeunload', function () {
 	$(window).scrollTop(0);
 });
+
 function reveal() {
 	var reveals = document.querySelectorAll(".reveal");
 	window.onscroll = function () {

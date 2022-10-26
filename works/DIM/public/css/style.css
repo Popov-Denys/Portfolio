@@ -128,6 +128,8 @@ body {
   font-family: "Inter", sans-serif; }
   body.lock, body.locked, body.hidden {
     overflow: hidden; }
+  body.hidden .header__link {
+    pointer-events: none; }
 
 a {
   color: #37404d; }
@@ -1610,7 +1612,7 @@ a {
     .banner__icons {
       display: flex; }
   .form {
-    min-height: 468px;
+    min-height: 495px;
     margin: 23px 0;
     display: block; } }
 
