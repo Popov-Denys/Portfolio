@@ -10,7 +10,7 @@
 </head>
 
 <body onload="removeLoader();">
-	<div class="wrapper">
+	<div class="wrapper" id="pageWrapper">
 		<header class="header">
 			<div class="header__container">
 				<a href="main-en.html" class="header__logo">
@@ -263,10 +263,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="description reveal" id="description">
-					<div class="description__title">We help change the world for the better
+				<div class="description" id="description">
+					<div class="description__title label"><span>We</span> <span>help</span> <span>change</span> <span>the
+							world</span> <span>for the better</span>
 					</div>
-					<div class="description__container">
+					<div class="description__container reveal">
 						<div class="description__content">
 							<div class="description__label">Why this service
 								should exist?</div>
@@ -306,10 +307,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="cards reveal" id="cards">
-					<div class="cards__title">How it works
+				<div class="cards " id="cards">
+					<div class="cards__title label"><span>How</span> <span>it</span> <span>works</span>
 					</div>
-					<div class="cards__box cards-slider">
+					<div class="cards__box cards-slider reveal">
 						<div class="card">
 							<div class="card__image"><img src="img/card-o-en.png" alt="website"></div>
 							<div class="card__content">
@@ -356,9 +357,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="help help_special reveal" id="help">
-					<div class="help__title">What can you do using DIM?</div>
-					<div class="help__filters">
+				<div class="help help_special" id="help">
+					<div class="help__title label"><span>What</span> <span>can you do</span> <span>using DIM?</span></div>
+					<div class="help__filters reveal">
 						<div class="help__button active" id="first-button">Report statuses</div>
 						<div class="help__button" id="second-button">View change history</div>
 						<div class="help__button" id="third-button">View user requests</div>
@@ -412,9 +413,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="team reveal" id="team">
-					<div class="team__title title">Meet our team</div>
-					<div class="team__slider">
+				<div class="team" id="team">
+					<div class="team__title title label"><span>Meet our team</span> </div>
+					<div class="team__slider reveal">
 						<div class="team__item">
 							<div class="team__image"><img src="img/Phillip.webp" alt="member"></div>
 							<div class="team__content">
@@ -601,7 +602,7 @@
 					</div>
 				</div>
 				<div class="partners reveal">
-					<div class="partners__title title">Our partners</div>
+					<div class="partners__title title label"><span>Our partners</span> </div>
 					<div class="partners__content">
 						<a href="https://inuits.eu/" class="partners__item"><img src="img/partner.png" alt="inuits">
 							<img src="img/partner-hover.png" alt="inuits">
@@ -612,7 +613,8 @@
 				</div>
 				<div class="banner reveal" id="banner">
 					<div class="banner__content">
-						<div class="banner__title">Become a part of DIM today</div>
+						<div class="banner__title label"><span>Become</span> <span>a part of DIM </span> <span>today</span>
+						</div>
 						<div class="banner__text">Get information about the condition of your home or join the project team.
 							Together with us and other volunteers, help people find out the status of their housing and return
 							home more safely.</div>
@@ -772,7 +774,13 @@
 				</div>
 			</footer>
 		</div>
-
+		<a href="#pageWrapper" class="top"><svg width="15" height="22" viewBox="0 0 15 22" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M6.20703 20.207C6.20703 20.7593 6.65475 21.207 7.20703 21.207C7.75932 21.207 8.20703 20.7593 8.20703 20.207L8.20703 4.62124L12.4999 8.91414C12.8904 9.30466 13.5236 9.30466 13.9141 8.91414C14.3047 8.52361 14.3047 7.89045 13.9141 7.49992L7.91414 1.49992L7.20703 0.792819L6.49992 1.49992L0.499923 7.49993C0.109399 7.89045 0.109399 8.52362 0.499924 8.91414C0.890448 9.30466 1.52361 9.30466 1.91414 8.91414L6.20703 4.62125L6.20703 20.207Z"
+					fill="#2E60B3" />
+			</svg>
+		</a>
 	</div>
 	<div class="popup" id="popup">
 		<div class="popup__body">

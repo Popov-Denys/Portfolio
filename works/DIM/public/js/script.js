@@ -14,7 +14,7 @@ $(window).on('beforeunload', function () {
 });
 
 function reveal() {
-	var reveals = document.querySelectorAll(".reveal");
+	var reveals = document.querySelectorAll(".reveal,.label");
 	window.onscroll = function () {
 		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 			executed = true;
