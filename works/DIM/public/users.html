@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="removeLoader();">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -145,10 +145,10 @@
 					</div> -->
 					<div class="header__box">
 						<ul class="header__menu">
-							<li><a href="#" class="header__link">Про нас</a></li>
-							<li><a href="#" class="header__link">Як це працює</a></li>
-							<li><a href="#" class="header__link">Можливості DIM</a></li>
-							<li><a href="#" class="header__link">Знайомство з командою</a></li>
+							<li><a href="#description" class="header__link anchor">Про нас</a></li>
+							<li><a href="#cards" class="header__link anchor">Як це працює</a></li>
+							<li><a href="#help" class="header__link anchor">Можливості DIM</a></li>
+							<li><a href="#team" class="header__link anchor">Знайомство з командою</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -236,345 +236,606 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<div class="introduction">
-				<div class="introduction__content">
-					<h1 class="introduction__title">Перевіряй статус свого житла будь-де і будь-коли
-					</h1>
-					<div class="introduction__description">Проєкт DIM покликаний надавати власникам житла оперативну і
-						повноцінну інформацію про стан їхніх домівок, незважаючи на відстань та війну.</div>
-					<div class="introduction__phones">
-						<div class="introduction__phone"><img src="img/first-screen.png" alt="phone"></div>
-						<div class="introduction__phone"><img src="img/second-screen.png" alt="phone"></div>
-					</div>
-					<div class="introduction__buttons">
-						<a href="#banner" class="introduction__button introduction__button_anchor button">Отримати тестову
-							версію</a>
-						<a href="#popup" class="introduction__button introduction__button_popup button popup-link">Отримати
-							тестову версію</a>
-						<a href="organizations.html" class="introduction__button button">DIM для органiзацiй</a>
-					</div>
-				</div>
-				<div class="introduction__box">
-					<div class="introduction__smartphones">
-						<div class="introduction__smartphone"><img src="img/first-screen.png" alt="phone"></div>
-						<div class="introduction__smartphone"><img src="img/second-screen.png" alt="phone"></div>
-					</div>
-				</div>
+		<div class="content">
+			<div class="loader" id="loader">
+				<div class="loader__string"></div>
 			</div>
-			<div class="description">
-				<div class="description__title">Допомагаємо перетворювати світ на краще
+			<main class="main">
+				<div class="introduction">
+					<div class="introduction__content">
+						<h1 class="introduction__title">Перевіряй статус свого житла будь-де і будь-коли
+						</h1>
+						<div class="introduction__description">Проєкт DIM покликаний надавати власникам житла оперативну і
+							повноцінну інформацію про стан їхніх домівок, незважаючи на відстань та війну.</div>
+						<div class="introduction__phones">
+							<div class="introduction__phone"><img src="img/first-screen.png" alt="phone"></div>
+							<div class="introduction__phone"><img src="img/second-screen.png" alt="phone"></div>
+						</div>
+						<div class="introduction__buttons">
+							<a href="#banner" class="introduction__button introduction__button_anchor anchor button">Отримати
+								тестову
+								версію</a>
+							<a href="#popup" class="introduction__button introduction__button_popup button popup-link">Отримати
+								тестову версію</a>
+							<a href="organizations.html" class="introduction__button button">DIM для органiзацiй</a>
+						</div>
+					</div>
+					<div class="introduction__box">
+						<div class="introduction__smartphones">
+							<div class="introduction__smartphone"><img src="img/first-screen.png" alt="phone"></div>
+							<div class="introduction__smartphone"><img src="img/second-screen.png" alt="phone"></div>
+						</div>
+					</div>
 				</div>
-				<div class="description__container">
-					<div class="description__content">
-						<div class="description__label">Чому цей сервіс має існувати?</div>
-						<div class="description__text">
-							<p>Чому цей сервіс має існувати?
-								Мільйони людей через війну в Україні були вимушені покинути свої домівки та вирушити далеко від
-								рідного міста чи країни.</p>
+				<div class="description reveal" id="description">
+					<div class="description__title">Допомагаємо перетворювати світ на краще
+					</div>
+					<div class="description__container">
+						<div class="description__content">
+							<div class="description__label">Чому цей сервіс має існувати?</div>
+							<div class="description__text">
+								<p>
+									Мільйони людей через війну в Україні були вимушені покинути свої домівки та вирушити далеко
+									від
+									рідного міста чи країни.</p>
 
-							<p> Рішення про повернення додому часто стає ризикованим, адже стан будинку можна побачити тільки
-								самостійно повернувшися до оселі.</p>
+								<p> Рішення про повернення додому часто стає ризикованим, адже стан будинку можна побачити
+									тільки
+									самостійно повернувшися до оселі.</p>
 
-							<p>Саме тому ми вирішили збирати дані про стан будинків на територіях, що постраждали від воєнних
-								дій,
-								аби кожен власник житла знав стан власної оселі та міг перевіряти оновлені статуси.</p>
-						</div>
-					</div>
-					<div class="description__box">
-						<div class="description__messages">
-							<div class="description__message description__message_small"> <img src="img/messages-small.png"
-									alt="messages"></div>
-							<div class="description__message"> <img src="img/messages.webp" alt="messages"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="cards">
-				<div class="cards__title">Як це працює
-				</div>
-				<div class="cards__box cards-slider">
-					<div class="card">
-						<div class="card__image"><img src="img/card.png" alt="website"></div>
-						<div class="card__content">
-							<div class="card__title">Впиши адресу, за якою
-								бажаєш перевірити стан оселі</div>
-							<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
+								<p>Саме тому ми вирішили збирати дані про стан будинків на територіях, що постраждали від
+									воєнних
+									дій,
+									аби кожен власник житла знав стан власної оселі та міг перевіряти оновлені статуси.</p>
 							</div>
-							<div class="card__number">01</div>
 						</div>
-					</div>
-					<div class="card">
-						<div class="card__image"><img src="img/card-2.png" alt="website"></div>
-						<div class="card__content">
-							<div class="card__title">Впиши адресу, за якою
-								бажаєш перевірити стан оселі</div>
-							<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
-							</div>
-							<div class="card__number">02</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card__image"><img src="img/card-3.png" alt="website"></div>
-						<div class="card__content">
-							<div class="card__title">Впиши адресу, за якою
-								бажаєш перевірити стан оселі</div>
-							<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
-							</div>
-							<div class="card__number">03</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="help">
-				<div class="help__title">Як DIM може тобі допомогти?</div>
-				<div class="help__filters">
-					<div class="help__button">Відшукати свою адресу</div>
-					<div class="help__button active">Подивитися статус оселі</div>
-					<div class="help__button">Подивитися історію змін</div>
-					<div class="help__button popup-map-activator">Надіслати інформаційний запит</div>
-				</div>
-				<div class="help__container">
-					<div class="help__map">
-						<img src="img/map.webp" alt="map">
-						<div class="popup-map" id="popup-map">
-							<div class="popup-map__body">
-								<div class="popup-map__content">
-									<div class="popup-map__cross"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-											xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M13.3646 2.05C13.7551 1.65948 13.7551 1.02631 13.3646 0.635789C12.974 0.245264 12.3409 0.245264 11.9504 0.635789L7.00064 5.5855L2.05094 0.635789C1.66041 0.245264 1.02725 0.245264 0.636724 0.635789C0.246199 1.02631 0.246199 1.65948 0.636724 2.05L5.58643 6.99971L0.636643 11.9495C0.246119 12.34 0.246119 12.9732 0.636643 13.3637C1.02717 13.7542 1.66033 13.7542 2.05086 13.3637L7.00064 8.41392L11.9504 13.3637C12.341 13.7542 12.9741 13.7542 13.3646 13.3637C13.7552 12.9732 13.7552 12.34 13.3646 11.9495L8.41486 6.99971L13.3646 2.05Z"
-												fill="#1D2229" />
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M13.3646 2.05C13.7551 1.65948 13.7551 1.02631 13.3646 0.635789C12.974 0.245264 12.3409 0.245264 11.9504 0.635789L7.00064 5.5855L2.05094 0.635789C1.66041 0.245264 1.02725 0.245264 0.636724 0.635789C0.246199 1.02631 0.246199 1.65948 0.636724 2.05L5.58643 6.99971L0.636643 11.9495C0.246119 12.34 0.246119 12.9732 0.636643 13.3637C1.02717 13.7542 1.66033 13.7542 2.05086 13.3637L7.00064 8.41392L11.9504 13.3637C12.341 13.7542 12.9741 13.7542 13.3646 13.3637C13.7552 12.9732 13.7552 12.34 13.3646 11.9495L8.41486 6.99971L13.3646 2.05Z"
-												fill="black" fill-opacity="0.2" />
-										</svg>
+						<div class="description__box">
+
+							<div class="description__messages">
+								<div class="description__bubbles">
+									<div class="description__bubble ">
+
+										<img class="float" src="img/first-message.png" alt="">
+
 									</div>
-									<div class="popup-map__box">
-										<div class="popup-map__pass"><svg width="55" height="56" viewBox="0 0 55 56" fill="none"
+									<div class="description__bubble"><img class="float1" src="img/second-message.png" alt="">
+									</div>
+									<div class="description__bubble"><img class="float" src="img/third-message.png" alt="">
+									</div>
+									<div class="description__bubble"><img class="float" src="img/fourth-message.png" alt="">
+									</div>
+									<div class="description__bubble"><img class="float1" src="img/fifth-message.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cards reveal" id="cards">
+					<div class="cards__title">Як це працює
+					</div>
+					<div class="cards__box cards-slider">
+						<div class="card">
+							<div class="card__image"><img src="img/card.png" alt="website"></div>
+							<div class="card__content">
+								<div class="card__title">Впиши адресу, за якою
+									бажаєш перевірити стан оселі</div>
+								<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
+								</div>
+								<div class="card__number">01</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__image"><img src="img/card-2.png" alt="website"></div>
+							<div class="card__content">
+								<div class="card__title">Впиши адресу, за якою
+									бажаєш перевірити стан оселі</div>
+								<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
+								</div>
+								<div class="card__number">02</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card__image"><img src="img/card-3.png" alt="website"></div>
+							<div class="card__content">
+								<div class="card__title">Впиши адресу, за якою
+									бажаєш перевірити стан оселі</div>
+								<div class="card__text">Це просто та швидко, як 1-2-3. Перевiряй стан адреси коли забажаешь.
+								</div>
+								<div class="card__number">03</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help reveal" id="help">
+					<div class="help__title">Як DIM може тобі допомогти?</div>
+					<div class="help__filters">
+						<div class="help__button active" id="first-button">Відшукати свою адресу</div>
+						<div class="help__button" id="second-button">Подивитися статус оселі за адресою</div>
+						<div class="help__button" id="third-button">Подивитися історію змін</div>
+						<div class="help__button" id="fourth-button">Надіслати інформаційний запит</div>
+					</div>
+					<div class="help__container active" id="first">
+						<div class="help__map">
+							<img src="img/map-org.png" alt="map">
+						</div>
+						<div class="help__content">
+							<div class="help__box">
+								<div class="help__label">Відшукати
+									свою адресу</div>
+								<div class="help__text">
+									<p>Вкажи свою адресу – місто, село чи селище, вулицю, номер будинку, та перевір правильність
+										на
+										мапі.</p>
+								</div>
+							</div>
+							<div class="help__info"><img src="img/info.png" alt="info"></div>
+						</div>
+					</div>
+					<div class="help__container" id="second">
+						<div class="help__map">
+							<img src="img/status-org.png" alt="map">
+						</div>
+						<div class="help__content">
+							<div class="help__box">
+								<div class="help__label">Подивитися статус
+									оселі за адресою</div>
+								<div class="help__text">
+									<p>Тут ти можеш бачити інформацію про свій будинок та місцевість навколо, стан електро-,
+										водо- і
+										газопостачання, працюючі лікарні поблизу, тощо. </p>
+									<p>Цю інформацію ретельно перевірив волонтер однієї з наших партнерських організацій. </p>
+								</div>
+							</div>
+							<div class="help__info"><img src="img/info.png" alt="info"></div>
+						</div>
+					</div>
+					<div class="help__container" id="third">
+						<div class="help__map">
+							<img src="img/history-org.png" alt="map">
+						</div>
+						<div class="help__content">
+							<div class="help__box">
+								<div class="help__label">Подивитися історію змін </div>
+								<div class="help__text">
+									<p>Тут ти можеш відстежувати, як змінювався статус житла та прибудинкової території. Що було
+										знищено, а що вже відновлено, і коли це сталося.</p>
+								</div>
+							</div>
+							<div class="help__info"><img src="img/info.png" alt="info"></div>
+						</div>
+					</div>
+					<div class="help__container" id="fourth">
+						<div class="help__map">
+							<img src="img/request-org.png" alt="map">
+							<!-- <div class="popup-map" id="popup-map">
+								<div class="popup-map__body">
+									<div class="popup-map__content">
+										<div class="popup-map__cross"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd" clip-rule="evenodd"
-													d="M0 28C0 12.8122 12.3122 0.5 27.5 0.5C42.6878 0.5 55 12.8122 55 28C55 43.1878 42.6878 55.5 27.5 55.5C12.3122 55.5 0 43.1878 0 28ZM27.5 5.5C15.0736 5.5 5 15.5736 5 28C5 40.4264 15.0736 50.5 27.5 50.5C39.9264 50.5 50 40.4264 50 28C50 15.5736 39.9264 5.5 27.5 5.5ZM41.7678 18.7322C42.7441 19.7085 42.7441 21.2915 41.7678 22.2678L24.2678 39.7678C23.2915 40.7441 21.7085 40.7441 20.7322 39.7678L13.2322 32.2678C12.2559 31.2915 12.2559 29.7085 13.2322 28.7322C14.2085 27.7559 15.7915 27.7559 16.7678 28.7322L22.5 34.4645L38.2322 18.7322C39.2085 17.7559 40.7915 17.7559 41.7678 18.7322Z"
-													fill="#098507" />
+													d="M13.3646 2.05C13.7551 1.65948 13.7551 1.02631 13.3646 0.635789C12.974 0.245264 12.3409 0.245264 11.9504 0.635789L7.00064 5.5855L2.05094 0.635789C1.66041 0.245264 1.02725 0.245264 0.636724 0.635789C0.246199 1.02631 0.246199 1.65948 0.636724 2.05L5.58643 6.99971L0.636643 11.9495C0.246119 12.34 0.246119 12.9732 0.636643 13.3637C1.02717 13.7542 1.66033 13.7542 2.05086 13.3637L7.00064 8.41392L11.9504 13.3637C12.341 13.7542 12.9741 13.7542 13.3646 13.3637C13.7552 12.9732 13.7552 12.34 13.3646 11.9495L8.41486 6.99971L13.3646 2.05Z"
+													fill="#1D2229" />
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M13.3646 2.05C13.7551 1.65948 13.7551 1.02631 13.3646 0.635789C12.974 0.245264 12.3409 0.245264 11.9504 0.635789L7.00064 5.5855L2.05094 0.635789C1.66041 0.245264 1.02725 0.245264 0.636724 0.635789C0.246199 1.02631 0.246199 1.65948 0.636724 2.05L5.58643 6.99971L0.636643 11.9495C0.246119 12.34 0.246119 12.9732 0.636643 13.3637C1.02717 13.7542 1.66033 13.7542 2.05086 13.3637L7.00064 8.41392L11.9504 13.3637C12.341 13.7542 12.9741 13.7542 13.3646 13.3637C13.7552 12.9732 13.7552 12.34 13.3646 11.9495L8.41486 6.99971L13.3646 2.05Z"
+													fill="black" fill-opacity="0.2" />
 											</svg>
 										</div>
-										<div class="popup-map__text">
-											Ваш запит відправлено! Ви отримаєте сповіщення, коли ми матимемо інформацію про вашу
-											адресу!
+										<div class="popup-map__box">
+											<div class="popup-map__pass"><svg width="55" height="56" viewBox="0 0 55 56" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M0 28C0 12.8122 12.3122 0.5 27.5 0.5C42.6878 0.5 55 12.8122 55 28C55 43.1878 42.6878 55.5 27.5 55.5C12.3122 55.5 0 43.1878 0 28ZM27.5 5.5C15.0736 5.5 5 15.5736 5 28C5 40.4264 15.0736 50.5 27.5 50.5C39.9264 50.5 50 40.4264 50 28C50 15.5736 39.9264 5.5 27.5 5.5ZM41.7678 18.7322C42.7441 19.7085 42.7441 21.2915 41.7678 22.2678L24.2678 39.7678C23.2915 40.7441 21.7085 40.7441 20.7322 39.7678L13.2322 32.2678C12.2559 31.2915 12.2559 29.7085 13.2322 28.7322C14.2085 27.7559 15.7915 27.7559 16.7678 28.7322L22.5 34.4645L38.2322 18.7322C39.2085 17.7559 40.7915 17.7559 41.7678 18.7322Z"
+														fill="#098507" />
+												</svg>
+											</div>
+											<div class="popup-map__text">
+												Ваш запит відправлено! Ви отримаєте сповіщення, коли ми матимемо інформацію про вашу
+												адресу!
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
-					</div>
-					<div class="help__content">
-						<div class="help__box">
-							<div class="help__label">Подивитися статус оселі </div>
-							<div class="help__text">
-								<p>Тут ти можеш бачити інформацію про свій будинок та місцевість навколо, стан електро-, водо- і
-									газопостачання, працюючі лікарні поблизу, тощо. </p>
-								<p>Цю інформацію ретельно перевірив волонтер однієї з наших партнерських організацій.</p>
-							</div>
-						</div>
-						<div class="help__info"><img src="img/info.png" alt="info"></div>
-					</div>
-				</div>
-			</div>
-			<div class="banner" id="banner">
-				<div class="banner__content">
-					<div class="banner__title">Спробуй DIM одразу після фінальної готовності сервісу</div>
-					<div class="banner__text">Наразі ми активно працюємо над розробкою цього сервісу. Заповни цю форму, і ми
-						надішлемо тобі сервіс одразу, як тільки він буде повністю готовий. Користування сервісом абсолютно
-						безкоштовне.</div>
-					<a href="#popup" class="banner__button button popup-link">Отримати тестову версію</a>
-					<div class="banner__icons">
-						<a href="#" class="banner__icon"><svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M25.8333 2.96918C24.8847 3.39815 23.8785 3.67972 22.8482 3.80454C23.9214 3.14797 24.7454 2.10827 25.1334 0.869486C24.1132 1.48745 22.997 1.92285 21.833 2.15686C20.8849 1.12585 19.5342 0.481506 18.0393 0.481506C15.1689 0.481506 12.8417 2.85686 12.8417 5.78656C12.8417 6.20242 12.8877 6.60726 12.9763 6.99565C8.65674 6.77434 4.82705 4.66232 2.26354 1.45262C1.81624 2.23615 1.55994 3.14757 1.55994 4.11969C1.55994 5.9603 2.47758 7.58403 3.8721 8.53545C3.04674 8.50906 2.23954 8.28152 1.51789 7.87181C1.51759 7.89403 1.51759 7.91626 1.51759 7.93858C1.51759 10.509 3.30913 12.6532 5.6867 13.1406C4.92135 13.3531 4.11854 13.3842 3.33961 13.2315C4.00095 15.3392 5.92044 16.8729 8.1947 16.9159C6.41593 18.3387 4.17482 19.1869 1.73985 19.1869C1.32027 19.1869 0.90662 19.1617 0.5 19.1127C2.80009 20.618 5.53203 21.4963 8.46714 21.4963C18.0272 21.4963 23.2549 13.4123 23.2549 6.40181C23.2549 6.17171 23.2499 5.94292 23.2398 5.71545C24.2574 4.96462 25.1356 4.03465 25.8333 2.96918Z"
-									fill="#ffffff" />
-							</svg>
-						</a>
-						<a href="#" class="banner__icon"><svg width="13" height="24" viewBox="0 0 13 24" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M3.50545 23.8333V13.041H0.380859V9.15531H3.50545V5.83639C3.50545 3.22835 5.35116 0.833313 9.60406 0.833313C11.326 0.833313 12.5993 0.984078 12.5993 0.984078L12.4989 4.6127C12.4989 4.6127 11.2004 4.60115 9.78336 4.60115C8.2497 4.60115 8.00399 5.24664 8.00399 6.31801V9.15531H12.6209L12.42 13.041H8.00399V23.8333H3.50545Z"
-									fill="#ffffff" />
-							</svg>
-						</a>
-						<a href="#" class="banner__icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M11.5006 8.18161C9.39794 8.18161 7.68204 9.89751 7.68204 12.0001C7.68204 14.1028 9.39794 15.8187 11.5006 15.8187C13.6032 15.8187 15.3191 14.1028 15.3191 12.0001C15.3191 9.89751 13.6032 8.18161 11.5006 8.18161ZM22.9533 12.0001C22.9533 10.4189 22.9676 8.85193 22.8788 7.27353C22.79 5.44018 22.3718 3.81308 21.0311 2.47244C19.6876 1.12894 18.0634 0.713573 16.23 0.62477C14.6488 0.535967 13.0818 0.550291 11.5034 0.550291C9.92217 0.550291 8.35523 0.535967 6.77683 0.62477C4.94348 0.713573 3.31638 1.13181 1.97574 2.47244C0.632238 3.81595 0.216869 5.44018 0.128066 7.27353C0.0392633 8.85479 0.0535864 10.4217 0.0535864 12.0001C0.0535864 13.5785 0.0392633 15.1483 0.128066 16.7267C0.216869 18.5601 0.635102 20.1872 1.97574 21.5278C3.31924 22.8713 4.94348 23.2867 6.77683 23.3755C8.35809 23.4643 9.92503 23.45 11.5034 23.45C13.0847 23.45 14.6516 23.4643 16.23 23.3755C18.0634 23.2867 19.6905 22.8685 21.0311 21.5278C22.3746 20.1843 22.79 18.5601 22.8788 16.7267C22.9705 15.1483 22.9533 13.5814 22.9533 12.0001ZM11.5006 17.8754C8.24923 17.8754 5.62525 15.2515 5.62525 12.0001C5.62525 8.7488 8.24923 6.12482 11.5006 6.12482C14.7519 6.12482 17.3759 8.7488 17.3759 12.0001C17.3759 15.2515 14.7519 17.8754 11.5006 17.8754ZM17.6165 7.25634C16.8574 7.25634 16.2444 6.64331 16.2444 5.88419C16.2444 5.12507 16.8574 4.51205 17.6165 4.51205C18.3756 4.51205 18.9887 5.12507 18.9887 5.88419C18.9889 6.06445 18.9535 6.24298 18.8847 6.40956C18.8158 6.57614 18.7147 6.72749 18.5873 6.85495C18.4598 6.98241 18.3085 7.08348 18.1419 7.15235C17.9753 7.22123 17.7968 7.25657 17.6165 7.25634Z"
-									fill="#ffffff" />
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="form">
-					<div class="form__body">
-						<div class="form__content">
-							<div class="form__box">
-								<h2 class="form__title">
-									Запит на тестову версію
-								</h2>
-								<div class="form__success">
-									<svg width="55" height="56" viewBox="0 0 55 56" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M0 28C0 12.8122 12.3122 0.5 27.5 0.5C42.6878 0.5 55 12.8122 55 28C55 43.1878 42.6878 55.5 27.5 55.5C12.3122 55.5 0 43.1878 0 28ZM27.5 5.5C15.0736 5.5 5 15.5736 5 28C5 40.4264 15.0736 50.5 27.5 50.5C39.9264 50.5 50 40.4264 50 28C50 15.5736 39.9264 5.5 27.5 5.5ZM41.7678 18.7322C42.7441 19.7085 42.7441 21.2915 41.7678 22.2678L24.2678 39.7678C23.2915 40.7441 21.7085 40.7441 20.7322 39.7678L13.2322 32.2678C12.2559 31.2915 12.2559 29.7085 13.2322 28.7322C14.2085 27.7559 15.7915 27.7559 16.7678 28.7322L22.5 34.4645L38.2322 18.7322C39.2085 17.7559 40.7915 17.7559 41.7678 18.7322Z"
-											fill="#098507" />
-									</svg>
-									<span>Тестову версію відправлено на твій імейл!</span>
+						<div class="help__content">
+							<div class="help__box">
+								<div class="help__label">Надіслати
+									інформаційний запит</div>
+								<div class="help__text">
+									<p>Вкажи свою адресу – місто, село чи селище, вулицю, номер будинку, та перевір правильність
+										на
+										мапі.</p>
 								</div>
-								<form action="#" class="form__form">
-									<div class="form__inputs">
-										<div class="form__item">
-											<div class="form__label">Твоє ім’я</div>
-											<div class="form__input">
-												<input required type="text" placeholder="Iм’я">
+							</div>
+							<div class="help__info"><img src="img/info.png" alt="info"></div>
+						</div>
+					</div>
+				</div>
+				<div class="team reveal" id="team">
+					<div class="team__title title">Знайомся з командою</div>
+					<div class="team__slider">
+						<div class="team__item">
+							<div class="team__image"><img src="img/Phillip.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Філіп Коши</div>
+									<div class="team__position">Technical Founder</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_396_6106)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H11.2857V9.43333H1V1.5Z"
+												fill="#1A47B8" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M11.2857 1.5V2.63333H25V1.5H11.2857ZM11.2857 3.76667V4.9H25V3.76667H11.2857ZM11.2857 6.03333V7.16667H25V6.03333H11.2857ZM11.2857 8.3V9.43333H25V8.3H11.2857ZM1 10.5667V11.7H25V10.5667H1ZM1 12.8333V13.9667H25V12.8333H1ZM1 15.1V16.2333H25V15.1H1ZM1 17.3667V18.5H25V17.3667H1Z"
+												fill="#F93939" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M2.14258 2.6333V3.76663H3.28544V2.6333H2.14258ZM4.42829 2.6333V3.76663H5.57115V2.6333H4.42829ZM6.71401 2.6333V3.76663H7.85686V2.6333H6.71401ZM8.99972 2.6333V3.76663H10.1426V2.6333H8.99972ZM7.85686 3.76663V4.89997H8.99972V3.76663H7.85686ZM5.57115 3.76663V4.89997H6.71401V3.76663H5.57115ZM3.28544 3.76663V4.89997H4.42829V3.76663H3.28544ZM2.14258 4.89997V6.0333H3.28544V4.89997H2.14258ZM4.42829 4.89997V6.0333H5.57115V4.89997H4.42829ZM6.71401 4.89997V6.0333H7.85686V4.89997H6.71401ZM8.99972 4.89997V6.0333H10.1426V4.89997H8.99972ZM2.14258 7.16663V8.29997H3.28544V7.16663H2.14258ZM4.42829 7.16663V8.29997H5.57115V7.16663H4.42829ZM6.71401 7.16663V8.29997H7.85686V7.16663H6.71401ZM8.99972 7.16663V8.29997H10.1426V7.16663H8.99972ZM7.85686 6.0333V7.16663H8.99972V6.0333H7.85686ZM5.57115 6.0333V7.16663H6.71401V6.0333H5.57115ZM3.28544 6.0333V7.16663H4.42829V6.0333H3.28544Z"
+												fill="white" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#3C7CE6" />
+										<defs>
+											<clipPath id="clip0_396_6106">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/Nastya.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Анастасiя Коваленко</div>
+									<div class="team__position">UX/UX Designer</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/Vlad.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Влад Береговий</div>
+									<div class="team__position">Co-founder</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/vadim.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Вадим Усачов</div>
+									<div class="team__position">UI/UX Designer</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/Danil.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Даніл Сергієнко </div>
+									<div class="team__position">Graphic Designer</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/Sasha.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Олександр Еткін </div>
+									<div class="team__position">Back-end developer</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__image"><img src="img/Ivan.webp" alt="member"></div>
+							<div class="team__content">
+								<div class="team__text">
+									<div class="team__name">Іван Штифурко</div>
+									<div class="team__position">Front-end developer</div>
+								</div>
+								<div class="team__country"><svg width="26" height="20" viewBox="0 0 26 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_333_1773)">
+											<rect x="1" y="1.5" width="24" height="17" rx="3" fill="#FFDA2C" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H25V10.5667H1V1.5Z"
+												fill="#3A99FF" />
+										</g>
+										<rect x="0.5" y="1" width="25" height="18" rx="3.5" stroke="#C5D0E3" />
+										<defs>
+											<clipPath id="clip0_333_1773">
+												<rect x="1" y="1.5" width="24" height="17" rx="3" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner reveal" id="banner">
+					<div class="banner__content">
+						<div class="banner__title">Спробуй DIM одразу після фінальної готовності сервісу</div>
+						<div class="banner__text">Наразі ми активно працюємо над розробкою цього сервісу. Заповни цю форму, і
+							ми
+							надішлемо тобі сервіс одразу, як тільки він буде повністю готовий. Користування сервісом абсолютно
+							безкоштовне.</div>
+						<a href="#popup" class="banner__button button popup-link">Отримати тестову версію</a>
+						<div class="banner__icons">
+							<a href="#" class="banner__icon"><svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M25.8333 2.96918C24.8847 3.39815 23.8785 3.67972 22.8482 3.80454C23.9214 3.14797 24.7454 2.10827 25.1334 0.869486C24.1132 1.48745 22.997 1.92285 21.833 2.15686C20.8849 1.12585 19.5342 0.481506 18.0393 0.481506C15.1689 0.481506 12.8417 2.85686 12.8417 5.78656C12.8417 6.20242 12.8877 6.60726 12.9763 6.99565C8.65674 6.77434 4.82705 4.66232 2.26354 1.45262C1.81624 2.23615 1.55994 3.14757 1.55994 4.11969C1.55994 5.9603 2.47758 7.58403 3.8721 8.53545C3.04674 8.50906 2.23954 8.28152 1.51789 7.87181C1.51759 7.89403 1.51759 7.91626 1.51759 7.93858C1.51759 10.509 3.30913 12.6532 5.6867 13.1406C4.92135 13.3531 4.11854 13.3842 3.33961 13.2315C4.00095 15.3392 5.92044 16.8729 8.1947 16.9159C6.41593 18.3387 4.17482 19.1869 1.73985 19.1869C1.32027 19.1869 0.90662 19.1617 0.5 19.1127C2.80009 20.618 5.53203 21.4963 8.46714 21.4963C18.0272 21.4963 23.2549 13.4123 23.2549 6.40181C23.2549 6.17171 23.2499 5.94292 23.2398 5.71545C24.2574 4.96462 25.1356 4.03465 25.8333 2.96918Z"
+										fill="#ffffff" />
+								</svg>
+							</a>
+							<a href="#" class="banner__icon"><svg width="13" height="24" viewBox="0 0 13 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M3.50545 23.8333V13.041H0.380859V9.15531H3.50545V5.83639C3.50545 3.22835 5.35116 0.833313 9.60406 0.833313C11.326 0.833313 12.5993 0.984078 12.5993 0.984078L12.4989 4.6127C12.4989 4.6127 11.2004 4.60115 9.78336 4.60115C8.2497 4.60115 8.00399 5.24664 8.00399 6.31801V9.15531H12.6209L12.42 13.041H8.00399V23.8333H3.50545Z"
+										fill="#ffffff" />
+								</svg>
+							</a>
+							<a href="#" class="banner__icon"><svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.5006 8.18161C9.39794 8.18161 7.68204 9.89751 7.68204 12.0001C7.68204 14.1028 9.39794 15.8187 11.5006 15.8187C13.6032 15.8187 15.3191 14.1028 15.3191 12.0001C15.3191 9.89751 13.6032 8.18161 11.5006 8.18161ZM22.9533 12.0001C22.9533 10.4189 22.9676 8.85193 22.8788 7.27353C22.79 5.44018 22.3718 3.81308 21.0311 2.47244C19.6876 1.12894 18.0634 0.713573 16.23 0.62477C14.6488 0.535967 13.0818 0.550291 11.5034 0.550291C9.92217 0.550291 8.35523 0.535967 6.77683 0.62477C4.94348 0.713573 3.31638 1.13181 1.97574 2.47244C0.632238 3.81595 0.216869 5.44018 0.128066 7.27353C0.0392633 8.85479 0.0535864 10.4217 0.0535864 12.0001C0.0535864 13.5785 0.0392633 15.1483 0.128066 16.7267C0.216869 18.5601 0.635102 20.1872 1.97574 21.5278C3.31924 22.8713 4.94348 23.2867 6.77683 23.3755C8.35809 23.4643 9.92503 23.45 11.5034 23.45C13.0847 23.45 14.6516 23.4643 16.23 23.3755C18.0634 23.2867 19.6905 22.8685 21.0311 21.5278C22.3746 20.1843 22.79 18.5601 22.8788 16.7267C22.9705 15.1483 22.9533 13.5814 22.9533 12.0001ZM11.5006 17.8754C8.24923 17.8754 5.62525 15.2515 5.62525 12.0001C5.62525 8.7488 8.24923 6.12482 11.5006 6.12482C14.7519 6.12482 17.3759 8.7488 17.3759 12.0001C17.3759 15.2515 14.7519 17.8754 11.5006 17.8754ZM17.6165 7.25634C16.8574 7.25634 16.2444 6.64331 16.2444 5.88419C16.2444 5.12507 16.8574 4.51205 17.6165 4.51205C18.3756 4.51205 18.9887 5.12507 18.9887 5.88419C18.9889 6.06445 18.9535 6.24298 18.8847 6.40956C18.8158 6.57614 18.7147 6.72749 18.5873 6.85495C18.4598 6.98241 18.3085 7.08348 18.1419 7.15235C17.9753 7.22123 17.7968 7.25657 17.6165 7.25634Z"
+										fill="#ffffff" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="form">
+						<div class="form__body">
+							<div class="form__content">
+								<div class="form__box">
+									<h2 class="form__title">
+										Запит на тестову версію
+									</h2>
+									<div class="form__success">
+										<svg width="55" height="56" viewBox="0 0 55 56" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M0 28C0 12.8122 12.3122 0.5 27.5 0.5C42.6878 0.5 55 12.8122 55 28C55 43.1878 42.6878 55.5 27.5 55.5C12.3122 55.5 0 43.1878 0 28ZM27.5 5.5C15.0736 5.5 5 15.5736 5 28C5 40.4264 15.0736 50.5 27.5 50.5C39.9264 50.5 50 40.4264 50 28C50 15.5736 39.9264 5.5 27.5 5.5ZM41.7678 18.7322C42.7441 19.7085 42.7441 21.2915 41.7678 22.2678L24.2678 39.7678C23.2915 40.7441 21.7085 40.7441 20.7322 39.7678L13.2322 32.2678C12.2559 31.2915 12.2559 29.7085 13.2322 28.7322C14.2085 27.7559 15.7915 27.7559 16.7678 28.7322L22.5 34.4645L38.2322 18.7322C39.2085 17.7559 40.7915 17.7559 41.7678 18.7322Z"
+												fill="#098507" />
+										</svg>
+										<span>Тестову версію відправлено на твій імейл!</span>
+									</div>
+									<form action="#" class="form__form">
+										<div class="form__inputs">
+											<div class="form__item">
+												<div class="form__label">Твоє ім’я</div>
+												<div class="form__input">
+													<input required type="text" placeholder="Iм’я">
+												</div>
 											</div>
-										</div>
-										<div class="form__item">
-											<div class="form__select custom-select">
-												<select>
-													<option value="0">Регіон</option>
-													<option value="1">м. Київ</option>
-													<option value="2">Донецька область</option>
-													<option value="3">Дніпропетровська область</option>
-													<option value="4">Харківська область</option>
-													<option value="5">Київська область</option>
-													<option value="6">Одеська область</option>
-													<option value="7">Львівська область</option>
-													<option value="8">Луганська область</option>
-													<option value="9">Полтавська область</option>
-													<option value="10">Запорізька область</option>
-													<option value="11">Вінницька область</option>
-													<option value="12">Івано-Франківська область</option>
-													<option value="13">Черкаська область</option>
-													<option value="14">Миколаївська область</option>
-													<option value="15">Хмельницька область</option>
-													<option value="16">Сумська область</option>
-													<option value="17">Житомирська область</option>
-													<option value="18">Чернігівська область</option>
-													<option value="19">Кіровоградська область</option>
-													<option value="20">Рівненська область</option>
-													<option value="21">Закарпатська область</option>
-													<option value="22">Волинська область</option>
-													<option value="23">Херсонська область</option>
-													<option value="24">Тернопільська область</option>
-													<option value="25">Чернівецька область</option>
-												</select>
-												<div class="form__arrow"><svg width="14" height="9" viewBox="0 0 14 9" fill="none"
-														xmlns="http://www.w3.org/2000/svg">
-														<path fill-rule="evenodd" clip-rule="evenodd"
-															d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7 8.41421L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
-															fill="#64748C" />
-													</svg>
+											<div class="form__item">
+												<div class="form__select custom-select">
+													<select>
+														<option value="0">Регіон</option>
+														<option value="1">м. Київ</option>
+														<option value="2">Донецька область</option>
+														<option value="3">Дніпропетровська область</option>
+														<option value="4">Харківська область</option>
+														<option value="5">Київська область</option>
+														<option value="6">Одеська область</option>
+														<option value="7">Львівська область</option>
+														<option value="8">Луганська область</option>
+														<option value="9">Полтавська область</option>
+														<option value="10">Запорізька область</option>
+														<option value="11">Вінницька область</option>
+														<option value="12">Івано-Франківська область</option>
+														<option value="13">Черкаська область</option>
+														<option value="14">Миколаївська область</option>
+														<option value="15">Хмельницька область</option>
+														<option value="16">Сумська область</option>
+														<option value="17">Житомирська область</option>
+														<option value="18">Чернігівська область</option>
+														<option value="19">Кіровоградська область</option>
+														<option value="20">Рівненська область</option>
+														<option value="21">Закарпатська область</option>
+														<option value="22">Волинська область</option>
+														<option value="23">Херсонська область</option>
+														<option value="24">Тернопільська область</option>
+														<option value="25">Чернівецька область</option>
+													</select>
+													<div class="form__arrow"><svg width="14" height="9" viewBox="0 0 14 9"
+															fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd"
+																d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L7 8.41421L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+																fill="#64748C" />
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="form__item">
+												<div class="form__label">Твій email</div>
+												<div class="form__input">
+													<input required type="email" placeholder="test@test.com">
 												</div>
 											</div>
 										</div>
-										<div class="form__item">
-											<div class="form__label">Твій email</div>
-											<div class="form__input">
-												<input required type="email" placeholder="test@test.com">
-											</div>
-										</div>
-									</div>
-									<button type="submit" class="form__button button">Отримати тестову версію</button>
-								</form>
+										<button type="submit" class="form__button button">Отримати тестову версію</button>
+									</form>
 
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
-		<footer class="footer">
-			<a href="#" class="footer__logo"><svg xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="24" viewBox="0 0 89 24" fill="none">
-					<g clip-path="url(#clip0_248_3747)">
+			</main>
+			<footer class="footer">
+				<a href="#" class="footer__logo"><svg xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="24" viewBox="0 0 89 24" fill="none">
+						<g clip-path="url(#clip0_248_3747)">
+							<path
+								d="M10.6367 3.01676L11.2356 0.798711C11.2949 0.57958 11.1297 0.363037 10.9034 0.363037H2.75339C1.233 0.3639 0 1.60018 0 3.1246V8.41912C0 8.68138 0.280502 8.84789 0.510238 8.72107L10.4698 3.22899C10.5515 3.18413 10.6117 3.10735 10.6358 3.01676H10.6367Z"
+								fill="#37404D" />
+							<path
+								d="M30.3613 2.13075C30.4801 2.4396 30.5455 2.77434 30.5455 3.1246V11.92C30.5455 12.0598 30.4611 12.1857 30.3321 12.2392L19.8726 16.5546C19.6429 16.6495 19.3951 16.4769 19.3985 16.2276V9.04027C19.3985 8.93087 19.3971 8.82668 19.3956 8.72387C19.3937 8.58995 19.3919 8.4584 19.3934 8.32077C19.3951 8.16116 19.4785 8.0145 19.6162 7.93427L29.8666 1.95648C30.0498 1.85037 30.2847 1.93232 30.3613 2.13075Z"
+								fill="#37404D" />
+							<path
+								d="M24.0104 20.3471L23.07 17.0498C23.0132 16.8522 22.7981 16.7469 22.6079 16.8255L18.1337 18.6717C18.0623 18.701 18.0029 18.7536 17.965 18.8209L15.5403 23.1216C15.4104 23.3519 15.5765 23.6366 15.8398 23.6366H18.1552C18.2662 23.6366 18.3755 23.6099 18.4744 23.5581L23.8384 20.7474C23.9829 20.6715 24.0552 20.5041 24.0096 20.3471H24.0104Z"
+								fill="#37404D" />
+							<path
+								d="M15.8768 18.8511H6.05747C5.78471 18.8511 5.62036 19.1539 5.76836 19.3834L6.90327 21.1494C6.97297 21.2581 7.09687 21.3185 7.22508 21.3064L15.3476 20.5369C15.4594 20.5265 15.5593 20.461 15.6152 20.3635L16.177 19.3679C16.307 19.1375 16.1409 18.8528 15.8776 18.8528L15.8768 18.8511Z"
+								fill="#37404D" />
+							<path
+								d="M14.4269 22.4676L13.8668 23.4615H13.8659C13.8048 23.5693 13.6904 23.6366 13.5665 23.6366H6.95232C6.66751 23.6366 6.50575 23.3088 6.6787 23.0819L6.93683 22.7437C6.99448 22.6678 7.08224 22.6186 7.17775 22.61L14.0948 21.9543C14.3719 21.9284 14.5637 22.2252 14.4269 22.4676Z"
+								fill="#37404D" />
+							<path
+								d="M21.8138 23.6366H27.7921C29.3125 23.6366 30.5455 22.4004 30.5455 20.8759V19.2644C30.5455 19.0055 30.271 18.8382 30.0421 18.9581L21.7337 23.3114C21.5746 23.3951 21.6339 23.6366 21.8138 23.6366Z"
+								fill="#37404D" />
+							<path
+								d="M30.5455 14.0665V17.0256H30.5463C30.5463 17.1542 30.4749 17.2723 30.3613 17.3319L25.6306 19.8105C25.4371 19.9114 25.2004 19.8096 25.1402 19.5991L24.2514 16.4804C24.2032 16.3113 24.2892 16.1327 24.451 16.0663L30.0705 13.7473C30.2968 13.6541 30.5455 13.8206 30.5455 14.0665Z"
+								fill="#37404D" />
+							<path
+								d="M5.76836 21.7714L3.70073 18.5552C3.70073 18.5552 2.78867 17.507 2.78179 16.1914C2.78179 16.1914 2.78351 11.2506 2.78437 9.52857C2.78437 9.2663 2.50387 9.0998 2.27413 9.22662L0.17811 10.3818C0.0679744 10.4422 0 10.5587 0 10.6838V20.8759C0 22.4004 1.233 23.6366 2.75339 23.6366H4.46308C4.57063 23.6366 4.6713 23.5866 4.7367 23.5012L5.75287 22.1674C5.84064 22.0518 5.84752 21.8931 5.76836 21.7706V21.7714Z"
+								fill="#37404D" />
+							<path
+								d="M12.1175 3.50851C11.9764 3.43432 11.905 3.2704 11.9471 3.11425V3.11339L12.6209 0.618402C12.6613 0.468289 12.7973 0.3639 12.953 0.3639H27.7921C28.0924 0.3639 28.3703 0.408761 28.6525 0.501935C28.9347 0.595109 28.976 0.979019 28.7188 1.12913L18.7153 6.96371C18.5957 7.03359 18.4477 7.02151 18.3367 6.93869C18.2447 6.87053 18.1483 6.80842 18.0468 6.75234L12.3369 3.61635C12.2994 3.59537 12.2573 3.57571 12.2156 3.5562C12.1818 3.54041 12.1483 3.52472 12.1175 3.50851Z"
+								fill="#37404D" />
+							<path
+								d="M16.7955 17.5059H5.38443C4.65994 17.5059 4.07227 16.9166 4.07227 16.1902V9.04085C4.07227 8.56032 4.33384 8.11774 4.75373 7.8874L10.4593 4.75228C10.8516 4.5366 11.3275 4.5366 11.7198 4.75228L17.4254 7.88654C17.8461 8.11774 18.1068 8.55946 18.1068 9.03999V16.1902C18.1068 16.9166 17.5191 17.5059 16.7947 17.5059H16.7955Z"
+								fill="url(#pattern0)" />
+						</g>
 						<path
-							d="M10.6367 3.01676L11.2356 0.798711C11.2949 0.57958 11.1297 0.363037 10.9034 0.363037H2.75339C1.233 0.3639 0 1.60018 0 3.1246V8.41912C0 8.68138 0.280502 8.84789 0.510238 8.72107L10.4698 3.22899C10.5515 3.18413 10.6117 3.10735 10.6358 3.01676H10.6367Z"
+							d="M45.9054 3.27271C47.7794 3.27271 49.344 3.49677 50.5991 3.9449C51.8542 4.39303 52.8514 5.0049 53.5907 5.7805C54.3472 6.53888 54.8801 7.4179 55.1896 8.41757C55.5163 9.41724 55.6796 10.4686 55.6796 11.5717C55.6796 12.6748 55.4991 13.7348 55.138 14.7517C54.7942 15.7686 54.2354 16.6735 53.4617 17.4663C52.7052 18.2419 51.6994 18.8624 50.4443 19.3278C49.2064 19.7759 47.6935 20 45.9054 20H37.0906C36.6889 20 36.3633 19.6744 36.3633 19.2727V3.99998C36.3633 3.59832 36.6889 3.27271 37.0906 3.27271H45.9054ZM39.7933 16.3254C39.7933 16.7271 40.1189 17.0527 40.5206 17.0527H45.828C47.0659 17.0527 48.0889 16.9062 48.897 16.6132C49.7222 16.3029 50.3756 15.8893 50.857 15.3722C51.3384 14.8551 51.6822 14.2691 51.8886 13.6141C52.0949 12.9592 52.198 12.2784 52.198 11.5717C52.198 10.865 52.0949 10.1928 51.8886 9.55513C51.6822 8.91741 51.3384 8.34863 50.857 7.84879C50.3756 7.34895 49.7222 6.95253 48.897 6.65952C48.0889 6.36652 47.0659 6.22001 45.828 6.22001H40.5206C40.1189 6.22001 39.7933 6.54562 39.7933 6.94729V16.3254Z"
 							fill="#37404D" />
 						<path
-							d="M30.3613 2.13075C30.4801 2.4396 30.5455 2.77434 30.5455 3.1246V11.92C30.5455 12.0598 30.4611 12.1857 30.3321 12.2392L19.8726 16.5546C19.6429 16.6495 19.3951 16.4769 19.3985 16.2276V9.04027C19.3985 8.93087 19.3971 8.82668 19.3956 8.72387C19.3937 8.58995 19.3919 8.4584 19.3934 8.32077C19.3951 8.16116 19.4785 8.0145 19.6162 7.93427L29.8666 1.95648C30.0498 1.85037 30.2847 1.93232 30.3613 2.13075Z"
+							d="M57.4567 3.99998C57.4567 3.59832 57.7823 3.27271 58.1839 3.27271H60.1594C60.5611 3.27271 60.8867 3.59832 60.8867 3.99998V19.2727C60.8867 19.6744 60.5611 20 60.1594 20H58.1839C57.7823 20 57.4567 19.6744 57.4567 19.2727V3.99998Z"
 							fill="#37404D" />
 						<path
-							d="M24.0104 20.3471L23.07 17.0498C23.0132 16.8522 22.7981 16.7469 22.6079 16.8255L18.1337 18.6717C18.0623 18.701 18.0029 18.7536 17.965 18.8209L15.5403 23.1216C15.4104 23.3519 15.5765 23.6366 15.8398 23.6366H18.1552C18.2662 23.6366 18.3755 23.6099 18.4744 23.5581L23.8384 20.7474C23.9829 20.6715 24.0552 20.5041 24.0096 20.3471H24.0104Z"
+							d="M75.8021 17.6089C75.9906 17.9057 75.7774 18.2936 75.4259 18.2936C75.0738 18.2936 74.8607 17.9047 75.0502 17.608L83.9915 3.60851C84.1252 3.39931 84.3562 3.27271 84.6045 3.27271H86.9087C87.3104 3.27271 87.636 3.59832 87.636 3.99998V19.2727C87.636 19.6744 87.3104 20 86.9087 20H84.9333C84.5316 20 84.206 19.6744 84.206 19.2727V8.27269C84.206 8.05995 84.4092 7.90609 84.614 7.96382C84.8215 8.02234 84.9135 8.26479 84.7969 8.44619L77.5865 19.6659C77.4527 19.8741 77.2222 20 76.9747 20H73.9254C73.6784 20 73.4482 19.8746 73.3143 19.6671L66.105 8.4978C65.9881 8.31661 66.0798 8.07394 66.2874 8.01541C66.4919 7.95774 66.6949 8.11144 66.6949 8.32396V19.2727C66.6949 19.6744 66.3693 20 65.9677 20H63.9922C63.5906 20 63.2649 19.6744 63.2649 19.2727V3.99998C63.2649 3.59832 63.5906 3.27271 63.9922 3.27271H66.2953C66.5442 3.27271 66.7758 3.39995 66.9092 3.61001L75.8021 17.6089Z"
 							fill="#37404D" />
-						<path
-							d="M15.8768 18.8511H6.05747C5.78471 18.8511 5.62036 19.1539 5.76836 19.3834L6.90327 21.1494C6.97297 21.2581 7.09687 21.3185 7.22508 21.3064L15.3476 20.5369C15.4594 20.5265 15.5593 20.461 15.6152 20.3635L16.177 19.3679C16.307 19.1375 16.1409 18.8528 15.8776 18.8528L15.8768 18.8511Z"
-							fill="#37404D" />
-						<path
-							d="M14.4269 22.4676L13.8668 23.4615H13.8659C13.8048 23.5693 13.6904 23.6366 13.5665 23.6366H6.95232C6.66751 23.6366 6.50575 23.3088 6.6787 23.0819L6.93683 22.7437C6.99448 22.6678 7.08224 22.6186 7.17775 22.61L14.0948 21.9543C14.3719 21.9284 14.5637 22.2252 14.4269 22.4676Z"
-							fill="#37404D" />
-						<path
-							d="M21.8138 23.6366H27.7921C29.3125 23.6366 30.5455 22.4004 30.5455 20.8759V19.2644C30.5455 19.0055 30.271 18.8382 30.0421 18.9581L21.7337 23.3114C21.5746 23.3951 21.6339 23.6366 21.8138 23.6366Z"
-							fill="#37404D" />
-						<path
-							d="M30.5455 14.0665V17.0256H30.5463C30.5463 17.1542 30.4749 17.2723 30.3613 17.3319L25.6306 19.8105C25.4371 19.9114 25.2004 19.8096 25.1402 19.5991L24.2514 16.4804C24.2032 16.3113 24.2892 16.1327 24.451 16.0663L30.0705 13.7473C30.2968 13.6541 30.5455 13.8206 30.5455 14.0665Z"
-							fill="#37404D" />
-						<path
-							d="M5.76836 21.7714L3.70073 18.5552C3.70073 18.5552 2.78867 17.507 2.78179 16.1914C2.78179 16.1914 2.78351 11.2506 2.78437 9.52857C2.78437 9.2663 2.50387 9.0998 2.27413 9.22662L0.17811 10.3818C0.0679744 10.4422 0 10.5587 0 10.6838V20.8759C0 22.4004 1.233 23.6366 2.75339 23.6366H4.46308C4.57063 23.6366 4.6713 23.5866 4.7367 23.5012L5.75287 22.1674C5.84064 22.0518 5.84752 21.8931 5.76836 21.7706V21.7714Z"
-							fill="#37404D" />
-						<path
-							d="M12.1175 3.50851C11.9764 3.43432 11.905 3.2704 11.9471 3.11425V3.11339L12.6209 0.618402C12.6613 0.468289 12.7973 0.3639 12.953 0.3639H27.7921C28.0924 0.3639 28.3703 0.408761 28.6525 0.501935C28.9347 0.595109 28.976 0.979019 28.7188 1.12913L18.7153 6.96371C18.5957 7.03359 18.4477 7.02151 18.3367 6.93869C18.2447 6.87053 18.1483 6.80842 18.0468 6.75234L12.3369 3.61635C12.2994 3.59537 12.2573 3.57571 12.2156 3.5562C12.1818 3.54041 12.1483 3.52472 12.1175 3.50851Z"
-							fill="#37404D" />
-						<path
-							d="M16.7955 17.5059H5.38443C4.65994 17.5059 4.07227 16.9166 4.07227 16.1902V9.04085C4.07227 8.56032 4.33384 8.11774 4.75373 7.8874L10.4593 4.75228C10.8516 4.5366 11.3275 4.5366 11.7198 4.75228L17.4254 7.88654C17.8461 8.11774 18.1068 8.55946 18.1068 9.03999V16.1902C18.1068 16.9166 17.5191 17.5059 16.7947 17.5059H16.7955Z"
-							fill="url(#pattern0)" />
-					</g>
-					<path
-						d="M45.9054 3.27271C47.7794 3.27271 49.344 3.49677 50.5991 3.9449C51.8542 4.39303 52.8514 5.0049 53.5907 5.7805C54.3472 6.53888 54.8801 7.4179 55.1896 8.41757C55.5163 9.41724 55.6796 10.4686 55.6796 11.5717C55.6796 12.6748 55.4991 13.7348 55.138 14.7517C54.7942 15.7686 54.2354 16.6735 53.4617 17.4663C52.7052 18.2419 51.6994 18.8624 50.4443 19.3278C49.2064 19.7759 47.6935 20 45.9054 20H37.0906C36.6889 20 36.3633 19.6744 36.3633 19.2727V3.99998C36.3633 3.59832 36.6889 3.27271 37.0906 3.27271H45.9054ZM39.7933 16.3254C39.7933 16.7271 40.1189 17.0527 40.5206 17.0527H45.828C47.0659 17.0527 48.0889 16.9062 48.897 16.6132C49.7222 16.3029 50.3756 15.8893 50.857 15.3722C51.3384 14.8551 51.6822 14.2691 51.8886 13.6141C52.0949 12.9592 52.198 12.2784 52.198 11.5717C52.198 10.865 52.0949 10.1928 51.8886 9.55513C51.6822 8.91741 51.3384 8.34863 50.857 7.84879C50.3756 7.34895 49.7222 6.95253 48.897 6.65952C48.0889 6.36652 47.0659 6.22001 45.828 6.22001H40.5206C40.1189 6.22001 39.7933 6.54562 39.7933 6.94729V16.3254Z"
-						fill="#37404D" />
-					<path
-						d="M57.4567 3.99998C57.4567 3.59832 57.7823 3.27271 58.1839 3.27271H60.1594C60.5611 3.27271 60.8867 3.59832 60.8867 3.99998V19.2727C60.8867 19.6744 60.5611 20 60.1594 20H58.1839C57.7823 20 57.4567 19.6744 57.4567 19.2727V3.99998Z"
-						fill="#37404D" />
-					<path
-						d="M75.8021 17.6089C75.9906 17.9057 75.7774 18.2936 75.4259 18.2936C75.0738 18.2936 74.8607 17.9047 75.0502 17.608L83.9915 3.60851C84.1252 3.39931 84.3562 3.27271 84.6045 3.27271H86.9087C87.3104 3.27271 87.636 3.59832 87.636 3.99998V19.2727C87.636 19.6744 87.3104 20 86.9087 20H84.9333C84.5316 20 84.206 19.6744 84.206 19.2727V8.27269C84.206 8.05995 84.4092 7.90609 84.614 7.96382C84.8215 8.02234 84.9135 8.26479 84.7969 8.44619L77.5865 19.6659C77.4527 19.8741 77.2222 20 76.9747 20H73.9254C73.6784 20 73.4482 19.8746 73.3143 19.6671L66.105 8.4978C65.9881 8.31661 66.0798 8.07394 66.2874 8.01541C66.4919 7.95774 66.6949 8.11144 66.6949 8.32396V19.2727C66.6949 19.6744 66.3693 20 65.9677 20H63.9922C63.5906 20 63.2649 19.6744 63.2649 19.2727V3.99998C63.2649 3.59832 63.5906 3.27271 63.9922 3.27271H66.2953C66.5442 3.27271 66.7758 3.39995 66.9092 3.61001L75.8021 17.6089Z"
-						fill="#37404D" />
-				</svg></a>
-			<div class="footer__description">
-				<a href="#" class="footer__link footer__link_email">dim@gmail.com</a>
-				<a href="#" class="footer__link">Умови користування</a>
-				<a href="#" class="footer__link">Політика конфіденційності</a>
-			</div>
-			<div class="footer__icons">
-				<a href="#" class="footer__icon">
-					<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M11.5006 8.18161C9.39794 8.18161 7.68204 9.89751 7.68204 12.0001C7.68204 14.1028 9.39794 15.8187 11.5006 15.8187C13.6032 15.8187 15.3191 14.1028 15.3191 12.0001C15.3191 9.89751 13.6032 8.18161 11.5006 8.18161ZM22.9533 12.0001C22.9533 10.4189 22.9676 8.85193 22.8788 7.27353C22.79 5.44018 22.3718 3.81308 21.0311 2.47244C19.6876 1.12894 18.0634 0.713573 16.23 0.62477C14.6488 0.535967 13.0818 0.550291 11.5034 0.550291C9.92217 0.550291 8.35523 0.535967 6.77683 0.62477C4.94348 0.713573 3.31638 1.13181 1.97574 2.47244C0.632238 3.81595 0.216869 5.44018 0.128066 7.27353C0.0392633 8.85479 0.0535864 10.4217 0.0535864 12.0001C0.0535864 13.5785 0.0392633 15.1483 0.128066 16.7267C0.216869 18.5601 0.635102 20.1872 1.97574 21.5278C3.31924 22.8713 4.94348 23.2867 6.77683 23.3755C8.35809 23.4643 9.92503 23.45 11.5034 23.45C13.0847 23.45 14.6516 23.4643 16.23 23.3755C18.0634 23.2867 19.6905 22.8685 21.0311 21.5278C22.3746 20.1843 22.79 18.5601 22.8788 16.7267C22.9705 15.1483 22.9533 13.5814 22.9533 12.0001ZM11.5006 17.8754C8.24923 17.8754 5.62525 15.2515 5.62525 12.0001C5.62525 8.7488 8.24923 6.12482 11.5006 6.12482C14.7519 6.12482 17.3759 8.7488 17.3759 12.0001C17.3759 15.2515 14.7519 17.8754 11.5006 17.8754ZM17.6165 7.25634C16.8574 7.25634 16.2444 6.64331 16.2444 5.88419C16.2444 5.12507 16.8574 4.51205 17.6165 4.51205C18.3756 4.51205 18.9887 5.12507 18.9887 5.88419C18.9889 6.06445 18.9535 6.24298 18.8847 6.40956C18.8158 6.57614 18.7147 6.72749 18.5873 6.85495C18.4598 6.98241 18.3085 7.08348 18.1419 7.15235C17.9753 7.22123 17.7968 7.25657 17.6165 7.25634Z"
-							fill="#37404D" />
-					</svg>
-				</a>
-				<a href="#" class="footer__icon">
-					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M6 0C2.96243 0 0.5 2.46243 0.5 5.5V18.5C0.5 21.5376 2.96243 24 6 24H19C22.0376 24 24.5 21.5376 24.5 18.5V5.5C24.5 2.46243 22.0376 0 19 0H6ZM9.48828 6.66667L9.53704 6.66667H15.463L15.5117 6.66667C16.1684 6.66663 16.7342 6.6666 17.1873 6.72925C17.6728 6.7964 18.1383 6.94783 18.5158 7.33614C18.8933 7.72445 19.0405 8.2032 19.1058 8.70264C19.1667 9.16867 19.1667 9.75063 19.1667 10.4261L19.1667 10.4762V13.5238L19.1667 13.5739C19.1667 14.2494 19.1667 14.8313 19.1058 15.2974C19.0405 15.7968 18.8933 16.2755 18.5158 16.6639C18.1383 17.0522 17.6728 17.2036 17.1873 17.2707C16.7342 17.3334 16.1684 17.3334 15.5117 17.3333H15.463H9.53704H9.48827C8.83162 17.3334 8.26583 17.3334 7.81275 17.2707C7.32718 17.2036 6.86174 17.0522 6.48421 16.6639C6.10668 16.2755 5.95946 15.7968 5.89418 15.2974C5.83327 14.8313 5.8333 14.2494 5.83334 13.574L5.83334 13.5238V10.4762L5.83334 10.426C5.8333 9.75062 5.83327 9.16866 5.89418 8.70264C5.95946 8.2032 6.10668 7.72445 6.48421 7.33614C6.86174 6.94783 7.32718 6.7964 7.81275 6.72925C8.26583 6.6666 8.83162 6.66663 9.48828 6.66667ZM8.01015 8.23947C7.68887 8.2839 7.58816 8.35564 7.53178 8.41364C7.47539 8.47163 7.40565 8.57521 7.36245 8.90568C7.34892 9.00923 7.33922 9.12365 7.33228 9.25239L12.1687 11.7397C12.3773 11.847 12.6227 11.847 12.8313 11.7397L17.6677 9.25239C17.6608 9.12365 17.6511 9.00923 17.6375 8.90568C17.5944 8.57521 17.5246 8.47163 17.4682 8.41364C17.4118 8.35564 17.3111 8.2839 16.9898 8.23947C16.6472 8.1921 16.1823 8.19048 15.463 8.19048H9.53704C8.81772 8.19048 8.35275 8.1921 8.01015 8.23947ZM7.31482 13.5238V10.9471L11.5062 13.1026C12.1318 13.4244 12.8682 13.4244 13.4938 13.1026L17.6852 10.9471V13.5238C17.6852 14.2637 17.6836 14.7419 17.6375 15.0943C17.5944 15.4248 17.5246 15.5284 17.4682 15.5864C17.4118 15.6444 17.3111 15.7161 16.9898 15.7605C16.6472 15.8079 16.1823 15.8095 15.463 15.8095H9.53704C8.81772 15.8095 8.35275 15.8079 8.01015 15.7605C7.68887 15.7161 7.58816 15.6444 7.53178 15.5864C7.47539 15.5284 7.40565 15.4248 7.36245 15.0943C7.31639 14.7419 7.31482 14.2637 7.31482 13.5238Z"
-							fill="#37404D" />
-					</svg>
-				</a>
-				<a href="#" class="footer__icon">
-					<svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M3.50545 23.8333V13.041H0.380859V9.15531H3.50545V5.83639C3.50545 3.22835 5.35116 0.833313 9.60406 0.833313C11.326 0.833313 12.5993 0.984078 12.5993 0.984078L12.4989 4.6127C12.4989 4.6127 11.2004 4.60115 9.78336 4.60115C8.2497 4.60115 8.00399 5.24664 8.00399 6.31801V9.15531H12.6209L12.42 13.041H8.00399V23.8333H3.50545Z"
-							fill="#37404D" />
-					</svg>
-				</a>
-				<a href="#" class="footer__icon footer__icon_email">
-					<svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M25.8333 2.96918C24.8847 3.39815 23.8785 3.67972 22.8482 3.80454C23.9214 3.14797 24.7454 2.10827 25.1334 0.869486C24.1132 1.48745 22.997 1.92285 21.833 2.15686C20.8849 1.12585 19.5342 0.481506 18.0393 0.481506C15.1689 0.481506 12.8417 2.85686 12.8417 5.78656C12.8417 6.20242 12.8877 6.60726 12.9763 6.99565C8.65674 6.77434 4.82705 4.66232 2.26354 1.45262C1.81624 2.23615 1.55994 3.14757 1.55994 4.11969C1.55994 5.9603 2.47758 7.58403 3.8721 8.53545C3.04674 8.50906 2.23954 8.28152 1.51789 7.87181C1.51759 7.89403 1.51759 7.91626 1.51759 7.93858C1.51759 10.509 3.30913 12.6532 5.6867 13.1406C4.92135 13.3531 4.11854 13.3842 3.33961 13.2315C4.00095 15.3392 5.92044 16.8729 8.1947 16.9159C6.41593 18.3387 4.17482 19.1869 1.73985 19.1869C1.32027 19.1869 0.90662 19.1617 0.5 19.1127C2.80009 20.618 5.53203 21.4963 8.46714 21.4963C18.0272 21.4963 23.2549 13.4123 23.2549 6.40181C23.2549 6.17171 23.2499 5.94292 23.2398 5.71545C24.2574 4.96462 25.1356 4.03465 25.8333 2.96918Z"
-							fill="#37404D" />
-					</svg>
-				</a>
-			</div>
-			<div class="footer__copyright">
-				<span class="footer__text">© 2022 DIM, Org.</span>
-				<span class="footer__text">Всі права захищені.</span>
-			</div>
-		</footer>
+					</svg></a>
+				<div class="footer__description">
+					<a href="#" class="footer__link footer__link_email">dim@gmail.com</a>
+					<a href="#" class="footer__link">Умови користування</a>
+					<a href="#" class="footer__link">Політика конфіденційності</a>
+				</div>
+				<div class="footer__icons">
+					<a href="#" class="footer__icon">
+						<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.5006 8.18161C9.39794 8.18161 7.68204 9.89751 7.68204 12.0001C7.68204 14.1028 9.39794 15.8187 11.5006 15.8187C13.6032 15.8187 15.3191 14.1028 15.3191 12.0001C15.3191 9.89751 13.6032 8.18161 11.5006 8.18161ZM22.9533 12.0001C22.9533 10.4189 22.9676 8.85193 22.8788 7.27353C22.79 5.44018 22.3718 3.81308 21.0311 2.47244C19.6876 1.12894 18.0634 0.713573 16.23 0.62477C14.6488 0.535967 13.0818 0.550291 11.5034 0.550291C9.92217 0.550291 8.35523 0.535967 6.77683 0.62477C4.94348 0.713573 3.31638 1.13181 1.97574 2.47244C0.632238 3.81595 0.216869 5.44018 0.128066 7.27353C0.0392633 8.85479 0.0535864 10.4217 0.0535864 12.0001C0.0535864 13.5785 0.0392633 15.1483 0.128066 16.7267C0.216869 18.5601 0.635102 20.1872 1.97574 21.5278C3.31924 22.8713 4.94348 23.2867 6.77683 23.3755C8.35809 23.4643 9.92503 23.45 11.5034 23.45C13.0847 23.45 14.6516 23.4643 16.23 23.3755C18.0634 23.2867 19.6905 22.8685 21.0311 21.5278C22.3746 20.1843 22.79 18.5601 22.8788 16.7267C22.9705 15.1483 22.9533 13.5814 22.9533 12.0001ZM11.5006 17.8754C8.24923 17.8754 5.62525 15.2515 5.62525 12.0001C5.62525 8.7488 8.24923 6.12482 11.5006 6.12482C14.7519 6.12482 17.3759 8.7488 17.3759 12.0001C17.3759 15.2515 14.7519 17.8754 11.5006 17.8754ZM17.6165 7.25634C16.8574 7.25634 16.2444 6.64331 16.2444 5.88419C16.2444 5.12507 16.8574 4.51205 17.6165 4.51205C18.3756 4.51205 18.9887 5.12507 18.9887 5.88419C18.9889 6.06445 18.9535 6.24298 18.8847 6.40956C18.8158 6.57614 18.7147 6.72749 18.5873 6.85495C18.4598 6.98241 18.3085 7.08348 18.1419 7.15235C17.9753 7.22123 17.7968 7.25657 17.6165 7.25634Z"
+								fill="#37404D" />
+						</svg>
+					</a>
+					<a href="#" class="footer__icon footer__icon_email">
+						<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M6 0C2.96243 0 0.5 2.46243 0.5 5.5V18.5C0.5 21.5376 2.96243 24 6 24H19C22.0376 24 24.5 21.5376 24.5 18.5V5.5C24.5 2.46243 22.0376 0 19 0H6ZM9.48828 6.66667L9.53704 6.66667H15.463L15.5117 6.66667C16.1684 6.66663 16.7342 6.6666 17.1873 6.72925C17.6728 6.7964 18.1383 6.94783 18.5158 7.33614C18.8933 7.72445 19.0405 8.2032 19.1058 8.70264C19.1667 9.16867 19.1667 9.75063 19.1667 10.4261L19.1667 10.4762V13.5238L19.1667 13.5739C19.1667 14.2494 19.1667 14.8313 19.1058 15.2974C19.0405 15.7968 18.8933 16.2755 18.5158 16.6639C18.1383 17.0522 17.6728 17.2036 17.1873 17.2707C16.7342 17.3334 16.1684 17.3334 15.5117 17.3333H15.463H9.53704H9.48827C8.83162 17.3334 8.26583 17.3334 7.81275 17.2707C7.32718 17.2036 6.86174 17.0522 6.48421 16.6639C6.10668 16.2755 5.95946 15.7968 5.89418 15.2974C5.83327 14.8313 5.8333 14.2494 5.83334 13.574L5.83334 13.5238V10.4762L5.83334 10.426C5.8333 9.75062 5.83327 9.16866 5.89418 8.70264C5.95946 8.2032 6.10668 7.72445 6.48421 7.33614C6.86174 6.94783 7.32718 6.7964 7.81275 6.72925C8.26583 6.6666 8.83162 6.66663 9.48828 6.66667ZM8.01015 8.23947C7.68887 8.2839 7.58816 8.35564 7.53178 8.41364C7.47539 8.47163 7.40565 8.57521 7.36245 8.90568C7.34892 9.00923 7.33922 9.12365 7.33228 9.25239L12.1687 11.7397C12.3773 11.847 12.6227 11.847 12.8313 11.7397L17.6677 9.25239C17.6608 9.12365 17.6511 9.00923 17.6375 8.90568C17.5944 8.57521 17.5246 8.47163 17.4682 8.41364C17.4118 8.35564 17.3111 8.2839 16.9898 8.23947C16.6472 8.1921 16.1823 8.19048 15.463 8.19048H9.53704C8.81772 8.19048 8.35275 8.1921 8.01015 8.23947ZM7.31482 13.5238V10.9471L11.5062 13.1026C12.1318 13.4244 12.8682 13.4244 13.4938 13.1026L17.6852 10.9471V13.5238C17.6852 14.2637 17.6836 14.7419 17.6375 15.0943C17.5944 15.4248 17.5246 15.5284 17.4682 15.5864C17.4118 15.6444 17.3111 15.7161 16.9898 15.7605C16.6472 15.8079 16.1823 15.8095 15.463 15.8095H9.53704C8.81772 15.8095 8.35275 15.8079 8.01015 15.7605C7.68887 15.7161 7.58816 15.6444 7.53178 15.5864C7.47539 15.5284 7.40565 15.4248 7.36245 15.0943C7.31639 14.7419 7.31482 14.2637 7.31482 13.5238Z"
+								fill="#37404D" />
+						</svg>
+					</a>
+					<a href="#" class="footer__icon">
+						<svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M3.50545 23.8333V13.041H0.380859V9.15531H3.50545V5.83639C3.50545 3.22835 5.35116 0.833313 9.60406 0.833313C11.326 0.833313 12.5993 0.984078 12.5993 0.984078L12.4989 4.6127C12.4989 4.6127 11.2004 4.60115 9.78336 4.60115C8.2497 4.60115 8.00399 5.24664 8.00399 6.31801V9.15531H12.6209L12.42 13.041H8.00399V23.8333H3.50545Z"
+								fill="#37404D" />
+						</svg>
+					</a>
+					<a href="#" class="footer__icon">
+						<svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M25.8333 2.96918C24.8847 3.39815 23.8785 3.67972 22.8482 3.80454C23.9214 3.14797 24.7454 2.10827 25.1334 0.869486C24.1132 1.48745 22.997 1.92285 21.833 2.15686C20.8849 1.12585 19.5342 0.481506 18.0393 0.481506C15.1689 0.481506 12.8417 2.85686 12.8417 5.78656C12.8417 6.20242 12.8877 6.60726 12.9763 6.99565C8.65674 6.77434 4.82705 4.66232 2.26354 1.45262C1.81624 2.23615 1.55994 3.14757 1.55994 4.11969C1.55994 5.9603 2.47758 7.58403 3.8721 8.53545C3.04674 8.50906 2.23954 8.28152 1.51789 7.87181C1.51759 7.89403 1.51759 7.91626 1.51759 7.93858C1.51759 10.509 3.30913 12.6532 5.6867 13.1406C4.92135 13.3531 4.11854 13.3842 3.33961 13.2315C4.00095 15.3392 5.92044 16.8729 8.1947 16.9159C6.41593 18.3387 4.17482 19.1869 1.73985 19.1869C1.32027 19.1869 0.90662 19.1617 0.5 19.1127C2.80009 20.618 5.53203 21.4963 8.46714 21.4963C18.0272 21.4963 23.2549 13.4123 23.2549 6.40181C23.2549 6.17171 23.2499 5.94292 23.2398 5.71545C24.2574 4.96462 25.1356 4.03465 25.8333 2.96918Z"
+								fill="#37404D" />
+						</svg>
+					</a>
+				</div>
+				<div class="footer__copyright">
+					<span class="footer__text">© 2022 DIM, Org.</span>
+					<span class="footer__text">Всі права захищені.</span>
+				</div>
+			</footer>
+		</div>
 	</div>
 	<div class="popup" id="popup">
 		<div class="popup__body">
