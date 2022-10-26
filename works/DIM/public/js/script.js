@@ -39,6 +39,24 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
+
+$(window).scroll(function () {
+	var kek = $(window).scrollTop();
+
+	if (kek > 200) {
+		$('.top').addClass('active');
+
+	} else {
+		$('.top').removeClass('active');
+	}
+});
+$(document).on('click', 'a[href^="#pageWrapper"]', function (event) {
+	event.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: $($.attr(this, 'href')).offset().top
+	}, 500);
+});
 $(document).ready(function (e) {
 	const selectDefault = $(".header__dropdown > .header__list_default");
 
