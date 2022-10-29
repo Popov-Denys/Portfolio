@@ -14,7 +14,7 @@ $(window).on('beforeunload', function () {
 });
 
 function reveal() {
-	var reveals = document.querySelectorAll(".reveal,.label");
+	var reveals = document.querySelectorAll(".label,.reveal,.reveal-2,.reveal-3,.reveal-4");
 	window.onscroll = function () {
 		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 			executed = true;
@@ -32,7 +32,6 @@ function reveal() {
 		}
 
 	}
-
 
 }
 
@@ -102,7 +101,7 @@ $('.introduction__button').click(function () {
 });
 $('.help__button').click(function () {
 	$(this).toggleClass('active');
-	$(this).siblings().removeClass('active');
+	$(this).parent().siblings().children(".help__button").removeClass('active');
 });
 $('.popup-map-activator').click(function () {
 	$(".popup-map").addClass('active');

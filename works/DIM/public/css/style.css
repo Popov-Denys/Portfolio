@@ -338,6 +338,30 @@ a {
   transform: translateY(100px);
   opacity: 0;
   transition: 0.8s all ease; }
+  .reveal-2 {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.8s all ease; }
+    .reveal-2.active {
+      transform: translateY(0);
+      opacity: 1; }
+  .reveal-3 {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.8s all ease; }
+    .reveal-3.active {
+      transform: translateY(0);
+      opacity: 1; }
+  .reveal-4 {
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: 0.8s all ease; }
+    .reveal-4.active {
+      transform: translateY(0);
+      opacity: 1; }
   .reveal.active {
     transform: translateY(0);
     opacity: 1; }
@@ -360,6 +384,12 @@ a {
   -webkit-animation: float 4s ease-in-out alternate infinite;
   animation: float 4s ease-in-out alternate infinite; }
 
+.float3 {
+  -webkit-transform: translatex(0px);
+  transform: translatex(0px);
+  -webkit-animation: float-alt 2s ease-in-out alternate infinite;
+  animation: float-alt 2s ease-in-out alternate infinite; }
+
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translatey(0px);
@@ -381,6 +411,28 @@ a {
   100% {
     -webkit-transform: translatey(0px);
     transform: translatey(0px); } }
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); }
+  50% {
+    -webkit-transform: translatex(-10px);
+    transform: translatex(-10px); }
+  100% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); } }
+
+@keyframes float-alt {
+  0% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); }
+  50% {
+    -webkit-transform: translatey(-10px);
+    transform: translatex(-10px); }
+  100% {
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); } }
 
 .section {
   margin: 0 0 24px; }
@@ -597,7 +649,7 @@ a {
       top: 120%;
       left: 0%;
       width: 0;
-      height: 2px;
+      height: 1px;
       background-color: #2e60b3;
       -webkit-transition: all 0.4s;
       -o-transition: all 0.4s;
@@ -626,6 +678,8 @@ a {
   border-radius: 24px;
   overflow: hidden;
   padding: 32px;
+  transform: scale(0.94);
+  animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
   min-height: 472px;
   color: #ffffff;
   margin: 0 0 16px; }
@@ -666,6 +720,9 @@ a {
       margin: 0 0 15px; }
       .selection__text p:last-child {
         margin: 0; }
+  .selection__button {
+    background: #ffffff;
+    color: #37404d; }
   .selection__box {
     flex-shrink: 0; }
   .selection__map {
@@ -783,7 +840,24 @@ a {
     display: flex;
     flex-direction: column; }
   .introduction__button {
+    cursor: pointer;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 16px 10px;
+    transition: 0.3s ease-in-out;
+    background: #ffffff;
+    color: #37404d;
     margin: 0 0 16px; }
+    .introduction__button_special {
+      background: transparent;
+      color: #ffffff; }
     .introduction__button_anchor {
       display: none; }
     .introduction__button:last-child {
@@ -964,9 +1038,12 @@ a {
     border-radius: 16px;
     overflow: hidden;
     margin: 0 12px 0 0; }
-  .team__image img,
-  .team__image svg {
-    max-width: 100%; }
+  .team__image {
+    max-height: 337px;
+    overflow: hidden; }
+    .team__image img,
+    .team__image svg {
+      max-width: 100%; }
   .team__content {
     display: flex;
     justify-content: space-between;
@@ -1190,6 +1267,7 @@ a {
     border-radius: 8px;
     padding: 8px 16px;
     background: #ffffff;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 26px;
     appearance: none;
@@ -1348,6 +1426,7 @@ a {
     padding: 8px 16px;
     font-size: 16px;
     appearance: none;
+    font-family: "Inter", sans-serif;
     line-height: 26px;
     -webkit-appearance: none;
     width: 100%; }
