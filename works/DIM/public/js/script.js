@@ -137,7 +137,7 @@ $('#fourth-button').click(function () {
 	$('#second').removeClass('active');
 	$('#third').removeClass('active');
 });
-const popupLinks = document.querySelectorAll('.popup-link');
+let popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 
 
@@ -147,11 +147,12 @@ const timeout = 800;
 
 if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
-		const popupLink = popupLinks[index];
+		let popupLink = popupLinks[index];
 		popupLink.addEventListener("click", function (e) {
 			const popupName = popupLink.getAttribute('href').replace('#', '');
 			const curentPopup = document.getElementById(popupName);
 			popupOpen(curentPopup);
+			popupLink.classList.add('open');
 			e.preventDefault();
 		});
 	}
@@ -167,8 +168,10 @@ if (popupCloseIcon.length > 0) {
 	}
 }
 
+
 function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
+
 		const popupActive = document.querySelector('.popup.open');
 		if (popupActive) {
 
@@ -188,6 +191,10 @@ function popupOpen(curentPopup) {
 function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {
 		popupActive.classList.remove('open');
+		let popupLinks = document.querySelectorAll('.popup-link');
+		let index = 0; index < popupLinks.length; index++
+		let popupLink = popupLinks[index];
+		popupLink.classList.remove('open');
 		if (doUnlock) {
 			bodyUnLock();
 		}
@@ -332,19 +339,19 @@ $(document).ready(function () {
 		responsive: [
 			{
 
-				breakpoint: 1439,
+				breakpoint: 1296,
 				settings: {
 					slidesToShow: 4,
 				},
 
 			},
 			{
-				breakpoint: 1024,
+				breakpoint: 984,
 				settings: {
 					slidesToShow: 3,
 				},
 			}, {
-				breakpoint: 768,
+				breakpoint: 660,
 				settings: {
 					slidesToShow: 2,
 				},
@@ -377,6 +384,22 @@ $(document).ready(function () {
 
 				breakpoint: 1439,
 				settings: "unslick"
+
+			},
+			{
+
+				breakpoint: 1150,
+				settings: {
+					slidesToShow: 3
+				}
+
+			},
+			{
+
+				breakpoint: 733,
+				settings: {
+					slidesToShow: 2
+				}
 
 			}
 		]
