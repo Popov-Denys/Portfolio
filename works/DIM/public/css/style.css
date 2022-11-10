@@ -1928,6 +1928,8 @@ a {
       margin: auto 0 0 -10px; }
     .selection__box {
       display: flex; }
+      .selection__box:last-child {
+        margin: 0 0 0 -20px; }
   .title {
     font-size: 40px;
     margin: 0 0 32px; }
