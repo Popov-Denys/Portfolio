@@ -401,6 +401,22 @@ $(document).ready(function () {
 					slidesToShow: 2
 				}
 
+			},
+			{
+
+				breakpoint: 375,
+				settings: {
+					variableWidth: true,
+				}
+
+			},
+			{
+
+				breakpoint: 320,
+				settings: {
+					variableWidth: false,
+				}
+
 			}
 		]
 	});

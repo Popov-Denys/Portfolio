@@ -99,47 +99,19 @@ $maxHeight: 1150;
 		@content;
 	}
 }
-@mixin _1170 {
-	@media (min-width: 1170px) {
-		@content;
-	}
-}
-@mixin _979 {
-	@media (min-width: 979px) {
-		@content;
-	}
-}
-@mixin _992 {
-	@media (min-width: 992px) {
-		@content;
-	}
-}
-@mixin _920 {
-	@media (min-width: 920px) {
-		@content;
-	}
-}
 
 @mixin _768 {
 	@media (min-width: 768px) {
 		@content;
 	}
 }
-
 @mixin _500 {
 	@media (min-width: 500px) {
 		@content;
 	}
 }
-@mixin _350 {
-	@media (min-width: 350px) {
+@mixin _375 {
+	@media (min-width: 375px) {
 		@content;
-	}
-}
-@media (min-width: 480px) {
-	@mixin fz($pcSize, $mobSize) {
-		$addSize: $pcSize - $mobSize;
-		$maxMobileHeight: $maxMobileHeight - 480;
-		font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vh - 480px) / #{$maxMobileHeight}));
 	}
 }
