@@ -1554,7 +1554,7 @@ a {
     text-align: center;
     color: #098507; }
 
-@media (min-width: 375px) {
+@media (min-width: 420px) {
   .cards .slick-track {
     left: 16px; }
   .cards .slick-list {

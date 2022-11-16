@@ -110,8 +110,8 @@ $maxHeight: 1150;
 		@content;
 	}
 }
-@mixin _375 {
-	@media (min-width: 375px) {
+@mixin _420 {
+	@media (min-width: 420px) {
 		@content;
 	}
 }

@@ -404,7 +404,7 @@ $(document).ready(function () {
 			},
 			{
 
-				breakpoint: 375,
+				breakpoint: 419,
 				settings: {
 					variableWidth: true,
 				}
@@ -412,7 +412,7 @@ $(document).ready(function () {
 			},
 			{
 
-				breakpoint: 320,
+				breakpoint: 319,
 				settings: {
 					variableWidth: false,
 				}
