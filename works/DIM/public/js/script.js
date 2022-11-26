@@ -355,6 +355,22 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 				},
+			},
+			{
+
+				breakpoint: 420.5,
+				settings: {
+					variableWidth: true,
+				}
+
+			},
+			{
+
+				breakpoint: 319,
+				settings: {
+					variableWidth: false,
+				}
+
 			}
 		]
 
@@ -404,7 +420,7 @@ $(document).ready(function () {
 			},
 			{
 
-				breakpoint: 419,
+				breakpoint: 420.5,
 				settings: {
 					variableWidth: true,
 				}

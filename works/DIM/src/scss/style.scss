@@ -1176,7 +1176,9 @@ a {
 	margin: 0 -16px 0;
 	& .slick-track {
 		margin: 0 0 24px 0;
-		left: 16px;
+	}
+	& .slick-list {
+		padding: 0 0 0 16px;
 	}
 	&__title {
 		padding: 0 0 0 16px;
@@ -1849,6 +1851,16 @@ a {
 	}
 }
 @include _420 {
+	.team {
+		&__slider {
+			& .slick-track {
+				left: 16px;
+			}
+			& .slick-list {
+				padding: 0;
+			}
+		}
+	}
 	.cards {
 		& .slick-track {
 			left: 16px;

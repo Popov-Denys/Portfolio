@@ -1051,8 +1051,9 @@ a {
 .team {
   margin: 0 -16px 0; }
   .team .slick-track {
-    margin: 0 0 24px 0;
-    left: 16px; }
+    margin: 0 0 24px 0; }
+  .team .slick-list {
+    padding: 0 0 0 16px; }
   .team__title {
     padding: 0 0 0 16px; }
   .team__slider {
@@ -1554,7 +1555,11 @@ a {
     text-align: center;
     color: #098507; }
 
-@media (min-width: 420px) {
+@media (min-width: 420.5px) {
+  .team__slider .slick-track {
+    left: 16px; }
+  .team__slider .slick-list {
+    padding: 0; }
   .cards .slick-track {
     left: 16px; }
   .cards .slick-list {

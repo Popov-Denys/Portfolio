@@ -111,7 +111,7 @@ $maxHeight: 1150;
 	}
 }
 @mixin _420 {
-	@media (min-width: 420px) {
+	@media (min-width: 420.5px) {
 		@content;
 	}
 }
