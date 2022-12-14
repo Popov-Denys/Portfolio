@@ -199,6 +199,102 @@ a {
 			filter: blur(0);
 		}
 	}
+	&_alt {
+		span {
+			opacity: 0;
+		}
+		&.active {
+			transform: scale(0.94);
+			animation: scale 3s forwards 4s cubic-bezier(0.5, 1, 0.89, 1);
+
+			span {
+				opacity: 0;
+				filter: blur(4px);
+			}
+			span:nth-child(1) {
+				animation: fade-in 0.8s 3.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(2) {
+				animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(3) {
+				animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(4) {
+				animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(5) {
+				animation: fade-in 0.8s 3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(6) {
+				animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(7) {
+				animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(8) {
+				animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(9) {
+				animation: fade-in 0.8s 3.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(10) {
+				animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(11) {
+				animation: fade-in 0.8s 4.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(12) {
+				animation: fade-in 0.8s 4.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(13) {
+				animation: fade-in 0.8s 4.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(14) {
+				animation: fade-in 0.8s 4.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(15) {
+				animation: fade-in 0.8s 4.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(16) {
+				animation: fade-in 0.8s 4.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(17) {
+				animation: fade-in 0.8s 4.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+
+			span:nth-child(18) {
+				animation: fade-in 0.8s 4.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+			}
+		}
+		@keyframes scale {
+			100% {
+				transform: scale(1);
+			}
+		}
+		@keyframes fade-in {
+			100% {
+				opacity: 1;
+				filter: blur(0);
+			}
+		}
+	}
 }
 .button {
 	cursor: pointer;
@@ -280,11 +376,23 @@ a {
 .select-items .same-as-selected {
 	color: #3c7ce6;
 }
+
 .reveal {
 	position: relative;
 	transform: translateY(100px);
 	opacity: 0;
 	transition: 0.8s all ease;
+	&_alt {
+		animation: sun 2s forwards 3s cubic-bezier(0.5, 1, 0.89, 1);
+		@keyframes sun {
+			from {
+				transform: translateY(100px);
+			}
+			to {
+				transform: translateY(0);
+			}
+		}
+	}
 	&-2 {
 		position: relative;
 		transform: translateY(150px);
@@ -320,6 +428,7 @@ a {
 		opacity: 1;
 	}
 }
+
 .float {
 	-webkit-transform: translatey(0px);
 	transform: translatey(0px);
@@ -1233,7 +1342,7 @@ a {
 	}
 }
 .partners {
-	margin: 0 0 24px;
+	margin: 0 0 32px;
 	&__title {
 	}
 
@@ -1598,53 +1707,73 @@ a {
 	}
 }
 .footer {
-	padding: 0 16px;
+	padding: 0 16px 40px;
 	flex-shrink: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	justify-content: center;
-
-	&__logo {
-		@include flex-center;
-		margin: 0 0 20px;
-	}
-
 	&__description {
-		@include flex-column-center;
 		margin: 0 0 16px;
+		a {
+			display: block;
+		}
+	}
+	&__box {
+		margin: 0 0 24px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__documents {
+		font-weight: 600;
+		color: #495466;
+		font-size: 14px;
+		text-transform: uppercase;
+		div {
+			margin: 0 0 10px;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 	&__link {
 		font-size: 16px;
-		line-height: 26px;
-		&:hover {
-			text-decoration: underline;
+		text-decoration: underline;
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
 		}
 		&_email {
+			text-decoration: none;
 			display: none;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	&__icons {
-		@include flex-center;
-		margin: 0 0 16px;
+		display: flex;
+		margin: 0 0 20px;
 	}
 
 	&__icon {
 		@include inline-flex-center;
-		width: 32px;
-		height: 32px;
+		width: 19px;
+		height: 19px;
 		margin: 0 24px 0 0;
+		svg {
+			max-height: 100%;
+		}
 		&:last-child {
 			margin: 0;
 		}
 	}
 
 	&__copyright {
-		@include flex-column-center;
+		display: flex;
 	}
 	&__text {
 		font-size: 16px;
-		line-height: 26px;
+		&:first-child {
+			margin: 0 2px 0 0;
+		}
 	}
 }
 
@@ -1903,14 +2032,17 @@ a {
 		min-height: 489px;
 	}
 	.footer {
+		&__documents {
+			display: flex;
+			div {
+				margin: 0 16px 0 0;
+			}
+		}
 		&__description {
-			flex-direction: row;
+			display: flex;
 		}
 		&__link {
-			margin: 0 60px 0 0;
-			&:last-child {
-				margin: 0;
-			}
+			margin: 0 24px 0 0;
 		}
 		&__copyright {
 			flex-direction: row;
@@ -2060,7 +2192,6 @@ a {
 		}
 	}
 	.partners {
-		margin: 0 0 32px;
 		&__content {
 			display: flex;
 		}
@@ -2108,45 +2239,21 @@ a {
 		}
 	}
 	.footer {
-		padding: 0 24px;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		white-space: nowrap;
-		& > * {
-			flex-shrink: 0;
-		}
-		&__logo {
-			flex: 0 1 40%;
-			align-items: flex-start;
-			justify-content: flex-start;
-			margin: 0 0 16px;
+		padding: 0 24px 48px;
+		&__box {
+			display: flex;
+			justify-content: space-between;
 		}
 		&__description {
-			flex: 1 1 auto;
-			justify-content: flex-end;
-			margin: 0 0 16px;
 		}
 		&__link {
-			margin: 0 48px 0 0;
 		}
 		&__icons {
-			flex: 0 0 50%;
-			align-items: flex-start;
-			justify-content: flex-start;
+			margin: 0;
 		}
 		&__icon {
-			width: 24px;
-			height: 24px;
-			margin: 0 20px 0 0;
-			svg {
-				max-width: 18px;
-				max-height: 17px;
-			}
 		}
 		&__copyright {
-			flex: 1 1 auto;
-			justify-content: flex-end;
 		}
 	}
 }
@@ -2397,6 +2504,18 @@ a {
 		margin: 23px 0;
 		display: block;
 	}
+	.footer {
+		&__icon {
+			&_email {
+				display: none;
+			}
+		}
+		&__link {
+			&_email {
+				display: block;
+			}
+		}
+	}
 }
 @include _1440 {
 	.selections {
@@ -2596,38 +2715,12 @@ a {
 	}
 
 	.footer {
-		padding: 0 60px;
-		flex-wrap: nowrap;
-		&__logo {
-			order: 1;
-			flex: 0 0 auto;
-			margin: 0 48px 0 0;
-		}
+		padding: 0 60px 48px;
 		&__description {
-			order: 3;
-			flex: 0 0 auto;
 		}
 		&__icons {
-			order: 2;
-			flex: 0 0 auto;
-			margin: 0 48px 0 0;
-		}
-		&__icon {
-			&_email {
-				display: none;
-			}
 		}
 		&__copyright {
-			height: fit-content;
-			order: 4;
-			flex: 0 0 auto;
-			margin: 0 0 0 auto;
-		}
-		&__link {
-			margin: 0 48px 0 0;
-			&_email {
-				display: inline-block;
-			}
 		}
 	}
 }
@@ -2639,5 +2732,8 @@ a {
 		&__title {
 			margin: 0 0 40px;
 		}
+	}
+	.footer {
+		padding: 0 60px 48px;
 	}
 }
