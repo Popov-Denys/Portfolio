@@ -812,7 +812,7 @@ a {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	background: url("../img/selection-small.png") 100% / cover no-repeat;
+	background: url("../img/selection-small.jpg") 100% / cover no-repeat;
 	border-radius: 24px;
 	overflow: hidden;
 	padding: 32px;
@@ -962,7 +962,7 @@ a {
 
 .introduction {
 	overflow: hidden;
-	background: url("../img/intro-bg.webp") center/cover #3c7ce6 no-repeat;
+	background: url("../img/intro-bg.png") center/cover #3c7ce6 no-repeat;
 	background-blend-mode: multiply;
 	border-radius: 24px;
 	padding: 24px;
@@ -972,9 +972,9 @@ a {
 		display: flex;
 		flex-direction: column;
 		min-height: 600px;
-		background: url("../img/people-bg.webp") center/ cover no-repeat,
+		background: url("../img/people-bg.png") center/ cover no-repeat,
 			linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%),
-			url("../img/people-small.webp") 100% / cover no-repeat, #3c7ce6;
+			url("../img/people-small.jpg") 100% / cover no-repeat, #3c7ce6;
 		background-blend-mode: multiply, normal, normal, normal;
 		.introduction {
 			&__content {
@@ -1501,7 +1501,7 @@ a {
 	position: relative;
 	background: url("../img/bg-2.webp") bottom right no-repeat,
 		linear-gradient(0deg, rgba(60, 124, 230, 0.9) 35.6%, rgba(46, 96, 179, 0.315) 100%),
-		url("../img/bg-1.webp") 100% / cover no-repeat;
+		url("../img/bg-1.jpg") 100% / cover no-repeat;
 	background-blend-mode: multiply, normal, normal, normal;
 	border-radius: 24px;
 	display: flex;
@@ -2001,7 +2001,7 @@ a {
 }
 @include _500 {
 	.selection {
-		background: url("../img/selection.png") 100% / cover no-repeat;
+		background: url("../img/selection.jpg") 100% / cover no-repeat;
 	}
 	.selection {
 		min-height: 372px;
@@ -2081,13 +2081,13 @@ a {
 		min-height: 572px;
 		overflow: hidden;
 		border-radius: 32px;
-		background: url("../img/intro-bg.webp") center/cover no-repeat,
+		background: url("../img/intro-bg.png") center/cover no-repeat,
 			linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%);
 		margin: 0 0 32px;
 		&_special {
-			background: url("../img/people-bg.webp") right top/ cover no-repeat,
+			background: url("../img/people-bg.png") right top/ cover no-repeat,
 				linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%),
-				url("../img/people.png") right top / contain no-repeat, #3c7ce6;
+				url("../img/people.jpg") right top / contain no-repeat, #3c7ce6;
 			.introduction {
 				&__content {
 					max-width: 540px;
@@ -2326,9 +2326,9 @@ a {
 		padding: 64px 64px 0;
 		margin: 0 0 48px;
 		&_special {
-			background: url("../img/people-bg.webp") center/ cover no-repeat,
+			background: url("../img/people-bg.png") center/ cover no-repeat,
 				linear-gradient(90deg, #3c7ce6 55.07%, rgba(46, 96, 179, 0) 108.64%),
-				url("../img/people-ibg.webp") 100% / contain no-repeat, #3c7ce6;
+				url("../img/people-ibg.jpg") 100% / contain no-repeat, #3c7ce6;
 			.introduction {
 				&__description {
 					padding: 0;
@@ -2480,7 +2480,7 @@ a {
 		justify-content: center;
 		background: url("../img/bg-2.webp") center/100% no-repeat,
 			linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%),
-			url("../img/bg-1.webp") 100% / cover no-repeat;
+			url("../img/bg-1.jpg") 100% / cover no-repeat;
 		&__content {
 			margin: 0 48px 0 0;
 		}
