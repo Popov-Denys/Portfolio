@@ -1005,6 +1005,13 @@ a {
 		font-size: 14px;
 		line-height: 22px;
 		margin: 0 0 24px;
+		p {
+			line-height: 22px;
+			margin: 0 0 4px;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 	&__smartphones {
 		display: flex;
