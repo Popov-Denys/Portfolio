@@ -1129,7 +1129,7 @@ a {
 .team {
   margin: 0 -16px 0; }
   .team .slick-track {
-    margin: 0 0 24px 0; }
+    margin: 0 0 4px 0; }
   .team .slick-list {
     padding: 0 0 0 16px; }
   .team__title {
@@ -1168,6 +1168,7 @@ a {
     margin: 0 0 -8px; }
 
 .partners {
+  padding: 20px 0 0;
   margin: 0 0 32px; }
   .partners__item {
     display: inline-flex;
@@ -1776,7 +1777,7 @@ a {
     .team__title {
       padding: 0 0 0 24px; }
     .team .slick-track {
-      margin: 0 0 32px;
+      margin: 0 0 12px;
       left: 24px; }
     .team__item {
       width: 312px; }
@@ -2083,7 +2084,7 @@ a {
     .card:last-child {
       margin: 0; }
   .team {
-    margin: 0 0 64px 0; }
+    margin: 0 0 44px 0; }
     .team .slick-track {
       left: 0; }
     .team__title {

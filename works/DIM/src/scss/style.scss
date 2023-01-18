@@ -1306,7 +1306,7 @@ a {
 .team {
 	margin: 0 -16px 0;
 	& .slick-track {
-		margin: 0 0 24px 0;
+		margin: 0 0 4px 0;
 	}
 	& .slick-list {
 		padding: 0 0 0 16px;
@@ -1365,6 +1365,7 @@ a {
 	}
 }
 .partners {
+	padding: 20px 0 0;
 	margin: 0 0 32px;
 	&__title {
 	}
@@ -2217,7 +2218,7 @@ a {
 			padding: 0 0 0 24px;
 		}
 		& .slick-track {
-			margin: 0 0 32px;
+			margin: 0 0 12px;
 			left: 24px;
 		}
 		&__item {
@@ -2691,7 +2692,7 @@ a {
 		}
 	}
 	.team {
-		margin: 0 0 64px 0;
+		margin: 0 0 44px 0;
 		& .slick-track {
 			left: 0;
 		}
