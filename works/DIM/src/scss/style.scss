@@ -33,6 +33,7 @@ a {
 	color: #37404d;
 }
 .content {
+	padding: 10px 0 0;
 	flex: 1 1 auto;
 	height: 100%;
 	position: relative;
@@ -614,7 +615,6 @@ a {
 .header {
 	flex-shrink: 0;
 	padding: 16px 16px 14px;
-	margin: 0 0 10px;
 	position: relative;
 	z-index: 15;
 	&__container {
@@ -2083,7 +2083,6 @@ a {
 	}
 	.header {
 		padding: 38px 24px 24px;
-		margin: 0 0 14px;
 	}
 
 	.slick-arrow {
@@ -2093,6 +2092,9 @@ a {
 	}
 	.loader {
 		padding: 0 24px;
+	}
+	.content {
+		padding: 14px 0 0;
 	}
 	.main {
 		padding: 0 24px;

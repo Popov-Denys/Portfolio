@@ -144,6 +144,7 @@ a {
   color: #37404d; }
 
 .content {
+  padding: 10px 0 0;
   flex: 1 1 auto;
   height: 100%;
   position: relative; }
@@ -583,7 +584,6 @@ a {
 .header {
   flex-shrink: 0;
   padding: 16px 16px 14px;
-  margin: 0 0 10px;
   position: relative;
   z-index: 15; }
   .header__container {
@@ -1683,14 +1683,15 @@ a {
   .section {
     margin: 0 0 32px; }
   .header {
-    padding: 38px 24px 24px;
-    margin: 0 0 14px; }
+    padding: 38px 24px 24px; }
   .slick-arrow {
     pointer-events: all;
     visibility: visible;
     opacity: 1; }
   .loader {
     padding: 0 24px; }
+  .content {
+    padding: 14px 0 0; }
   .main {
     padding: 0 24px; }
   .introduction {
