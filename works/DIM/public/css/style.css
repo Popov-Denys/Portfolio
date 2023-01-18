@@ -182,9 +182,6 @@ a {
 .introduction-page {
   background: #f5f5f5; }
 
-.introduction-wrapper {
-  padding: 10px 0 0; }
-
 .top {
   display: inline-flex;
   align-items: center;
@@ -859,14 +856,17 @@ a {
     .selection__phone img {
       max-width: 100%; }
 
+.introduction-wrapper {
+  padding: 10px 0 0;
+  margin: 0 0 4px; }
+
 .introduction {
   overflow: hidden;
   background: url("../img/intro-bg.png") center/cover #3c7ce6 no-repeat;
   background-blend-mode: multiply;
   border-radius: 24px;
   padding: 24px;
-  color: #ffffff;
-  margin: 0 0 4px; }
+  color: #ffffff; }
   .introduction_special {
     display: flex;
     flex-direction: column;
@@ -1699,15 +1699,15 @@ a {
   .main {
     padding: 0 24px; }
   .introduction-wrapper {
-    padding: 14px 0 0; }
+    padding: 14px 0 0;
+    margin: 0 0 12px; }
   .introduction {
     display: flex;
     padding: 48px 48px 0;
     min-height: 572px;
     overflow: hidden;
     border-radius: 32px;
-    background: url("../img/intro-bg.png") center/cover no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%);
-    margin: 0 0 12px; }
+    background: url("../img/intro-bg.png") center/cover no-repeat, linear-gradient(90deg, rgba(60, 124, 230, 0.9) 23.75%, rgba(46, 96, 179, 0) 105.04%); }
     .introduction_special {
       background: url("../img/people-bg.png") right top/cover no-repeat, linear-gradient(90deg, #3c7ce6 38.93%, rgba(46, 96, 179, 0) 105.04%), url("../img/people.jpg") right top/contain no-repeat, #3c7ce6; }
       .introduction_special .introduction__content {
@@ -1868,9 +1868,10 @@ a {
     .selection__button {
       max-width: 250px;
       margin: 0 auto 0 0; }
-  .introduction {
-    padding: 64px 64px 0;
+  .introduction-wrapper {
     margin: 0 0 28px; }
+  .introduction {
+    padding: 64px 64px 0; }
     .introduction_special {
       background: url("../img/people-bg.png") center/cover no-repeat, linear-gradient(90deg, #3c7ce6 55.07%, rgba(46, 96, 179, 0) 108.64%), url("../img/people-ibg.jpg") 100%/contain no-repeat, #3c7ce6; }
       .introduction_special .introduction__description {
@@ -2027,32 +2028,32 @@ a {
     padding: 0 22px; }
   .main {
     padding: 0 60px; }
-  .introduction {
+  .introduction-wrapper {
     margin: 0 0 44px; }
-    .introduction_special .introduction__description {
-      max-width: 458px;
-      padding: 0; }
-    .introduction__content {
-      margin: 0 71px 0 0; }
-    .introduction__description {
-      padding: 0 30px 0 0; }
-    .introduction__box {
-      margin: 0 0 -41px; }
-    .introduction__smartphone {
-      max-width: 268px;
-      margin: 0 24px 0 0; }
-      .introduction__smartphone:last-child {
-        margin: 0; }
-    .introduction__title {
-      font-size: 56px;
-      padding: 0 30px 0 0;
-      margin: 0 0 40px; }
-    .introduction__buttons {
-      flex-direction: row; }
-    .introduction__button {
-      margin: 0 24px 0 0; }
-      .introduction__button:last-child {
-        margin: 0; }
+  .introduction_special .introduction__description {
+    max-width: 458px;
+    padding: 0; }
+  .introduction__content {
+    margin: 0 71px 0 0; }
+  .introduction__description {
+    padding: 0 30px 0 0; }
+  .introduction__box {
+    margin: 0 0 -41px; }
+  .introduction__smartphone {
+    max-width: 268px;
+    margin: 0 24px 0 0; }
+    .introduction__smartphone:last-child {
+      margin: 0; }
+  .introduction__title {
+    font-size: 56px;
+    padding: 0 30px 0 0;
+    margin: 0 0 40px; }
+  .introduction__buttons {
+    flex-direction: row; }
+  .introduction__button {
+    margin: 0 24px 0 0; }
+    .introduction__button:last-child {
+      margin: 0; }
   .description {
     margin: 0 0 44px; }
     .description__title {
