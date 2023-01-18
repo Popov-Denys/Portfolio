@@ -33,7 +33,6 @@ a {
 	color: #37404d;
 }
 .content {
-	padding: 10px 0 0;
 	flex: 1 1 auto;
 	height: 100%;
 	position: relative;
@@ -74,6 +73,9 @@ a {
 }
 .introduction-page {
 	background: #f5f5f5;
+}
+.introduction-wrapper {
+	padding: 10px 0 0;
 }
 .top {
 	@include inline-flex-center;
@@ -2093,11 +2095,11 @@ a {
 	.loader {
 		padding: 0 24px;
 	}
-	.content {
-		padding: 14px 0 0;
-	}
 	.main {
 		padding: 0 24px;
+	}
+	.introduction-wrapper {
+		padding: 14px 0 0;
 	}
 	.introduction {
 		display: flex;
