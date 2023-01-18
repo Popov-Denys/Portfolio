@@ -1410,7 +1410,7 @@ a {
 	background: #ebf2ff;
 	border-radius: 16px;
 	overflow: hidden;
-	padding: 24px 24px 32px;
+	padding: 4px 24px 32px;
 	color: #37404d;
 	margin: 0 0 4px;
 	&_special {
@@ -1418,6 +1418,9 @@ a {
 			&__label {
 			}
 		}
+	}
+	&__wrapper {
+		padding: 20px 0 0;
 	}
 	&__container {
 		display: none;
@@ -2229,7 +2232,7 @@ a {
 		}
 	}
 	.help {
-		padding: 32px;
+		padding: 12px 32px 32px;
 		margin: 0 0 12px;
 		border-radius: 24px;
 		&__title {
@@ -2472,7 +2475,7 @@ a {
 		width: 360px;
 	}
 	.help {
-		padding: 32px;
+		padding: 12px 32px 32px;
 		margin: 0 0 28px;
 		&__container {
 			&.active {
@@ -2702,7 +2705,7 @@ a {
 		margin: 0 0 88px;
 	}
 	.help {
-		padding: 64px 64px 72px;
+		padding: 44px 64px 72px;
 		margin: 0 0 44px;
 		&_special {
 			.help {

@@ -1199,9 +1199,11 @@ a {
   background: #ebf2ff;
   border-radius: 16px;
   overflow: hidden;
-  padding: 24px 24px 32px;
+  padding: 4px 24px 32px;
   color: #37404d;
   margin: 0 0 4px; }
+  .help__wrapper {
+    padding: 20px 0 0; }
   .help__container {
     display: none; }
     .help__container.active {
@@ -1784,7 +1786,7 @@ a {
     padding: 40px 66px;
     margin: 0 16px 0 0; }
   .help {
-    padding: 32px;
+    padding: 12px 32px 32px;
     margin: 0 0 12px;
     border-radius: 24px; }
     .help__title {
@@ -1949,7 +1951,7 @@ a {
   .card {
     width: 360px; }
   .help {
-    padding: 32px;
+    padding: 12px 32px 32px;
     margin: 0 0 28px; }
     .help__container.active {
       display: flex; }
@@ -2095,7 +2097,7 @@ a {
   .partners {
     margin: 0 0 88px; }
   .help {
-    padding: 64px 64px 72px;
+    padding: 44px 64px 72px;
     margin: 0 0 44px; }
     .help_special .help__label {
       max-width: 100%; }
