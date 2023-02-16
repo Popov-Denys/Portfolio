@@ -427,6 +427,8 @@ body {
     .header_dark .header__menu a {
       color: #000000;
       text-shadow: none; }
+    .header_dark .header__callback {
+      text-shadow: none; }
   .header__box {
     max-width: 1502px;
     margin: 0 auto; }
@@ -577,10 +579,10 @@ body {
     .featured__special .featured__img {
       border-right: none; }
   .featured__img img {
-    border: 2px solid #cf9455;
+    border: 2px solid rgba(0, 0, 0, 0.6);
     max-width: 100%; }
   .featured__box {
-    background: #cf9455;
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     color: #ffffff;
     display: flex;
@@ -589,12 +591,16 @@ body {
   .featured__title {
     font-size: 30px;
     font-weight: 500;
-    flex: 1 1 auto;
-    margin: 0 0 20px; }
+    margin: 0 0 20px;
+    cursor: pointer; }
+    .featured__title:hover {
+      color: #cf9455;
+      text-decoration: underline; }
   .featured__date {
     font-size: 20px;
     margin: 0 0 20px; }
   .featured__link {
+    margin: auto 0 0;
     text-decoration: underline;
     color: #ffffff;
     font-size: 15px; }

@@ -248,6 +248,9 @@ body {
 					text-shadow: none;
 				}
 			}
+			&__callback {
+				text-shadow: none;
+			}
 		}
 	}
 	&__box {
@@ -451,12 +454,12 @@ body {
 	}
 	&__img {
 		img {
-			border: 2px solid #cf9455;
+			border: 2px solid rgba(0, 0, 0, 0.6);
 			max-width: 100%;
 		}
 	}
 	&__box {
-		background: #cf9455;
+		background: rgba(0, 0, 0, 0.6);
 		padding: 20px;
 		color: #ffffff;
 		@include flex-column;
@@ -465,14 +468,19 @@ body {
 	&__title {
 		font-size: 30px;
 		font-weight: 500;
-		flex: 1 1 auto;
 		margin: 0 0 20px;
+		cursor: pointer;
+		&:hover {
+			color: $main-color;
+			text-decoration: underline;
+		}
 	}
 	&__date {
 		font-size: 20px;
 		margin: 0 0 20px;
 	}
 	&__link {
+		margin: auto 0 0;
 		text-decoration: underline;
 		color: #ffffff;
 		font-size: 15px;
