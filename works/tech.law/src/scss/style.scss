@@ -20,6 +20,71 @@ body {
 		}
 	}
 }
+.careers {
+	padding: 100px 60px;
+	&__container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	&__heading {
+		font-size: 40px;
+		font-weight: 500;
+		margin: 0 0 100px;
+	}
+	&__title {
+		font-size: 35px;
+		color: $main-color;
+		margin: 0 0 30px;
+	}
+
+	&__items {
+		display: grid;
+		gap: 50px;
+		margin: 0 0 80px;
+	}
+
+	&__item {
+		display: flex;
+		gap: 30px;
+		&:nth-child(odd) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__img {
+		max-width: 600px;
+		img {
+			border: 1px solid $main-color;
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		padding: 20px 0 5px;
+	}
+
+	&__text {
+		font-size: 18px;
+	}
+
+	&__maps {
+	}
+
+	&__label {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 38px;
+		font-weight: 500;
+		margin: 0 0 30px;
+	}
+
+	&__map {
+		height: 452px;
+		border: 1px solid $main-color;
+	}
+}
+
 .story {
 	padding: 304px 60px 100px;
 	&__container {
@@ -1294,6 +1359,9 @@ body {
 	}
 }
 @include _1280 {
+	.careers {
+		padding: 100px 40px;
+	}
 	.new-insights-item {
 		&__container {
 			column-gap: 25px;
@@ -1371,6 +1439,17 @@ body {
 	}
 }
 @include _1024 {
+	.careers {
+		&__item {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		&__img {
+			max-width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
 	.featured {
 		&__date {
 			font-size: 18px;
