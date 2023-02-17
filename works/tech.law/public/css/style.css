@@ -859,9 +859,52 @@ body {
     column-gap: 150px; }
   .approach__number {
     color: #cf9455;
+    display: inline-flex;
     font-size: 68px;
     font-weight: 700;
-    margin: 0 0 20px; }
+    max-height: 60px;
+    line-height: 1;
+    margin: 0 0 20px;
+    overflow: hidden;
+    white-space: nowrap; }
+    .approach__number span {
+      animation-duration: 3s;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      line-height: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      .approach__number span span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 100%;
+        height: 100%; }
+    .approach__number_1.animate span {
+      animation-name: count1; }
+
+@keyframes count1 {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-33%); } }
+    .approach__number_2.animate span {
+      animation-name: count2; }
+
+@keyframes count2 {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-50%); } }
+    .approach__number_3.animate span {
+      animation-name: count3; }
+
+@keyframes count3 {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-60%); } }
   .approach__label {
     color: #212121;
     font-size: 24px;

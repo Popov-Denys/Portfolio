@@ -2,6 +2,20 @@ $('.hamburger').click(function () {
 	$('.hamburger,.header__box,.header__menu').toggleClass('active');
 	$('body').toggleClass('locked');
 });
+const observer = new IntersectionObserver(intersections => {
+	intersections.forEach(({
+		target,
+		isIntersecting
+	}) => {
+		target.classList.toggle('animate', isIntersecting);
+	});
+}, {
+	threshold: 0
+});
+
+document.querySelectorAll('.approach__number').forEach(div => {
+	observer.observe(div);
+});
 document.addEventListener('DOMContentLoaded', function (event) {
 	// array with texts to type in typewriter
 	var dataText = ["Telecommunications Law", "Technology", "Media", "Machine Learning"];
