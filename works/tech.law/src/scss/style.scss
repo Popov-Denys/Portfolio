@@ -381,16 +381,21 @@ body {
 					position: absolute;
 					bottom: -6px;
 					width: calc(100% + 10px);
-					height: 3px;
-					left: 50%;
-					transform: translateX(-50%);
+					left: 0;
 					background: #cf9455;
-					display: none;
+					width: 0;
+					height: 3px;
+					-webkit-transition: all 0.4s;
+					-o-transition: all 0.4s;
+					transition: all 0.4s;
+					border-radius: 10px;
 				}
 				&:hover {
 					color: #cf9455;
+					text-shadow: none;
 					&::before {
-						display: block;
+						width: 100%;
+						left: 0;
 					}
 				}
 				&.active {
@@ -635,6 +640,15 @@ body {
 		font-size: 36px;
 		font-weight: 700;
 		margin: 0 0 14px;
+		span {
+			border-right: 0.05em solid $main-color;
+			animation: caret 1s steps(1) infinite;
+		}
+		@keyframes caret {
+			50% {
+				border-color: transparent;
+			}
+		}
 	}
 
 	&__text {
@@ -660,8 +674,34 @@ body {
 		text-transform: uppercase;
 		font-weight: 500;
 		color: #cf9455;
+		position: relative;
 		border: 2px solid #cf9455;
 		padding: 20px 40px;
+		z-index: 1;
+		span {
+			transition: 0.6s ease;
+			display: inline-block;
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			top: 0;
+			display: inline-block;
+			background: $main-color;
+			transition: 0.6s ease;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			right: 100%;
+			bottom: 0;
+			left: 0;
+		}
+		&:hover {
+			color: #ffffff;
+			&:before {
+				right: 0;
+			}
+		}
 	}
 }
 .areas {
