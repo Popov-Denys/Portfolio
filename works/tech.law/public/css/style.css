@@ -1158,9 +1158,10 @@ body {
   .blog__img {
     margin: 0 0 15px; }
     .blog__img img {
+      border: 1px solid #cf9455;
       max-width: 100%; }
   .blog__date {
-    color: #424242;
+    color: #cf9455;
     font-size: 14px;
     margin: 0 0 8px; }
   .blog__label {
@@ -1269,14 +1270,14 @@ body {
     font-size: 22px;
     font-weight: 700;
     margin: 0 0 20px; }
-  .footer__address, .footer__phone, .footer__email, .footer__fax {
+  .footer__address, .footer__phone, .footer__email {
     line-height: 30px;
     font-size: 16px;
     color: #424242;
     margin: 0 0 15px; }
-    .footer__address:last-child, .footer__phone:last-child, .footer__email:last-child, .footer__fax:last-child {
+    .footer__address:last-child, .footer__phone:last-child, .footer__email:last-child {
       margin: 0; }
-    .footer__address span:first-child, .footer__phone span:first-child, .footer__email span:first-child, .footer__fax span:first-child {
+    .footer__address span:first-child, .footer__phone span:first-child, .footer__email span:first-child {
       font-weight: 500;
       margin: 0 10px 0 0; }
   .footer__box {
@@ -1708,6 +1709,8 @@ body {
   .insights__button {
     padding: 20px 40px;
     margin: 0 auto; }
+  .areas__container {
+    padding: 80px 20px; }
   .areas__content {
     grid-template-columns: repeat(1, 1fr); }
   .areas__text {
@@ -1746,13 +1749,17 @@ body {
     .statistic__content {
       column-gap: 50px;
       row-gap: 20px; }
+  .contact {
+    padding: 80px 20px; }
   .team__content {
     grid-template-columns: repeat(1, 1fr); }
   .review__title {
     font-size: 37px;
     line-height: normal; }
-  .blog__content {
-    grid-template-columns: repeat(1, 1fr); }
+  .blog {
+    padding: 80px 20px; }
+    .blog__content {
+      grid-template-columns: repeat(1, 1fr); }
   .footer__content {
     grid-template-columns: 1fr; }
   .footer__box {

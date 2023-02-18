@@ -12,7 +12,16 @@ const observer = new IntersectionObserver(intersections => {
 }, {
 	threshold: 0
 });
-
+$('[href^="#areas"]').on('click', function () {
+	let href = $(this).attr('href'), elem = $(document).find(href);
+	if (elem.length > 0) {
+		let posY = elem.eq(0).offset().top;
+		$('html, body').animate({
+			scrollTop: posY
+		}, 1000);
+	}
+	return false;
+});
 document.querySelectorAll('.approach__number').forEach(div => {
 	observer.observe(div);
 });
@@ -47,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 			}, 20000);
 		}
 		// check if dataText[i] exists
-		if (i < dataText[i].length) {
+		else if (i < dataText[i].length) {
 			// text exists! start typewriter animation
 			typeWriter(dataText[i], 0, function () {
 				// after callback (and whole text has been animated), start next text

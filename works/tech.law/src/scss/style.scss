@@ -1224,12 +1224,13 @@ body {
 	&__img {
 		margin: 0 0 15px;
 		img {
+			border: 1px solid $main-color;
 			max-width: 100%;
 		}
 	}
 
 	&__date {
-		color: #424242;
+		color: $main-color;
 		font-size: 14px;
 		margin: 0 0 8px;
 	}
@@ -1383,8 +1384,7 @@ body {
 
 	&__address,
 	&__phone,
-	&__email,
-	&__fax {
+	&__email {
 		line-height: 30px;
 		font-size: 16px;
 		color: #424242;
@@ -1406,9 +1406,6 @@ body {
 	}
 
 	&__email {
-	}
-
-	&__fax {
 	}
 
 	&__box {
@@ -2069,6 +2066,9 @@ body {
 		}
 	}
 	.areas {
+		&__container {
+			padding: 80px 20px;
+		}
 		&__content {
 			grid-template-columns: repeat(1, 1fr);
 		}
@@ -2141,6 +2141,9 @@ body {
 			row-gap: 20px;
 		}
 	}
+	.contact {
+		padding: 80px 20px;
+	}
 	.team {
 		&__content {
 			grid-template-columns: repeat(1, 1fr);
@@ -2153,6 +2156,7 @@ body {
 		}
 	}
 	.blog {
+		padding: 80px 20px;
 		&__content {
 			grid-template-columns: repeat(1, 1fr);
 		}
