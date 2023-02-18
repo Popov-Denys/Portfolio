@@ -384,13 +384,12 @@ body {
 					background: #cf9455;
 					width: 0;
 					height: 3px;
-					-webkit-transition: all 0.4s;
-					-o-transition: all 0.4s;
 					transition: all 0.4s;
 					border-radius: 10px;
 				}
 				&:hover {
 					color: #cf9455;
+
 					text-shadow: none;
 					&::before {
 						width: 100%;
@@ -2087,6 +2086,44 @@ body {
 			max-width: 400px;
 			margin: 0 auto;
 			@include flex-column;
+		}
+		&__number {
+			&_1 {
+				span {
+					@keyframes count1 {
+						from {
+							transform: translateY(0);
+						}
+						to {
+							transform: translateY(-47%);
+						}
+					}
+				}
+			}
+			&_2 {
+				span {
+					@keyframes count2 {
+						from {
+							transform: translateY(0);
+						}
+						to {
+							transform: translateY(-97%);
+						}
+					}
+				}
+			}
+			&_3 {
+				span {
+					@keyframes count3 {
+						from {
+							transform: translateY(0);
+						}
+						to {
+							transform: translateY(-147%);
+						}
+					}
+				}
+			}
 		}
 	}
 	.statistic {
