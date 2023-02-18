@@ -383,6 +383,7 @@ body {
     width: 147px;
     transition: 0.3s all; }
     .testimonials__img img {
+      border-radius: 100%;
       max-width: 107px; }
   .testimonials__info {
     width: 200%;

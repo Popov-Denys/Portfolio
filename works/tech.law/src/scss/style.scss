@@ -184,8 +184,10 @@ body {
 
 	&__img {
 		width: 147px;
+
 		transition: 0.3s all;
 		img {
+			border-radius: 100%;
 			max-width: 107px;
 		}
 	}
