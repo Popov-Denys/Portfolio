@@ -1032,6 +1032,38 @@ body {
 	max-width: 1228px;
 	color: #212121;
 	margin: 0 auto;
+	&_full {
+		.contact {
+			&__container {
+				display: grid;
+				grid-template-columns: 1fr;
+			}
+			&__title {
+				font-size: 45px;
+				text-align: center;
+			}
+			&__subtitle {
+				text-align: center;
+				font-size: 25px;
+				margin: 0 0 30px;
+			}
+			&__text {
+				max-width: 600px;
+				font-size: 18px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			&__info {
+				margin: 0 0 50px;
+			}
+			&__button {
+				display: flex;
+				margin: 0 auto;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+	}
 	&__container {
 		display: grid;
 		align-items: center;
@@ -1110,11 +1142,34 @@ body {
 	&__button {
 		appearance: none;
 		padding: 16px 40px;
+		font-family: Outfit;
 		background-color: #cf9455;
+		border: 2px solid $main-color;
 		text-transform: uppercase;
 		color: #ffffff;
+		position: relative;
+		transition: 0.6s ease;
+		z-index: 1;
 		font-size: 16px;
 		font-weight: 500;
+		&::before {
+			top: 0;
+			display: inline-block;
+			background: #ffffff;
+			transition: 0.6s ease;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 100%;
+			bottom: 0;
+			right: 0;
+		}
+		&:hover {
+			color: $main-color;
+			&::before {
+				left: 0;
+			}
+		}
 	}
 }
 .review {

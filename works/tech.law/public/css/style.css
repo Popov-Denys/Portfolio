@@ -1012,6 +1012,28 @@ body {
   max-width: 1228px;
   color: #212121;
   margin: 0 auto; }
+  .contact_full .contact__container {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .contact_full .contact__title {
+    font-size: 45px;
+    text-align: center; }
+  .contact_full .contact__subtitle {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 30px; }
+  .contact_full .contact__text {
+    max-width: 600px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto; }
+  .contact_full .contact__info {
+    margin: 0 0 50px; }
+  .contact_full .contact__button {
+    display: flex;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500; }
   .contact__container {
     display: grid;
     align-items: center;
@@ -1064,11 +1086,31 @@ body {
   .contact__button {
     appearance: none;
     padding: 16px 40px;
+    font-family: Outfit;
     background-color: #cf9455;
+    border: 2px solid #cf9455;
     text-transform: uppercase;
     color: #ffffff;
+    position: relative;
+    transition: 0.6s ease;
+    z-index: 1;
     font-size: 16px;
     font-weight: 500; }
+    .contact__button::before {
+      top: 0;
+      display: inline-block;
+      background: #ffffff;
+      transition: 0.6s ease;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 100%;
+      bottom: 0;
+      right: 0; }
+    .contact__button:hover {
+      color: #cf9455; }
+      .contact__button:hover::before {
+        left: 0; }
 
 .review {
   position: relative;
