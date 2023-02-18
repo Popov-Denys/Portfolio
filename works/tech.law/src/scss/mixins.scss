@@ -1,6 +1,9 @@
 $maxMobileHeight: 900;
 $maxHeight: 1150;
 $main-color: #cf9455;
+$main-color-text: #212121;
+$main-color-subtext: #424242;
+$main-light-color: #ffffff;
 $main-rgba: rgba(207, 148, 85, 1);
 @mixin fz($pcSize, $mobSize) {
 	$addSize: $pcSize - $mobSize;

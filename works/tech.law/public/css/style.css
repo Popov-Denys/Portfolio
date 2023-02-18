@@ -458,20 +458,20 @@ body {
   width: 100%; }
   .header_dark {
     position: relative;
-    color: #000000;
+    color: #212121;
     margin: 0 0 50px; }
     .header_dark .header__title {
-      color: #000000;
+      color: #212121;
       text-shadow: none; }
     .header_dark .header__label {
       border-color: rgba(0, 0, 0, 0.5); }
     .header_dark .header__description {
       border-color: rgba(0, 0, 0, 0.2); }
     .header_dark .header__subtitle {
-      color: #000000;
+      color: #212121;
       text-shadow: none; }
     .header_dark .header__menu a {
-      color: #000000;
+      color: #212121;
       text-shadow: none; }
     .header_dark .header__callback {
       text-shadow: none; }
@@ -725,6 +725,8 @@ body {
     justify-content: center;
     margin: 0 80px 0 0; }
     .insights__img img {
+      border: 1px solid #cf9455;
+      height: 100%;
       max-width: 100%; }
   .insights__content {
     display: flex;
@@ -1198,7 +1200,7 @@ body {
     max-width: 1410px;
     margin: 0 auto; }
   .blog__title {
-    color: #0d0d0d;
+    color: #212121;
     font-size: 46px;
     font-weight: 700;
     margin: 0 0 50px; }
@@ -1488,7 +1490,7 @@ body {
   .header_dark .hamburger-inner,
   .header_dark .hamburger-inner::before,
   .header_dark .hamburger-inner::after {
-    background-color: #000000; }
+    background-color: #212121; }
   .header__box.active .header__logo {
     color: #212121;
     background: #ffffff; }
@@ -1530,9 +1532,9 @@ body {
         margin: 0 0 40px 0; }
       .header__menu li a {
         text-shadow: none;
-        color: #000000; }
+        color: #212121; }
         .header__menu li a:hover {
-          color: #000000; }
+          color: #212121; }
           .header__menu li a:hover::before {
             display: none; }
     .header__menu.active {
@@ -1568,7 +1570,7 @@ body {
     .hamburger.active .hamburger-inner,
     .hamburger.active .hamburger-inner::before,
     .hamburger.active .hamburger-inner::after {
-      background-color: #000000; }
+      background-color: #212121; }
     .hamburger-box {
       width: 40px;
       height: 24px;

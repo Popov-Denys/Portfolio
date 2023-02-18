@@ -113,7 +113,7 @@ body {
 	}
 
 	&__text {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 16px;
 		margin: 0 0 48px;
 	}
@@ -276,23 +276,23 @@ body {
 	width: 100%;
 	min-height: 100%;
 	margin: 0 auto;
-	color: #212121;
+	color: $main-color-text;
 	display: flex;
 	flex-direction: column;
 }
 .header {
 	position: absolute;
 	display: block;
-	color: #ffffff;
+	color: $main-light-color;
 	z-index: 6;
 	width: 100%;
 	&_dark {
 		position: relative;
-		color: #000000;
+		color: $main-color-text;
 		margin: 0 0 50px;
 		.header {
 			&__title {
-				color: #000000;
+				color: $main-color-text;
 				text-shadow: none;
 			}
 			&__label {
@@ -302,12 +302,12 @@ body {
 				border-color: rgba(0, 0, 0, 0.2);
 			}
 			&__subtitle {
-				color: #000000;
+				color: $main-color-text;
 				text-shadow: none;
 			}
 			&__menu {
 				a {
-					color: #000000;
+					color: $main-color-text;
 					text-shadow: none;
 				}
 			}
@@ -348,7 +348,7 @@ body {
 		z-index: 10;
 		text-shadow: 0 0 6px rgba(0, 0, 0, 0.74);
 		text-transform: uppercase;
-		color: #ffffff;
+		color: $main-light-color;
 		transition: all 0.5s;
 		margin: 0 15px 0 0;
 	}
@@ -376,7 +376,7 @@ body {
 				opacity: 0.85;
 				text-shadow: 0 0 6px rgba(0, 0, 0, 0.74);
 				position: relative;
-				color: #ffffff;
+				color: $main-light-color;
 				&:before {
 					content: "";
 					position: absolute;
@@ -493,7 +493,7 @@ body {
 .featured {
 	padding: 100px 60px;
 	&__heading {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 30px;
 		margin: 0 0 50px;
 	}
@@ -529,12 +529,12 @@ body {
 		flex: 1 1 auto;
 		background: rgba(0, 0, 0, 0.45);
 		padding: 20px;
-		color: #ffffff;
+		color: $main-light-color;
 		@include flex-column;
 		justify-content: center;
 	}
 	&__title {
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 30px;
 		font-weight: 500;
 		margin: 0 0 20px;
@@ -549,7 +549,7 @@ body {
 	}
 	&__link {
 		margin: auto 0 0;
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 15px;
 		&:hover {
 			color: $main-color;
@@ -567,7 +567,7 @@ body {
 	padding: 100px 60px;
 
 	&__title {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 30px;
 		margin: 0 0 50px;
 	}
@@ -603,7 +603,7 @@ body {
 
 	&__title {
 		display: inline-block;
-		color: #212121;
+		color: $main-color-text;
 		font-size: 25px;
 		font-weight: 500;
 		margin: 0 0 10px;
@@ -611,7 +611,7 @@ body {
 
 	&__text {
 		display: block;
-		color: #212121;
+		color: $main-color-text;
 		font-size: 20px;
 		margin: 0 0 20px;
 	}
@@ -636,6 +636,8 @@ body {
 		@include flex-center;
 		margin: 0 80px 0 0;
 		img {
+			border: 1px solid $main-color;
+			height: 100%;
 			max-width: 100%;
 		}
 	}
@@ -643,7 +645,7 @@ body {
 		@include flex-column;
 	}
 	&__title {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 36px;
 		font-weight: 700;
 		margin: 0 0 14px;
@@ -662,7 +664,7 @@ body {
 		flex: 1 1 auto;
 		@include flex-column;
 		font-size: 23px;
-		color: #424242;
+		color: $main-color-subtext;
 		margin: 0 0 18px;
 		p {
 			flex: 1 1 auto;
@@ -704,7 +706,7 @@ body {
 			left: 0;
 		}
 		&:hover {
-			color: #ffffff;
+			color: $main-light-color;
 			&:before {
 				right: 0;
 			}
@@ -723,12 +725,12 @@ body {
 		text-transform: uppercase;
 		font-size: 20px;
 		font-weight: 500;
-		color: #212121;
+		color: $main-color-text;
 	}
 
 	&__title {
 		text-align: center;
-		color: #212121;
+		color: $main-color-text;
 		font-size: 46px;
 		font-weight: 700;
 		margin: 0 0 80px;
@@ -757,13 +759,13 @@ body {
 
 	&__label {
 		font-size: 30px;
-		color: #212121;
+		color: $main-color-text;
 		font-weight: 700;
 		margin: 0 0 20px;
 	}
 
 	&__text {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 16px;
 		line-height: 28px;
 		max-width: 450px;
@@ -790,7 +792,7 @@ body {
 	}
 
 	&__subtitle {
-		color: #212121;
+		color: $main-color-text;
 		opacity: 0.3;
 		font-size: 20px;
 		font-weight: 500;
@@ -799,7 +801,7 @@ body {
 	}
 
 	&__title {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 46px;
 		font-weight: 700;
 		text-align: center;
@@ -893,7 +895,7 @@ body {
 	}
 
 	&__label {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 24px;
 		font-weight: 500;
 		margin: 0 0 23px;
@@ -901,12 +903,12 @@ body {
 
 	&__text {
 		font-size: 16px;
-		color: #424242;
+		color: $main-color-subtext;
 		line-height: 28px;
 	}
 }
 .statistic {
-	background: #212121;
+	background: $main-color-text;
 	padding: 0 50px;
 	&__container {
 		display: flex;
@@ -931,7 +933,7 @@ body {
 	}
 
 	&__text {
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 24px;
 		line-height: 36px;
 		margin: 0 0 22px;
@@ -941,7 +943,7 @@ body {
 		display: inline-block;
 		padding: 20px 22px;
 		text-transform: uppercase;
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 16px;
 		font-weight: 500;
 		text-align: center;
@@ -957,7 +959,7 @@ body {
 	}
 
 	&__item {
-		color: #ffffff;
+		color: $main-light-color;
 		text-align: center;
 	}
 
@@ -985,7 +987,7 @@ body {
 	}
 
 	&__title {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 46px;
 		font-weight: 700;
 		text-align: center;
@@ -995,7 +997,7 @@ body {
 	&__subtitle {
 		font-size: 18px;
 		text-align: center;
-		color: #424242;
+		color: $main-color-subtext;
 		margin: 0 0 55px;
 	}
 
@@ -1030,7 +1032,7 @@ body {
 	}
 
 	&__position {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 14px;
 	}
 }
@@ -1039,7 +1041,7 @@ body {
 	padding: 100px 30px;
 	background: #ffffff;
 	max-width: 1228px;
-	color: #212121;
+	color: $main-color-text;
 	margin: 0 auto;
 	&_full {
 		.contact {
@@ -1097,7 +1099,7 @@ body {
 	}
 
 	&__text {
-		color: #424242;
+		color: $main-color-subtext;
 		line-height: 30px;
 	}
 
@@ -1155,7 +1157,7 @@ body {
 		background-color: $main-color;
 		border: 2px solid $main-color;
 		text-transform: uppercase;
-		color: #ffffff;
+		color: $main-light-color;
 		position: relative;
 		transition: 0.6s ease;
 		z-index: 1;
@@ -1228,7 +1230,7 @@ body {
 		font-size: 46px;
 		position: relative;
 		z-index: 2;
-		color: #ffffff;
+		color: $main-light-color;
 		line-height: 65px;
 		letter-spacing: 1.38px;
 		margin: 0 20px 0 0;
@@ -1261,7 +1263,7 @@ body {
 }
 
 .blog {
-	background-color: #ffffff;
+	background-color: $main-light-color;
 	padding: 100px 60px;
 	&__container {
 		max-width: 1410px;
@@ -1269,7 +1271,7 @@ body {
 	}
 
 	&__title {
-		color: #0d0d0d;
+		color: $main-color-text;
 		font-size: 46px;
 		font-weight: 700;
 		margin: 0 0 50px;
@@ -1301,13 +1303,13 @@ body {
 
 	&__label {
 		font-size: 20px;
-		color: #212121;
+		color: $main-color-text;
 		line-height: 26px;
 		margin: 0 0 15px;
 	}
 
 	&__text {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 16px;
 		line-height: 26px;
 		flex: 1 1 auto;
@@ -1335,7 +1337,7 @@ body {
 	}
 
 	&__title {
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 40px;
@@ -1354,7 +1356,7 @@ body {
 		width: 100%;
 		padding: 14px 18px;
 		background-color: #373e4f;
-		color: #ffffff;
+		color: $main-light-color;
 		font-size: 16px;
 		appearance: none;
 		&::placeholder {
@@ -1373,7 +1375,7 @@ body {
 		background-color: $main-color;
 		padding: 5px 26px;
 		font-size: 16px;
-		color: #ffffff;
+		color: $main-light-color;
 	}
 }
 .footer {
@@ -1403,7 +1405,7 @@ body {
 	}
 
 	&__text {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 14px;
 		line-height: 26px;
 	}
@@ -1414,7 +1416,7 @@ body {
 	}
 
 	&__title {
-		color: #212121;
+		color: $main-color-text;
 		font-size: 22px;
 		font-weight: 700;
 		margin: 0 0 20px;
@@ -1425,7 +1427,7 @@ body {
 
 	&__link {
 		@include flex-a-center;
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 16px;
 		margin: 0 0 16px;
 		&:last-child {
@@ -1440,7 +1442,7 @@ body {
 
 	&__office {
 		text-transform: uppercase;
-		color: #212121;
+		color: $main-color-text;
 		font-size: 22px;
 		font-weight: 700;
 		margin: 0 0 20px;
@@ -1451,7 +1453,7 @@ body {
 	&__email {
 		line-height: 30px;
 		font-size: 16px;
-		color: #424242;
+		color: $main-color-subtext;
 		margin: 0 0 15px;
 		&:last-child {
 			margin: 0;
@@ -1479,7 +1481,7 @@ body {
 	}
 
 	&__copyright {
-		color: #424242;
+		color: $main-color-subtext;
 		font-size: 16px;
 	}
 
@@ -1724,14 +1726,14 @@ body {
 			.hamburger-inner,
 			.hamburger-inner::before,
 			.hamburger-inner::after {
-				background-color: #000000;
+				background-color: $main-color-text;
 			}
 		}
 		&__box {
 			&.active {
 				.header {
 					&__logo {
-						color: #212121;
+						color: $main-color-text;
 						background: #ffffff;
 					}
 					&__title {
@@ -1745,10 +1747,10 @@ body {
 						border-color: rgba(0, 0, 0, 0.2);
 					}
 					&__address {
-						color: #212121;
+						color: $main-color-text;
 					}
 					&__label {
-						color: #212121;
+						color: $main-color-text;
 						border-color: rgba(0, 0, 0, 0.5);
 					}
 				}
@@ -1767,7 +1769,7 @@ body {
 		}
 		&__menu {
 			position: fixed;
-			background-color: #ffffff;
+			background-color: $main-light-color;
 			top: -100%;
 			width: 100%;
 			transition: all 0.5s;
@@ -1786,12 +1788,12 @@ body {
 				a {
 					text-shadow: none;
 					&:hover {
-						color: #000000;
+						color: $main-color-text;
 						&::before {
 							display: none;
 						}
 					}
-					color: #000000;
+					color: $main-color-text;
 				}
 			}
 			&.active {
@@ -1800,16 +1802,16 @@ body {
 		}
 		&__headset {
 			.headset {
-				fill: #212121;
+				fill: $main-color-text;
 			}
 		}
 		&__number {
 			text-shadow: none;
-			color: #212121;
+			color: $main-color-text;
 		}
 		&__consult {
 			text-shadow: none;
-			color: #212121;
+			color: $main-color-text;
 		}
 		&__nav {
 			display: flex;
@@ -1837,7 +1839,7 @@ body {
 			.hamburger-inner,
 			.hamburger-inner::before,
 			.hamburger-inner::after {
-				background-color: #000000;
+				background-color: $main-color-text;
 			}
 		}
 		&-box {
@@ -1852,7 +1854,7 @@ body {
 			margin-top: -2px;
 			width: 40px;
 			height: 4px;
-			background-color: #ffffff;
+			background-color: $main-light-color;
 			border-radius: 4px;
 			position: absolute;
 			transition-property: transform;
@@ -1864,7 +1866,7 @@ body {
 				display: block;
 				width: 40px;
 				height: 4px;
-				background-color: #ffffff;
+				background-color: $main-light-color;
 				border-radius: 4px;
 				position: absolute;
 				transition-property: transform;
