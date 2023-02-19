@@ -310,6 +310,54 @@ body {
     height: 452px;
     border: 1px solid #cf9455; }
 
+.vacancy {
+  height: 100vh;
+  background: url("../img/career.png") 100%/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 10% 10%; }
+  .vacancy__title {
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.74);
+    font-weight: 700;
+    margin: 0 0 30px; }
+  .vacancy__button {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cf9455;
+    position: relative;
+    border: 2px solid #cf9455;
+    padding: 20px 40px;
+    z-index: 1; }
+    .vacancy__button span {
+      transition: 0.6s ease;
+      display: inline-block;
+      position: relative;
+      z-index: 2; }
+    .vacancy__button:before {
+      top: 0;
+      display: inline-block;
+      background: #cf9455;
+      transition: 0.6s ease;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 100%;
+      bottom: 0;
+      left: 0; }
+    .vacancy__button:hover {
+      color: #ffffff; }
+      .vacancy__button:hover:before {
+        right: 0; }
+
 .story {
   padding: 304px 60px 100px; }
   .story__container {

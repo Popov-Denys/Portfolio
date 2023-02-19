@@ -2,16 +2,7 @@ $('.hamburger').click(function () {
 	$('.hamburger,.header__box,.header__menu').toggleClass('active');
 	$('body').toggleClass('locked');
 });
-const observer = new IntersectionObserver(intersections => {
-	intersections.forEach(({
-		target,
-		isIntersecting
-	}) => {
-		target.classList.toggle('animate', isIntersecting);
-	});
-}, {
-	threshold: 0
-});
+
 $('[href^="#areas"]').on('click', function () {
 	let href = $(this).attr('href'), elem = $(document).find(href);
 	if (elem.length > 0) {
@@ -21,6 +12,16 @@ $('[href^="#areas"]').on('click', function () {
 		}, 1000);
 	}
 	return false;
+});
+const observer = new IntersectionObserver(intersections => {
+	intersections.forEach(({
+		target,
+		isIntersecting
+	}) => {
+		target.classList.toggle('animate', isIntersecting);
+	});
+}, {
+	threshold: 0
 });
 document.querySelectorAll('.approach__number').forEach(div => {
 	observer.observe(div);
@@ -66,34 +67,4 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 	// start the text animation
 	StartTextAnimation(0);
-});
-let mySlider = $('.story__slider').slick({
-	arrows: true,
-	dots: true,
-	centerMode: false,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	waitForAnimate: false,
-	speed: 400,
-	//responsive: [{
-	//breakpoint: 920,
-	//settings: {
-	//vertical: true,
-	//verticalSwiping: true,
-	//}
-	//}]
-});
-
-// our mySlider dots
-let dots = $('.slick-dots > LI', mySlider);
-
-// before mySlider change slick event
-mySlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-
-	// remove dot past classes on dots after next slide dot
-	$(dots[nextSlide]).nextAll().removeClass('past');
-
-	// add dot past classes on dots before next slide dot
-	$(dots[nextSlide]).prevAll().addClass('past');
-
 });

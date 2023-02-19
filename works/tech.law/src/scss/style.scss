@@ -84,6 +84,58 @@ body {
 		border: 1px solid $main-color;
 	}
 }
+.vacancy {
+	height: 100vh;
+	background: url("../img/career.png") 100% / cover no-repeat;
+	@include flex-column;
+	justify-content: flex-end;
+	padding: 0 0 10% 10%;
+	&__title {
+		color: $main-light-color;
+		font-size: 50px;
+		text-shadow: 0 0 6px rgba(0, 0, 0, 0.74);
+		font-weight: 700;
+		margin: 0 0 30px;
+	}
+
+	&__button {
+		width: fit-content;
+		@include inline-flex-center;
+		text-align: center;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 500;
+		color: $main-color;
+		position: relative;
+		border: 2px solid $main-color;
+		padding: 20px 40px;
+		z-index: 1;
+		span {
+			transition: 0.6s ease;
+			display: inline-block;
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			top: 0;
+			display: inline-block;
+			background: $main-color;
+			transition: 0.6s ease;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			right: 100%;
+			bottom: 0;
+			left: 0;
+		}
+		&:hover {
+			color: $main-light-color;
+			&:before {
+				right: 0;
+			}
+		}
+	}
+}
 
 .story {
 	padding: 304px 60px 100px;
