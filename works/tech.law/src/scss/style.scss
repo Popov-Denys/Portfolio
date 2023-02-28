@@ -39,8 +39,43 @@ body {
 	}
 
 	&__map {
+		position: relative;
 		img {
 			max-width: 100%;
+		}
+	}
+	&__tooltip {
+		cursor: pointer;
+		position: absolute;
+
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		transition: all 0.6s;
+		&_1 {
+			top: 21%;
+			left: 20%;
+		}
+		&_2 {
+			top: 12%;
+			right: 49.5%;
+		}
+		&_3 {
+			top: 17%;
+			right: 47%;
+		}
+		&_4 {
+			top: 21%;
+			right: 37%;
+		}
+		svg {
+			transition: all 0.6s;
+			fill: red;
+		}
+		&:hover {
+			svg {
+				fill: $main-color;
+			}
 		}
 	}
 }
@@ -2130,6 +2165,40 @@ body {
 	}
 }
 @include _768 {
+	.map {
+		padding: 50px 20px;
+		&__container {
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+
+		&__map {
+			position: relative;
+			img {
+				max-width: 100%;
+			}
+		}
+		&__tooltip {
+			width: 15px;
+			height: 15px;
+			&_1 {
+				top: 21%;
+				left: 20%;
+			}
+			&_2 {
+				top: 12%;
+				right: 49.5%;
+			}
+			&_3 {
+				top: 17%;
+				right: 47%;
+			}
+			&_4 {
+				top: 21%;
+				right: 37%;
+			}
+		}
+	}
 	// .featured {
 	// 	&__content {
 	// 		grid-template-columns: 1fr;
