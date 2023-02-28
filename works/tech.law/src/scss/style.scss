@@ -20,8 +20,33 @@ body {
 		}
 	}
 }
+.map {
+	padding: 50px 60px;
+	&__container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	&__title {
+		font-size: 40px;
+		text-align: center;
+		margin: 0 0 20px;
+	}
+
+	&__text {
+		font-size: 20px;
+		text-align: center;
+		margin: 0 0 40px;
+	}
+
+	&__map {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 .careers {
-	padding: 100px 60px;
+	padding: 50px 60px;
 	&__container {
 		max-width: 1440px;
 		margin: 0 auto;
@@ -29,8 +54,9 @@ body {
 
 	&__heading {
 		font-size: 40px;
+		text-align: center;
 		font-weight: 500;
-		margin: 0 0 100px;
+		margin: 0 0 40px;
 	}
 	&__title {
 		font-size: 35px;
@@ -45,15 +71,11 @@ body {
 	}
 
 	&__item {
-		display: flex;
-		gap: 30px;
-		&:nth-child(odd) {
-			flex-direction: row-reverse;
-		}
 	}
 
 	&__img {
-		max-width: 600px;
+		@include flex-center;
+		margin: 0 0 20px;
 		img {
 			border: 1px solid $main-color;
 			max-width: 100%;
@@ -65,23 +87,9 @@ body {
 	}
 
 	&__text {
-		font-size: 18px;
-	}
-
-	&__maps {
-	}
-
-	&__label {
-		text-transform: uppercase;
 		text-align: center;
-		font-size: 38px;
-		font-weight: 500;
-		margin: 0 0 30px;
-	}
-
-	&__map {
-		height: 452px;
-		border: 1px solid $main-color;
+		font-size: 20px;
+		line-height: 35px;
 	}
 }
 .vacancy {
@@ -1199,6 +1207,7 @@ body {
 		padding: 16px;
 		font-size: 14px;
 		width: 100%;
+		font-family: Outfit;
 		appearance: none;
 		resize: none;
 		margin: 0 0 50px;

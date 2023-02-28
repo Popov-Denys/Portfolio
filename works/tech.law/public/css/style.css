@@ -269,15 +269,32 @@ body {
   body.hidden .header__link {
     pointer-events: none; }
 
+.map {
+  padding: 50px 60px; }
+  .map__container {
+    max-width: 1440px;
+    margin: 0 auto; }
+  .map__title {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 20px; }
+  .map__text {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 40px; }
+  .map__map img {
+    max-width: 100%; }
+
 .careers {
-  padding: 100px 60px; }
+  padding: 50px 60px; }
   .careers__container {
     max-width: 1440px;
     margin: 0 auto; }
   .careers__heading {
     font-size: 40px;
+    text-align: center;
     font-weight: 500;
-    margin: 0 0 100px; }
+    margin: 0 0 40px; }
   .careers__title {
     font-size: 35px;
     color: #cf9455;
@@ -286,29 +303,20 @@ body {
     display: grid;
     gap: 50px;
     margin: 0 0 80px; }
-  .careers__item {
-    display: flex;
-    gap: 30px; }
-    .careers__item:nth-child(odd) {
-      flex-direction: row-reverse; }
   .careers__img {
-    max-width: 600px; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px; }
     .careers__img img {
       border: 1px solid #cf9455;
       max-width: 100%; }
   .careers__content {
     padding: 20px 0 5px; }
   .careers__text {
-    font-size: 18px; }
-  .careers__label {
-    text-transform: uppercase;
     text-align: center;
-    font-size: 38px;
-    font-weight: 500;
-    margin: 0 0 30px; }
-  .careers__map {
-    height: 452px;
-    border: 1px solid #cf9455; }
+    font-size: 20px;
+    line-height: 35px; }
 
 .vacancy {
   height: 100vh;
@@ -1067,6 +1075,7 @@ body {
     padding: 16px;
     font-size: 14px;
     width: 100%;
+    font-family: Outfit;
     appearance: none;
     resize: none;
     margin: 0 0 50px; }

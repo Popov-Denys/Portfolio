@@ -7,7 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/favicon.svg">
 	<title>TECH.AI.LAW</title>
+	<link rel="stylesheet" type="text/css" href="css/tooltipster.main.min.css" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+	<script type="text/javascript" src="js/tooltipster.main.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function () {
+			$('.tooltip').tooltipster();
+		});
+	</script>
 </head>
 
 <body>
@@ -85,90 +94,20 @@
 
 		</header>
 		<div class="content">
-			<div class="new-insights">
-				<div class="new-insights-item">
-					<div class="new-insights-item__container">
-						<div class="new-insights-item__content">
-							<div class="new-insights-item__title">Lorem ipsum</div>
-							<div class="new-insights-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-								delectus rem sint libero minus dolores nesciunt fugiat iste repellat facilis.Lorem ipsum dolor
-								sit amet consectetur adipisicing elit.</div>
-							<div class="new-insights-item__description">
-								If you have questions about the blog or suggestions about what we should cover please do <a
-									href="#">contact us</a>.
-							</div>
-						</div>
-						<div class="new-insights-item__img"><img src="img/insight-img.webp" alt="img"></div>
+			<div class="map">
+				<div class="map__container">
+					<h1 class="map__title">Reach</h1>
+					<div class="map__text">
+						<p>We operative worldwide, support business and organizations achieve their goals.
+						</p>
+						<p>Please contact us for a consultation if you require specialized legal support in the UK, EU, North
+							America and Middle East regions.
+						</p>
 					</div>
-				</div>
-				<div class="featured">
-
-					<div class="featured__container">
-						<div class="featured__heading">Featured posts</div>
-						<div class="featured__content">
-							<div class="featured__special">
-								<div class="featured__img"><img src="img/way.jpg" alt="post"></div>
-								<div class="featured__box">
-									<div class="featured__date">BLOG POST: 23 December 2023</div>
-									<div class="featured__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-									<a href="#" class="featured__link">Read more</a>
-								</div>
-							</div>
-							<div class="featured__item">
-								<div class="featured__img"><img src="img/way.jpg" alt="post"></div>
-								<div class="featured__box">
-									<div class="featured__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-									<a href="#" class="featured__link">Read more</a>
-								</div>
-							</div>
-							<div class="featured__item">
-								<div class="featured__img"><img src="img/way.jpg" alt="post"></div>
-								<div class="featured__box">
-									<div class="featured__title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-									<a href="#" class="featured__link">Read more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="posts">
-					<div class="posts__title">All posts</div>
-					<div class="posts__container">
-						<div class="post">
-							<div class="post__img"><img src="img/way.jpg" alt="post"></div>
-							<div class="post__content">
-								<div class="post__title">Lorem ipsum dolor sit amet.</div>
-								<div class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora
-									voluptas id similique eius, voluptates aut itaque repellat excepturi quia.</div>
-								<a href="#" class="post__link">Read more</a>
-							</div>
-						</div>
-						<div class="post">
-							<div class="post__img"><img src="img/way.jpg" alt="post"></div>
-							<div class="post__content">
-								<div class="post__title">Lorem ipsum dolor sit amet.</div>
-								<div class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora
-									voluptas id similique eius, voluptates aut itaque repellat excepturi quia.</div>
-								<a href="#" class="post__link">Read more</a>
-							</div>
-						</div>
-						<div class="post">
-							<div class="post__img"><img src="img/way.jpg" alt="post"></div>
-							<div class="post__content">
-								<div class="post__title">Lorem ipsum dolor sit amet.</div>
-								<div class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora
-									voluptas id similique eius, voluptates aut itaque repellat excepturi quia.</div>
-								<a href="#" class="post__link">Read more</a>
-							</div>
-						</div>
-						<div class="post">
-							<div class="post__img"><img src="img/way.jpg" alt="post"></div>
-							<div class="post__content">
-								<div class="post__title">Lorem ipsum dolor sit amet.</div>
-								<div class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora
-									voluptas id similique eius, voluptates aut itaque repellat excepturi quia.</div>
-								<a href="#" class="post__link">Read more</a>
-							</div>
+					<div class="map__map">
+						<img src="img/map.jpeg" alt="map" class="tooltip">
+						<div id="my-tooltip">
+							This div has a tooltip with HTML when you hover over it!
 						</div>
 					</div>
 				</div>
@@ -346,8 +285,6 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 </body>
 
