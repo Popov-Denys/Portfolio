@@ -5,7 +5,7 @@ $(document).ready(function () {
 		centerMode: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		Infinity: false,
+		Infinity: true,
 		waitForAnimate: false,
 		variableWidth: false,
 		swipe: false,
