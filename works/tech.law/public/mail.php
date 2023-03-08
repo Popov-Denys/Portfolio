@@ -1,45 +1,62 @@
 <?php
+// Файлы phpmailer
+require 'mailer/PHPMailer.php';
+require 'mailer/SMTP.php';
+require 'mailer/Exception.php';
 
-#Receive user input
-$email_address = $_POST['email'];
-$feedback = $_POST['feedback'];
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$secondName = $_POST['secondname']
+$surName = $_POST['surname']
+$business = $_POST['business']
+$email = $_POST['email'];
+$text = $_POST['text'];
 
-#Filter user input
-function filter_email_header($form_field) {  
-return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
+// Формирование самого письма
+$title = "Heading";
+$body = "
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Email:</b> $email<br><br>
+<b>Message:</b><br>$text
+<b>Message:</b><br>$secondName
+<b>Message:</b><br>$surName
+<b>Message:</b><br>$business
+";
+
+// Настройки PHPMailer
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+try {
+    $mail->isSMTP();   
+    $mail->CharSet = "UTF-8";
+    $mail->SMTPAuth   = true;
+    //$mail->SMTPDebug = 2;
+    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+
+    // Настройки вашей почты
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'denispopovmaksimovich'; // Логин на почте
+    $mail->Password   = 'yesqidrgyhoqdaoe'; // Пароль на почте
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('denispopovmaksimovich@gmail.com', 'Nameless'); // Адрес самой почты и имя отправителя
+
+    // Получатель письма
+    $mail->addAddress('denispopovmaksimovich@gmail.com');  
+
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-$email_address  = filter_email_header($email_address);
-
-#Send email
-$headers = "From: $email_address";
-$sent = mail('denispopovmaksimovich@gmail.com', 'Feedback Form Submission', $feedback, $headers);
-
-#Thank user or notify them of a problem
-if ($sent) {
-
-?><html>
-<head>
-<title>Thank You</title>
-</head>
-<body>
-<h1>Thank You</h1>
-<p>Thank you for your feedback.</p>
-</body>
-</html>
-<?php
-
-} else {
-
-?><html>
-<head>
-<title>Something went wrong</title>
-</head>
-<body>
-<h1>Something went wrong</h1>
-<p>We could not send your feedback. Please try again.</p>
-</body>
-</html>
-<?php
-}
-?>
+// Отображение результата
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
