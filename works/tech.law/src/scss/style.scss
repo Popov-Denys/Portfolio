@@ -20,6 +20,172 @@ body {
 		}
 	}
 }
+.policy {
+	padding: 30px 70px 30px 30px;
+	max-width: 1440px;
+	margin: 0 auto;
+	&__labeling {
+		font-size: 17px;
+		font-weight: 700;
+		margin: 0 0 15px;
+	}
+	&__table {
+		width: 100%;
+		color: #000000;
+		border-collapse: collapse;
+		background: #eeece1;
+		border: 2px solid black;
+		margin: 0 0 15px;
+		thead {
+			th {
+				padding: 15px;
+				text-align: left;
+				border: 2px solid black;
+			}
+		}
+		tbody {
+			td {
+				border: 2px solid black;
+				padding: 15px;
+			}
+		}
+	}
+	&__logo {
+		position: absolute;
+		left: -55px;
+		top: 0;
+		height: 30px;
+		width: 124px;
+		transform: rotate(-90deg);
+		img {
+			height: 30px;
+			width: 124px;
+		}
+		&_2 {
+			top: 50%;
+		}
+	}
+	&__steps {
+		font-weight: 700;
+		font-size: 15px;
+		padding: 0 0 0 9px;
+		margin: 0 0 15px;
+		span {
+			display: inline-block;
+			margin: 0 30px 0 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	&__title {
+		position: relative;
+		@include flex-center;
+		font-size: 48px;
+		text-align: center;
+		font-weight: 700;
+		margin: 0 0 10px;
+		.policy {
+			&__bookmark {
+				height: auto;
+				svg {
+					width: 25px;
+				}
+			}
+		}
+	}
+
+	&__bookmark {
+		padding: 2px 0 0;
+		flex-shrink: 0;
+		height: 15px;
+		margin: 0 7px 0 0;
+		svg {
+			width: 10px;
+			fill: #7aa8e6;
+		}
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		font-size: 22px;
+		margin: 0 0 20px;
+		&_special {
+			text-transform: initial;
+		}
+	}
+
+	&__heading {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 16px;
+		margin: 0 0 15px;
+	}
+
+	&__item {
+		margin: 0 0 15px;
+	}
+
+	&__label {
+		font-weight: 700;
+		display: flex;
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__description {
+		position: relative;
+		padding: 0 0 0 5%;
+		p {
+			margin: 0 0 10px;
+		}
+	}
+
+	&__sublabel {
+		display: flex;
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	&__li {
+		&_special {
+			list-style-type: none !important;
+			margin: 0 0 10px 30px !important;
+		}
+	}
+	&__underline {
+		text-decoration: underline;
+	}
+	&__list {
+		margin: 0 0 15px;
+
+		&:last-child {
+			margin: 0;
+		}
+		li {
+			list-style-type: disc;
+			margin: 0 0 10px 65px;
+			padding: 0 0 0 20px;
+			&:last-child {
+				margin: 0 0 0 65px;
+			}
+		}
+		&_special {
+			.policy__list {
+				padding: 10px 0;
+			}
+			li {
+				list-style-type: lower-alpha;
+			}
+		}
+	}
+}
+
 .map {
 	padding: 50px 60px;
 	&__container {
@@ -1418,6 +1584,7 @@ body {
 		margin: 0 0 15px;
 		img {
 			border: 1px solid $main-color;
+			max-height: 205px;
 			max-width: 100%;
 		}
 	}
