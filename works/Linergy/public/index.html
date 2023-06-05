@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full w-full">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Linergy</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="h-full font-sans flex flex-col text-primary">
+	<header
+		class="relative bg-white px-4 flex items-center shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_rgba(0,0,0,0.06);] sm:px-8 md:px-16 ">
+		<div class="mr-2 sm:mr-4 md:mr-16">
+			<img src="img/logo.png" alt="logo">
+		</div>
+		<div>
+			<ul class="flex items-center">
+				<li>
+					<a href="#" title="Dashboard"
+						class="inline-block text-xs py-5 px-1 text-primary relative transition-all after:content-[attr(title)] after:block after:overflow-hidden after:opacity-0 after:font-bold after:h-0 before:hidden before:bottom-0 before:left-0 before:absolute before:w-full before:bg-[#6366F1] before:h-[2px] hover:before:inline-block hover:font-bold hover:text-tertiary mr-1 sm:mr-4 sm:text-sm md:mr-8">Dashboard</a>
+				</li>
+				<li><a href="#" title="Utenti"
+						class="inline-block text-xs py-5 px-1 text-primary relative transition-all after:content-[attr(title)] after:block after:overflow-hidden after:opacity-0 after:font-bold after:h-0 before:hidden before:bottom-0 before:left-0 before:absolute before:w-full before:bg-[#6366F1] before:h-[2px] hover:before:inline-block hover:font-medium hover:text-tertiary mr-1 sm:mr-4 sm:text-sm md:mr-8">Utenti</a>
+				</li>
+				<li><a href="#" title="Log-out"
+						class="inline-block text-xs py-5 px-1 text-primary relative transition-all after:content-[attr(title)] after:block after:overflow-hidden after:opacity-0 after:font-bold after:h-0 before:hidden before:bottom-0 before:left-0 before:absolute before:w-full before:bg-[#6366F1] before:h-[2px] hover:before:inline-block hover:font-medium hover:text-tertiary sm:text-sm">Log-out</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<main class="bg-gray-100 flex-auto px-8 pt-10 md:px-16 pb-16">
+		<div class="mx-auto max-w-7xl">
+			<h1 class="font-medium text-tertiary text-lg mb-10">Genera nuovo listino</h1>
+			<div>
+				<div>
+					<div
+						class="mb-5 rounded-lg border border-[#E5E7EB] overflow-hidden shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_rgba(0,0,0,0.06);]">
+						<form action="#" method="POST">
+							<div class="shadow sm:overflow-hidden sm:rounded-md">
+								<div class="bg-[#F9FAFB] py-3 px-4 border-b border-[#E5E7EB]">
+									<h4 class="text-xs font-medium text-primary">STEP 1 - FILTRA GLI ARTICOLI</h4>
+								</div>
+								<div class="space-y-6 bg-white px-4 py-5 sm:p-6">
+									<form action="#">
+										<div class="grid gap-y-8 grid-cols-1 md:grid-cols-4 items-center">
+											<div
+												class="col-span-3 row-span-1 grid md:grid-cols-7 items-center gap-y-5 gap-x-5 xl:gap-x-8">
+												<div class="md:col-span-2">
+													<label for="first-name" class="block text-sm text-secondary">Codice</label>
+													<input type="text" name="first-name" id="first-name" autocomplete="given-name"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="md:col-span-3">
+													<label for="first-name" class="block text-sm text-secondary">Dati
+														tecnici
+														(???)</label>
+													<input type="text" name="first-name" id="first-name" autocomplete="given-name"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="md:col-span-2 md:mt-5">
+													<div class="flex items-start">
+														<div class="flex h-5 items-center">
+															<input id="list" name="list" type="checkbox"
+																class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+														</div>
+														<div class="ml-3 text-sm">
+															<label for="list" class="text-secondary">A listino</label>
+														</div>
+													</div>
+													<div class="flex items-start">
+														<div class="flex h-5 items-center">
+															<input id="list1" name="list1" type="checkbox"
+																class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+														</div>
+														<div class="ml-3 text-sm">
+															<label for="list1" class="text-secondary">A listino</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<button type="button"
+												class=" col-span-1 w-fit rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-secondary shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 md:mt-5">Procedi
+												e mostra anteprima articoli</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div
+						class="mb-5 rounded-lg border border-[#E5E7EB] overflow-hidden shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_rgba(0,0,0,0.06);]">
+						<form action="#" method="POST">
+							<div class="shadow sm:overflow-hidden sm:rounded-md">
+								<div class="bg-[#F9FAFB] py-3 px-4 border-b border-[#E5E7EB]">
+									<h4 class="text-xs font-medium text-primary">STEP 2 - ANTEPRIMA ARTICOLI</h4>
+								</div>
+								<div class="bg-white px-5 py-5 sm:px-6 sm:py-6 xl:px-10">
+									<form action="#">
+										<div class="lg:grid lg:grid-cols-8 lg:mb-14">
+											<div
+												class="justify-center mb-4 sm:justify-start lg:mb-0 lg:mr-6 lg:pr-6 lg:border-r lg:border-[#E5E7EB] lg:col-span-2 xl:mr-8 xl:pr-8">
+												<div class="flex flex-row items-center mb-4">
+													<span
+														class="inline-block text-2xl font-medium mr-2 text-[#4F46E5] sm:mb-0 sm:mr-4">4.244</span>
+													<p class=" text-xs ">
+														articoli corrispondenti ai
+														filtri di ricerca impostati</p>
+												</div>
+												<button type="button"
+													class="mx-auto sm:mx-0 w-fit rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-secondary shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Visualizza
+													elenco</button>
+											</div>
+											<div
+												class="grid gap-y-4 text-secondary mb-4 lg:mb-0 lg:mr-6 lg:pr-6 lg:border-r lg:border-[#E5E7EB] lg:gap-x-4 lg:col-span-4 xl:grid-cols-12 xl:gap-x-6 xl:mr-8 xl:pr-8">
+												<h5 class="text-sm lg:col-span-12 lg:mb-1"><b class="text-tertiary">Opzionale:</b>
+													dati
+													comuni
+													a tutti
+													gli articoli
+													di
+													questo listino </h5>
+												<div class="lg:col-span-5">
+													<label for="data1" class="block text-sm mb-2">Data inizio</label>
+													<input type="text" name="data1" id="data1"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="lg:col-span-5">
+													<label for=" data1" class="block text-sm mb-2">Data fine</label>
+													<input type="text" name="data2" id="data2"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="lg:col-span-3">
+													<label for="sconto1" class="block text-sm mb-2">Sconto 1</label>
+													<input type="text" name="sconto1" id="sconto1"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="lg:col-span-3">
+													<label for="sconto2" class="block text-sm mb-2">Sconto 2</label>
+													<input type="text" name="sconto2" id="sconto2"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="lg:col-span-3">
+													<label for="sconto3" class="block text-sm mb-2">Sconto 3</label>
+													<input type="text" name="sconto3" id="sconto3"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="lg:col-span-3">
+													<label for="minima" class="block text-sm mb-2">Q.tà minima</label>
+													<input type="text" name="minima" id="minima"
+														class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+												</div>
+												<div class="flex items-start lg:mt-4 lg:mb-4 lg:col-span-12">
+													<div class="flex h-5 items-center">
+														<input id="riga" name="riga" type="checkbox"
+															class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+													</div>
+													<div class="ml-3 text-sm">
+														<label for="riga" class="text-secondary">Sconto riga</label>
+													</div>
+												</div>
+												<div class="lg:col-span-5">
+													<label for="riferimento" class="block text-sm mb-3"><b
+															class="text-tertiary">Opzionale: </b> listino di riferimento</label>
+													<select id="riferimento" name="riferimento"
+														class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+														<option></option>
+														<option></option>
+														<option></option>
+													</select>
+												</div>
+											</div>
+											<fieldset class="lg:col-span-2 lg:pt-9">
+												<p class="text-sm text-secondary mb-4">Tipo listino</p>
+												<div class=" space-y-3 mb-4 lg:mb-9">
+													<div class="flex items-center">
+														<input id="cliente-italia" name="cliente" type="radio"
+															class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500">
+														<label for="cliente-italia"
+															class="ml-3 block text-sm text-secondary"><b>Gruppi
+																prezzi
+																cliente</b>
+															- Italia</label>
+													</div>
+													<div class="flex items-center">
+														<input id="cliente-estero" name="cliente" type="radio"
+															class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500">
+														<label for="cliente-estero"
+															class="ml-3 block text-sm text-secondary"><b>Gruppi
+																prezzi
+																cliente</b>
+															- Estero</label>
+													</div>
+													<div class="flex items-center">
+														<input id="cliente" type="radio" name="cliente"
+															class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500">
+														<label for="cliente"
+															class="ml-3 block text-sm text-secondary font-bold">Cliente</label>
+													</div>
+												</div>
+												<div>
+													<p class="text-sm text-secondary mb-2">Seleziona clienti</p>
+													<div class="min-h-[122px] border-2 border-dashed border-gray-200 mb-4 lg:mb-0"
+														aria-hidden="true">
+													</div>
+
+												</div>
+											</fieldset>
+										</div>
+										<button type="button"
+											class=" flex w-fit rounded-md border border-gray-300 bg-white py-2 px-3 text-sm font-medium leading-4 text-secondary shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:ml-auto">Procedi
+											e genera file Excel</button>
+									</form>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div
+						class="mb-5 rounded-lg border border-[#E5E7EB] overflow-hidden shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_rgba(0,0,0,0.06);]">
+						<form action="#" method="POST">
+							<div class="shadow sm:overflow-hidden sm:rounded-md">
+								<div class="bg-[#F9FAFB] py-3 px-4 border-b border-[#E5E7EB]">
+									<h4 class="text-xs font-medium text-primary">STEP 3 - GENERAZIONE FILE EXCEL</h4>
+								</div>
+								<div
+									class="space-y-3 bg-white px-4 py-5 md:px-6 md:py-7 md:space-y-0 md:flex md:space-x-4 lg:space-x-8 xl:px-10">
+									<div
+										class="py-px flex justify-center items-center md:pr-4 md:border-r md:border-[#E5E7EB] lg:pr-8">
+										<button
+											class="text-[#10B981] border border-[#10B981] text-center py-2 font-medium px-8 rounded-md md:h-fit">Genera
+											file
+											Excel</button>
+									</div>
+									<div
+										class="py-px flex justify-center items-center md:pr-4 md:border-r md:border-[#E5E7EB] lg:pr-8">
+										<button
+											class="text-[#6366F1] border border-[#6366F1] text-center py-2 font-medium px-8 rounded-md md:h-fit">Importa
+											e valida file Excel</button>
+									</div>
+									<div class=" flex items-center justify-center">
+										<div class="text-sm flex justify-center md:h-fit md:block">
+											<div class="font-bold mr-1">Esito validazione:</div>
+											<div>n/a</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+					<div
+						class="mb-5 rounded-lg border border-[#E5E7EB] overflow-hidden shadow-[0px_1px_3px_rgba(0,0,0,0.1),0px_1px_2px_rgba(0,0,0,0.06);]">
+						<form action="#" method="POST">
+							<div class="shadow sm:overflow-hidden sm:rounded-md">
+								<div class="bg-[#F9FAFB] py-3 px-4 border-b border-[#E5E7EB]">
+									<h4 class="text-xs font-medium text-primary">STEP 4 - INVIO A NAV</h4>
+								</div>
+								<div
+									class="space-y-3 bg-white px-4 py-5 md:px-6 md:py-7 md:space-y-0 md:flex md:space-x-4 lg:space-x-8 xl:px-10">
+									<div class="w-full md:border-r md:border-[#E5E7EB] md:pr-4 lg:pr-8">
+										<label for="interne" class="block text-sm text-secondary mb-2">Note interne
+											listino</label>
+										<input type="text" name="interne" id="interne" autocomplete="given-interne"
+											class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+									</div>
+									<div class="shrink-0 md:flex md:items-end">
+										<button type="submit"
+											class="inline-flex h-fit justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:px-12">Salva
+											e invia a NAV</button>
+									</div>
+								</div>
+
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
