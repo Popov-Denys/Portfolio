@@ -1,0 +1,94 @@
+$maxWidth: 1920;
+@mixin fz($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+@mixin flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin text-ellipsis {
+	text-overflow: ellipsis;
+	padding: 0 2px 0 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@mixin flex-a-center {
+	display: flex;
+	align-items: center;
+}
+@mixin inline-flex-center {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin inline-flex-a-center {
+	display: inline-flex;
+	align-items: center;
+}
+@mixin flex-column-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+@mixin inline-flex-column-center {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+//! Media
+
+@mixin _1920 {
+	@media (min-width: 1920px) {
+		@content;
+	}
+}
+@mixin _1550 {
+	@media (min-width: 1550px) {
+		@content;
+	}
+}
+@mixin _1440 {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}
+@mixin _1280 {
+	@media (min-width: 1280px) {
+		@content;
+	}
+}
+@mixin _1024 {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}
+@mixin _768 {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin _640 {
+	@media (min-width: 640px) {
+		@content;
+	}
+}
+@mixin _480 {
+	@media (min-width: 480px) {
+		@content;
+	}
+}
